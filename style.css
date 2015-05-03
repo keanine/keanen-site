@@ -20,6 +20,14 @@ background:url('resources/background.jpg') no-repeat center center fixed;
 	text-align:center;
 }
 
+#mainBody
+{
+	color:#000000;
+	font-size:20px;
+	text-align:center;
+	padding-top:50px;
+}
+
 #project
 {
 	//background-color:red;
@@ -28,6 +36,7 @@ background:url('resources/background.jpg') no-repeat center center fixed;
 	margin-left:auto;
 	margin-right:auto;
 }
+
 #projectImage
 {
 	//background-color:blue;
