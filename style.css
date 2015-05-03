@@ -1,0 +1,131 @@
+﻿body
+{
+padding:0;
+margin:0;
+font-family:Arial, Helvetica, sans-serif;
+font-size:15px;
+color:#111111;
+background:url('resources/background.jpg') no-repeat center center fixed;
+-webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#title
+{
+	color:#000000;
+	font-size:28px;
+	font-weight:bold;
+	text-align:center;
+}
+
+#project
+{
+	//background-color:red;
+	padding-bottom:200px;
+	width:800px;
+	margin-left:auto;
+	margin-right:auto;
+}
+#projectImage
+{
+	//background-color:blue;
+	float:left;
+	margin-top:10px;
+	margin-left:25px;
+}
+
+#projectInfo
+{
+	//background-color:green;	
+	float:left;
+	padding-bottom:10px;
+	margin-left:25px;
+	width:600px;
+}
+
+#largetext
+{
+	color:#0084ff;
+	font-size:28px;
+	font-weight:bold;
+	padding-top:10px;
+	padding-bottom:10px;
+
+}
+
+#smallertext
+{
+
+	font-size:20px;
+	
+}
+
+#navigation
+{
+	position:fixed;
+	height:50px;
+	width:100%;
+	min-width:1000px;
+	background-color:#1e1c1d;
+	border-bottom:1px #171616 solid;
+}
+
+.navItems
+{
+
+	width:125px;
+	height:50px;
+	border-right:thin #171616 solid;
+	display:block;
+	margin:auto;
+	padding:0;
+	text-align:center;
+	line-height:50px;
+	text-decoration:none;
+	font-size:12px;
+	font-weight:bold;
+	color:#e7e7e7;
+}
+
+.navItems:hover
+{
+	background-color:#2b292a;
+}
+
+.navLogo
+{
+
+	width:175px;
+	height:50px;
+	border-right:thin #171616 solid;
+	display:block;
+	margin:auto;
+	padding:0;
+	text-align:center;
+	line-height:50px;
+	text-decoration:none;
+	font-size:12px;
+	font-weight:bold;
+	color:#e7e7e7;
+}
+
+.navLogo:hover
+{
+	background-color:#2b292a;
+}
+
+li{
+	float:left;
+}
+
+ul
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+
+
