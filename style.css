@@ -6,12 +6,6 @@ font-family:Arial, Helvetica, sans-serif;
 font-size:15px;
 color:#111111;
 background-color:#DFDFDF;
-/*background:url('resources/background.jpg') repeat center center fixed;
--webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-*/
 }
 
 #title
@@ -28,6 +22,23 @@ background-color:#DFDFDF;
 	font-size:20px;
 	text-align:center;
 	padding-top:50px;
+	padding-bottom:10px;
+	border-bottom:thin black solid;
+	min-height:300px;
+}
+
+#footer
+{
+	background-color:#1e1c1d;
+	color:#FFFFFF;
+	font-size:10px;
+	text-align:right;
+	padding-top:40px;
+	padding-bottom:5px;
+	padding-right:10px;
+	border-top:thin black solid;
+	min-height:25px;
+	
 }
 
 #project
