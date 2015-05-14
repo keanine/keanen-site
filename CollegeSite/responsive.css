@@ -9,7 +9,14 @@
 .navButtons
 {
 	font-size: 10px;
-	width:75px;
+	width:50px;
+	height:22px;
+	line-height:22px;
+}
+
+.navBar
+{
+	height:22px;
 }
 }
 @media screen and (min-width: 500px)
