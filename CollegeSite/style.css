@@ -3,7 +3,8 @@
 body
 {
 	margin:0;
-	font-family:"Arial Black", Gadget, sans-serif;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
 	font-size:15px;
 	background-color:#DAE8F7;
 }
