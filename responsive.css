@@ -28,19 +28,24 @@
 	padding-left:25px;
 	padding-right:25px;
 }
+.wideBody
+{
+	height:300px;
+}
+
 
 }
 @media screen and (min-width: 800px) and (max-width:1200px)
 {	
+.logo
+{
+	 height:300px;
+}
+
 .mainBody
 {
 	width:700px;
 	padding-left:25px;
 	padding-right:25px;
 }
-.logo
-{
-	 height:300px;
-}
-
 }

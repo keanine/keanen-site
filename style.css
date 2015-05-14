@@ -21,42 +21,20 @@ body
 	width:100%;
 	font-size:12px;
 	font-weight:bold;
-}
+	position:fixed;
+	background-color:#1e1c1d;
 
-.logoText 
-{
-	line-height:76px;
-	height:76px;
-	font-size:8px;
-	float:left;
-	//background-color:red;
-}
-
-.searchText 
-{
-	line-height:76px;
-	height:76px;
-	font-size:12px;
-	float:right;
-	padding-right:10px;
-	font-weight:normal;
-}
-
-.headerLR 
-{
-	width:76px;
-	height:76px;
 }
 
 .navBar
 {
 	list-style:none;
-	background-color:#1e1c1d;
 	clear:both;
 	height:50px;
 	border-bottom:#171616 solid thin;
 	padding:0;
 	margin-top:0;
+	margin-bottom:0;
 }
 
 .navButtons
@@ -81,6 +59,7 @@ body
 	 border-right:none;	 
 	 border-bottom:#7A2820 solid thin;
 	 background-color:#E74C3C;
+	 margin-left:-99px;
 }
 
 .mainBody
@@ -108,7 +87,10 @@ body
 	margin-left:0;
 	margin-right:0; 	
 	background-image:url('divImg.jpg');
-	min-height: 500px;
+	background-position:center;
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	height: 500px;
 	border-top:#BDBDBD solid thin;
 	border-bottom:#7B7B7B solid thin;
 	width:100%;
