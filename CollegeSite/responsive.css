@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+@media screen and (min-width: 500px)
+{	
+.logoText {
+	font-size:18px;
+	line-height:100px;
+	height:100px;
+}	
+
+.searchText {
+	line-height:100px;
+	height:100px;
+}
+
+.headerLR {
+	width:100px;
+	height:100px;
+}
+}
+
+@media screen and (min-width: 850px)
+{
+.logoText {
+	font-size:30px;
+	line-height:150px;
+	height:150px;
+}	
+
+.searchText {
+	line-height:150px;
+	height:150px;
+}
+
+.headerLR {
+	width:150px;
+	height:150px;
+}
+
+}
