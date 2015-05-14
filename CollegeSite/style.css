@@ -9,6 +9,12 @@ body
 	background-color:#ECF0F1;
 }
 
+#header
+{
+	background-color:#D2E1ED;
+	width:100%;
+}
+
 .logoText 
 {
 	line-height:76px;
@@ -73,8 +79,10 @@ body
 .mainBody
 {
 	background-color:#FFF;
-	border:#999 solid thin;
-	clear:both;
-	margin: 30px;
+	margin: 25px;
 	min-height: 400px;
+	border-top:#BDBDBD solid thin;
+	border-right:#BDBDBD solid thin;
+	border-left:#7B7B7B solid thin;
+	border-bottom:#7B7B7B solid thin;
 }
