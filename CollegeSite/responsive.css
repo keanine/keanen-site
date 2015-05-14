@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@media screen and (max-width: 499px)
+@media screen and (max-width: 399px)
 {	
 .logoText {
 	display:none;
@@ -19,7 +19,7 @@
 	height:22px;
 }
 }
-@media screen and (min-width: 500px)
+@media screen and (min-width: 400px)
 {	
 .logoText {
 	font-size:18px;
