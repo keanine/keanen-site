@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+body
+{
+	margin:0;
+	font-family:"Arial Black", Gadget, sans-serif;
+	font-size:15px;
+	background-color:#DAE8F7;
+}
+
+.logoText 
+{
+	line-height:76px;
+	height:76px;
+	font-size:8px;
+	float:left; 
+	//background-color:red;
+}
+
+.searchText 
+{
+	line-height:76px;
+	height:76px;
+	font-size:12px;
+	float:right;
+	//background-color:blue;
+	padding-right:10px;
+}
+
+.headerLR 
+{
+	width:76px;
+	height:76px;
+}
+
+.navBar
+{
+	list-style:none;
+	background-color:#719ED9;
+	clear:both;
+	height:25px;
+	border-top:#2E4559 solid thin;
+	border-bottom:#2E4559 solid thin;
+	padding:0;
+}
+
+.navButtons
+{
+	border-right:#2E4559 solid thin;
+	width:100px;
+	text-align:center;
+	text-decoration:none;
+	color:black;
+	padding-left:10px;
+	padding-right:10px;
+	display:inline;
+	height:25px;
+	float:left;
+	//background-color:cyan;
+}
