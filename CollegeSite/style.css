@@ -6,7 +6,7 @@ body
 	font-family:Arial, Helvetica, sans-serif;
 	font-weight:bold;
 	font-size:15px;
-	background-color:#DAE8F7;
+	background-color:#ECF0F1;
 }
 
 .logoText 
@@ -26,6 +26,7 @@ body
 	float:right;
 	//background-color:blue;
 	padding-right:10px;
+	font-weight:normal;
 }
 
 .headerLR 
@@ -37,21 +38,21 @@ body
 .navBar
 {
 	list-style:none;
-	background-color:#719ED9;
+	background-color:#0079ce;
 	clear:both;
 	height:25px;
-	border-top:#2E4559 solid thin;
-	border-bottom:#2E4559 solid thin;
+	//border-top:#2C3E50 solid thin;
+	//border-bottom:#2C3E50 solid thin;
 	padding:0;
 }
 
 .navButtons
 {
-	border-right:#2E4559 solid thin;
+	border-right:#394F7D solid thin;
 	width:100px;
 	text-align:center;
 	text-decoration:none;
-	color:black;
+	color:#EFEFEF;
 	padding-left:10px;
 	padding-right:10px;
 	display:inline;
@@ -59,4 +60,21 @@ body
 	float:left;
 	line-height:25px;
 	//background-color:cyan;
+}
+
+#donateButton
+{
+	 float:right;
+	 border-left:#7A2820 solid thin;
+	 border-right:none;
+	 background-color:#E74C3C;
+}
+
+.mainBody
+{
+	background-color:#FFF;
+	border:#999 solid thin;
+	clear:both;
+	margin: 30px;
+	min-height: 400px;
 }
