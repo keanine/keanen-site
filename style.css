@@ -78,6 +78,7 @@ body
 	padding-left:100px;
 	padding-right:100px;
 	width:1000px;
+	text-align:center;
 }
 
 .wideBody
@@ -86,7 +87,7 @@ body
 
 	margin-left:0;
 	margin-right:0; 	
-	background-image:url('Resources/divImg.jpg');
+	background-image:url('Resources/Gallery/field.jpg');
 	background-position:center;
 	background-repeat:no-repeat;
 	background-attachment:scroll;
@@ -95,6 +96,13 @@ body
 	border-bottom:#7B7B7B solid thin;
 	width:100%;
 
+}
+
+.contactOutside
+{
+	clear:both;
+	text-align:center;
+	margin-top: 25px;
 }
 
 .footer
@@ -121,14 +129,12 @@ body
 {	
 	padding-left:10px;
 	padding-top:20px;
-
 	text-align:left;
-
 	height:50%;
 	float:left;
 	display:inline-block;
 	vertical-align: middle;
-	
+	text-decoration:none;
 
 }
 
