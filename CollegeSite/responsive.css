@@ -1,5 +1,17 @@
 @charset "utf-8";
 
+@media screen and (max-width: 499px)
+{	
+.logoText {
+	display:none;
+}	
+
+.navButtons
+{
+	font-size: 10px;
+	width:75px;
+}
+
 @media screen and (min-width: 500px)
 {	
 .logoText {
