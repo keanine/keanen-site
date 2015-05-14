@@ -86,7 +86,7 @@ body
 
 	margin-left:0;
 	margin-right:0; 	
-	background-image:url('divImg.jpg');
+	background-image:url('Resources/divImg.jpg');
 	background-position:center;
 	background-repeat:no-repeat;
 	background-attachment:scroll;
@@ -100,8 +100,36 @@ body
 .footer
 {
 	margin-top: 25px;
-	height:100px;
+	height:80px;
 	background-color:#1e1c1d;
 	border-top:#171616 solid thin;
 	clear:both;
+	color:white;
+	font-size:12px;
+	padding-right:10px;
+	text-align:right;
 }
+
+.copyright
+{	
+	padding-top:50px;
+	float:right;
+
+}
+
+.socialMedia
+{	
+	padding-left:10px;
+	padding-top:20px;
+
+	text-align:left;
+
+	height:50%;
+	float:left;
+	display:inline-block;
+	vertical-align: middle;
+	
+
+}
+
+
