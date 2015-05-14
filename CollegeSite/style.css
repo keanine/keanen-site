@@ -12,7 +12,7 @@ body
 #header
 {
 	background-color:#D2E1ED;
-	width:100%;
+	clear:both;
 }
 
 .logoText 
@@ -85,4 +85,12 @@ body
 	border-right:#BDBDBD solid thin;
 	border-left:#7B7B7B solid thin;
 	border-bottom:#7B7B7B solid thin;
+}
+
+.footer
+{
+	height:100px;
+	background-color:#D2E1ED;
+	border-top:#838C92 solid thin;
+	clear:both;
 }
