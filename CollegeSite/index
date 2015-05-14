@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Charity</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="responsive.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+<div style="background-color:#B3D5F2;">
+<div style="float:left; //background-color:green;">
+		<img src="Charity Logo.png" class="headerLR" height="150px" />
+</div>
+	<div class="logoText">
+		Give me all dat monay tho.
+		
+	</div>
+	<div class="searchText">
+        	<form>
+        	<input type="text" name="search" style="width:100px;"/> Search
+        	</form>
+	</div>
+		<ul class="navBar">
+			<li><a href="index.html" class="navButtons">Home</a></li>
+			<li><a href="index.html" class="navButtons">About</a></li>
+        </ul>
+        
+</div>
+</body>
+</html>
