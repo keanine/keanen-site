@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+@media screen and (max-width: 799px)
+{	
+.logoText {
+	display:none;
+}	
+
+.navButtons
+{
+	font-size: 10px;
+	width:50px;
+	height:30px;
+	line-height:30px;
+}
+
+.navBar
+{
+	height:30px;
+}
+.logo
+{
+	 height:200px;
+}
+.mainBody
+{
+	width:350px;
+	padding-left:25px;
+	padding-right:25px;
+}
+
+}
+@media screen and (min-width: 800px) and (max-width:1200px)
+{	
+.mainBody
+{
+	width:700px;
+	padding-left:25px;
+	padding-right:25px;
+}
+.logo
+{
+	 height:300px;
+}
+
+}
