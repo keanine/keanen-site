@@ -91,7 +91,7 @@ body
 	background-repeat:no-repeat;
 	background-attachment:scroll;
 	height: 500px;
-	width:1050px;
+	width:1080px;
 	border-top:#BDBDBD solid thin;
 	border-bottom:#7B7B7B solid thin;
 	padding-left:50px;
@@ -143,6 +143,13 @@ h2
 {
 	color:#e74c3c;
 }
+
+h3
+{
+	padding-left:15px;
+	text-align:left;
+}
+
 
 a, img {
     border:none;
