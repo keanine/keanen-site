@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@media screen and (max-width: 649px)
+@media screen and (max-width: 679px)
 {	
 .logoText {
 	display:none;
@@ -20,7 +20,7 @@
 }
 .logo
 {
-	 height:200px;
+	 height:180px;
 }
 .mainBody
 {
@@ -35,7 +35,7 @@
 
 
 }
-@media screen and (min-width: 650px) and (max-width:1200px)
+@media screen and (min-width: 680px) and (max-width:1200px)
 {	
 .logo
 {
