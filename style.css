@@ -144,4 +144,9 @@ h2
 	color:#e74c3c;
 }
 
+a, img {
+    border:none;
+    outline:none
+}
+
 
