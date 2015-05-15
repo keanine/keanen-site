@@ -54,7 +54,8 @@
 
 .wideBody
 {
-	width:650px;	
+	width:650px;
+	clear:both;
 }
 }
 }
