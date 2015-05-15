@@ -84,7 +84,6 @@ body
 .wideBody
 {
 	margin-top: 25px;
-
 	margin-left:0;
 	margin-right:0; 	
 	background-image:url('Resources/Gallery/field.jpg');
@@ -94,7 +93,8 @@ body
 	height: 500px;
 	border-top:#BDBDBD solid thin;
 	border-bottom:#7B7B7B solid thin;
-	width:100%;
+	clear:both;
+	padding-left:50px;
 
 }
 
@@ -136,6 +136,11 @@ body
 	vertical-align: middle;
 	text-decoration:none;
 
+}
+
+h2
+{
+	color:#e74c3c;
 }
 
 
