@@ -91,9 +91,9 @@ body
 	background-repeat:no-repeat;
 	background-attachment:scroll;
 	height: 500px;
+	width:1000px;
 	border-top:#BDBDBD solid thin;
 	border-bottom:#7B7B7B solid thin;
-	clear:both;
 	padding-left:50px;
 	padding-right:50px;
 
