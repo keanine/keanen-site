@@ -7,8 +7,8 @@
 
 (function(w, $){
 
-	var mediabreakpoint = 'screen and (max-width: 480px)' // CSS media query. Should match that find in CSS above
-	var $smallscreentoggler = $('<div id="smallscreentoggler" data-state="closed">&equiv;</div>') // HTML for small screen menus toggler
+	var mediabreakpoint = '' // CSS media query. Should match that find in CSS above
+	var $smallscreentoggler = $('') // HTML for small screen menus toggler
 
 	var defaults = {
 		position: 'left',
@@ -79,7 +79,7 @@
 				url: s.source,
 				dataType: 'html',
 				error:function(ajaxrequest){
-					alert('Error fetching content.<br />Server Response: '+ajaxrequest.responseText)
+					//alert('Error fetching content.<br />Server Response: '+ajaxrequest.responseText)
 				},
 				success:function(content){
 					expandlength = init.call(thismenu, content)
