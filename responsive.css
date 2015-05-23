@@ -47,6 +47,11 @@
 	display:inline;
 }
 
+.mobileHeader
+{
+	display:inline;
+}
+
 }
 @media screen and (min-width: 680px) and (max-width:1200px)
 {	
