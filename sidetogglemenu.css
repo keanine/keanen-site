@@ -45,25 +45,3 @@
 	background: #E74C3C;
 	color: white;
 }
-
-/*#######  Additional CSS for toggle menu #togglemenu2  ####### */
-
-#togglemenu2{
-	width: 250px;
-	border-width: 0;
-	background: rgb(53,106,160);
-	box-shadow: -5px 0 5px rgba(174, 174, 174, .8);
-}
-
-#togglemenu2 ul a{
-	color: white;
-	border-bottom: 1px solid #eee;
-	font: bold 14px;
-	text-transform: uppercase;
-}
-
-#togglemenu2 a:hover{
-	background: #162a50;
-	color: white;
-}
-
