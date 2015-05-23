@@ -8,7 +8,7 @@
 .sidetogglemenu{ /* shared class for side toggle menus */
 	border-right: 5px solid #E74C3C;
 	background-color: #1e1c1d;
-	width: 170px; /* default menu width */
+	width: 250px; /* default menu width */
 	height: 120%;
 	position: fixed;
 	top: -100%;
