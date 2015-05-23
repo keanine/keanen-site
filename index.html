@@ -9,9 +9,65 @@
 <title>Keanen Collins</title>
 <link href="style.css" rel="stylesheet" type="text/css" />
 <link href="responsive.css" rel="stylesheet" type="text/css" />
+
+
+<link rel="stylesheet" href="sidetogglemenu.css" />
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+
+<script src="sidetogglemenu.js">
+
+/*
+* Responsive Side Toggle Menu(c) Dynamic Drive (www.dynamicdrive.com)
+* Last updated: May 28th, 13'
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+*/
+
+</script>
+
+<script>
+
+jQuery(function(){ // on DOM load
+	menu1 = new sidetogglemenu({  // initialize first menu example
+		id: 'togglemenu1',
+		marginoffset: 10
+	})
+
+	menu2 = new sidetogglemenu({  // initialize second menu example
+		id: 'togglemenu2',
+		position: 'right',
+		source: 'togglemenu.txt',
+		revealamt: -5
+	})
+})
+
+</script>
+
+
 </head>
 
 <body>
+<button onClick="menu1.toggle();" class="sideviewtoggle">Toggle Menu 1</button>
+
+<div id="togglemenu1" class="sidetogglemenu">
+
+		<ul>
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="projects.html">PROJECTS</a></li>
+			<li><a href="index.html" style="text-decoration: line-through;">PORTFOLIO</a></li>
+			<li><a href="contact.html">CONTACT</a></li>
+			<li><a href="Old Site/index.html">Old Site</a></li>
+        </ul>
+	
+	<p style="padding:10px">
+	This menu's markup is defined inline on the page. With the setting <code>pushcontent: true</code>, the menu shifts the rest of the page's content to make room for itself when revealed.
+	</p>
+
+</div>
+
+
+
+
 <div id="header">
 		<ul class="navBar">
 			<li><a href="index.html" class="navButtons">HOME</a></li>
@@ -21,6 +77,7 @@
 			<li><a href="Old Site/index.html" class="navButtons" id="donateButton">Old Site</a></li>
         </ul>
 </div>
+
 
 <div style="height:50px;">
 </div>
@@ -48,7 +105,7 @@ This is a shortened version of my portfolio, the full version can be found on it
 <div class="wideBody">
 <h2>Another section</h2>
 I dunno what will go here, but it should look cool. Maybe I'll use these for each project, and have screenshots as the background. 
-<br/>I could put a mosaic of different projects on this page.
+<br>I could put a mosaic of different projects on this page.
 </div>
 
 <div class="footer">
