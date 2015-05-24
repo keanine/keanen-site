@@ -1,0 +1,169 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no" />
+
+<title>Keanen Collins</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link href="responsive.css" rel="stylesheet" type="text/css" />
+
+
+<link rel="stylesheet" href="sidetogglemenu.css" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+
+<script src="sidetogglemenu.js">
+/*
+* Responsive Side Toggle Menu(c) Dynamic Drive (www.dynamicdrive.com)
+* Last updated: May 28th, 13'
+* Visit http://www.dynamicdrive.com/ for this script and 100s more.
+*/
+</script>
+
+<script>
+
+jQuery(function(){ // on DOM load
+	menu1 = new sidetogglemenu({  // initialize first menu example
+		id: 'togglemenu1',
+		marginoffset: 10
+	})
+})
+</script>
+
+
+<script>
+// Pokemon
+window.onload = loadList;
+
+var type = {normal:"A8A878", fire:"F08030", fighting:"C03028", water:"6890F0", flying:"A890F0", grass:"78C850", poison:"A040A0", electric:"F8D030", ground:"E0C068", psychic:"F85888", rock:"B8A038", ice:"98D8D8", bug:"A8B820", dragon:"7038F8", ghost:"705898"};
+
+
+var index;
+var text;
+var pokemon = [[]];
+
+function loadList()
+{
+
+
+for(x = 1; x <= 151; x++)
+{ pokemon[x] = {}; }
+
+pokemon[1] = {x:"x",  name:"Bulbasaur",  type1:type.grass, type2:type.poison, captured:"false"};
+pokemon[2] = {x:"x",  name:"Ivysaur",    type1:type.grass, type2:type.poison, captured:"false"};
+pokemon[3] = {x:"x",  name:"Venusaur",   type1:type.grass, type2:type.poison, captured:"false"};
+pokemon[4] = {x:"x",  name:"Charmander", type1:type.fire,  type2:type.fire,   captured:"false"};
+pokemon[5] = {x:"x",  name:"Charmeleon", type1:type.fire,  type2:type.fire,   captured:"false"};
+pokemon[6] = {x:"x",  name:"Charizard",  type1:type.fire,  type2:type.flying, captured:"false"};
+pokemon[7] = {x:"x",  name:"Squirtle",   type1:type.water, type2:type.water,  captured:"false"};
+pokemon[8] = {x:"x",  name:"Wartortle",  type1:type.water, type2:type.water,  captured:"false"};
+pokemon[9] = {x:"x",  name:"Blastoise",  type1:type.water, type2:type.water,  captured:"false"};
+pokemon[10] = {x:"x", name:"Caterpie",   type1:type.bug,   type2:type.bug,    captured:"false"};
+
+
+for(index = 1; index < pokemon.length; index++)
+{	
+	document.getElementById("pokeList").innerHTML += "<li class='entry'><div onclick='catchPoke(" + index + ")' id='img" + index + "' class='entryBase entryImg' style='width:6%;'></div> <a href='Pokemon/" + index + ".html'> <div><div id='num" + index + "' class='entryBase' style='width:7%;'></div> <div id='name" + index + "' class='entryBase' style='width:62%;'></div>   <div id='color2_" + index + "' class='entryType'></div><div id='color1_" + index + "' class='entryType'></div>  <div id='capturedImg" + index + "' class='capture'></div></div></a></li>";
+	//document.getElementById("pokeList").innerHTML += "<div id='pokeEntry'><li class='entry'><div id='img" + index + "' class='entryBase entryImg' style='width:6%;'></div> <div id='num" + index + "' class='entryBase' style='width:7%;'></div> <div id='name" + index + "' class='entryBase' style='width:33%;'></div>   <div id='color2_" + index + "' class='entryType'></div><div id='color1_" + index + "' class='entryType'></div>  <div id='capturedImg" + index + "' class='capture'></div><div id='seenImg" + index + "' class='spotted'></div></li></div>";
+	//document.getElementById("pokeList").innerHTML += "<div><li class='entry' id='pokeEntry'><div id='img" + index + "' class='entryBase entryImg' style='width:6%;'></div> <div id='num" + index + "' class='entryBase' style='width:7%;'></div> <div id='name" + index + "' class='entryBase' style='width:33%;'></div>   <div id='color2_" + index + "' class='entryType'></div><div id='color1_" + index + "' class='entryType'></div>  <div id='capturedImg" + index + "' class='capture'></div><div id='seenImg" + index + "' class='spotted'></div></li></div>";
+
+	zeroFilled = ('000' + index).substr(-3)
+	document.getElementById("num" + index).innerHTML = zeroFilled;
+	document.getElementById("name" + index).innerHTML = pokemon[index].name;
+	document.getElementById("color1_" + index).style.backgroundColor = "#" + pokemon[index].type1;
+	document.getElementById("color2_" + index).style.backgroundColor = "#" + pokemon[index].type2;
+	document.getElementById("img" + index).style.backgroundImage = "url('Resources/Pokemon/"+ [index] + ".png')";
+
+	if(pokemon[index].captured == "true") { document.getElementById("capturedImg" + index).style.backgroundImage = "url('Resources/Pokeball.png')"; }
+	else if(pokemon[index].captured == "seen") { document.getElementById("capturedImg" + index).style.backgroundImage = "url('Resources/Eye.png')"; }
+	else { document.getElementById("capturedImg" + index).style.backgroundImage = "none"; }
+}
+}
+
+function catchPoke(num)
+{
+	if(pokemon[num].captured == "true") { 
+	pokemon[num].captured = "false";
+	document.getElementById("capturedImg" + num).style.backgroundImage = "none"; 
+	}
+	else if(pokemon[num].captured == "seen") { 
+	pokemon[num].captured = "true";
+	document.getElementById("capturedImg" + num).style.backgroundImage = "url('Resources/Pokeball.png')"; 
+	}
+	else { 
+	pokemon[num].captured = "seen";
+	document.getElementById("capturedImg" + num).style.backgroundImage = "url('Resources/Eye.png')"; 
+	}
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="mobileHeader">
+<button onClick="menu1.toggle();" class="sideviewtoggle">&equiv;</button>
+
+<div id="togglemenu1" class="sidetogglemenu">
+
+		<ul>
+			<li><a href="index.html">POKEDEX</a></li>
+			<li><a href="#">LOCATIONS</a></li>
+			<li><a href="/index.html">KEANEN</a></li>
+			<li><a href="#">CONTACT</a></li>
+
+        </ul>
+	<p style="padding:10px">
+	
+	</p>
+
+</div>
+<div class="titleText">
+Pokedex
+</div>
+</div>
+
+
+
+<div style="height:50px;">
+</div>
+
+<!--<div class="logo">
+<img src="Resources/Logo.png" height="100%"/>
+</div>-->
+
+<div style="margin-left:auto; margin-right:auto; text-align:center; color:white;">
+<h1>Home</h1>
+</div>
+
+
+<div>
+<ul id="pokeList" class="entryBlock">
+
+<!--List of Pokemon is written here through JavaScript-->
+
+</ul>
+</div>
+<div style="height:62px;">
+</div>
+
+
+<div class="footer">
+	<div class="socialMedia">
+		<a href="https://www.facebook.com/keanen.collins"><img src="Resources/SocialMedia/Facebook.png" height="40px"/></a>
+		<a href="https://twitter.com/keanine3000"><img src="Resources/SocialMedia/Twitter.png" height="40px"/></a>
+		<a href="https://www.youtube.com/user/Keanine3000/videos"><img src="Resources/SocialMedia/Youtube.png" height="40px"/></a>
+	</div>
+	<div class="copyright">
+		&copy; Keanen Collins | 2015
+	</div>
+
+</div>
+
+
+</body>
+</html>
