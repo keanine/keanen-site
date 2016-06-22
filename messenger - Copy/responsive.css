@@ -1,6 +1,6 @@
 @charset "utf-8";
 
-@media screen and (max-width: 679px)
+@media screen and (max-width: 499px)
 {	
 .logoText {
 	display:none;
@@ -49,6 +49,7 @@
 .mobileHeader
 {
 	display:inline;
+	width:100%;
 }
 
 .entryType
@@ -63,7 +64,7 @@
 }
 
 }
-@media screen and (min-width: 680px) and (max-width:1200px)
+@media screen and (min-width: 500px) and (max-width:1200px)
 {	
 .logo
 {
