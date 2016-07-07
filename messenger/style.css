@@ -7,34 +7,25 @@ body
 
 nav
 {
-	display:inline;
-	position:fixed;
+	//display:inline;
+	//position:fixed;
 	
     background-color:#eeeeee;
     height:100vh;
 	
     float:left;
-	border-right:1px solid gray;
-	box-sizing: border-box;
+	//border-right:1px solid gray;
+	//box-sizing: border-box;
 	
     width:20%;
-	min-width:320px;
 }
 
 section
 {
 	margin:auto;
-    width:100%;
+    width:80%;
     float:left;
-    height:200vh;
-}
-
-section:before
-{
-	min-width:320px;
-	width:20%;
-    content: "";
-    display: inline-block;
+    height:100vh;
 }
 
 
