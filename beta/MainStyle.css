@@ -1,16 +1,7 @@
 ﻿body 
 {
     margin:0;
-    font-family: Arial;
-    
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Resources/Backgrounds/musPuz1.png");
-
-    
-    background-size: 1920px 1080px;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-color: black;
-    background-attachment: fixed;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 nav
@@ -25,7 +16,6 @@ nav
     text-align: center;
     font-size: 20px;
 }
-
 .navBar
 {
 	list-style:none;
@@ -38,9 +28,7 @@ nav
     width: 750px;
 
     font-size: 14px;
-    font-weight: normal;
 }
-
 .navButton2
 {
     width:150px;
@@ -48,10 +36,13 @@ nav
 	height: 50px;
     color: white;
 }
-
 .navButton2:hover
 {
     background-color:#2c2c2c;
+}
+.navSpacer 
+{
+    height:50px;
 }
 
 section
@@ -60,7 +51,86 @@ section
     color: white;
 }
 
-.paraL
+.sectTitle
+{
+    text-shadow: 2px 1px 2px #111;
+    box-shadow: 0px 0px 14px 6px rgba(0,0,0,0.6) inset;
+}
+
+.sectText
+{
+    background-color: white; 
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+
+
+    height: 850px;
+}
+
+.background
+{    
+    background-size: 1920px 1080px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-color: white;
+    background-attachment: fixed;
+}
+
+.b-MusicPuzzler
+{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Resources/Backgrounds/musPuz1.png");
+}
+
+.b-Zelda
+{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("Resources/Backgrounds/zelda1.jpg");
+}
+
+.paragraphL
+{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left:10%;
+    margin-right:50%;
+    text-align:left;
+}
+
+.paragraphR
+{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left:50%;
+    margin-right:10%;
+    text-align:right;
+}
+
+.paragraphC
+{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-left: 22%;
+    margin-right: 22%;
+    text-align:center;
+}
+
+h1
+{
+    text-align:center;
+    font-size:50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.paraLold
 {
     font-size: 18px;
     text-align: left;
@@ -71,7 +141,7 @@ section
     margin-bottom: 100px;
 }
 
-.paraR
+.paraRold
 {
     font-size: 18px;
     text-align: right;
