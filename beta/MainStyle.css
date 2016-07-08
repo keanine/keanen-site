@@ -66,12 +66,11 @@ section
     font-size: 17px;
 
 
-    height: 850px;
 }
 
 .background
 {    
-    background-size: 1920px 1080px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position-x: center;
     background-color: white;
@@ -88,31 +87,40 @@ section
     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("Resources/Backgrounds/zelda1.jpg");
 }
 
+.logo
+{
+    margin-left:10%;
+    width: 500px;
+}
+
 .paragraphL
 {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top:50px;
+    margin-bottom:50px;
     margin-left:10%;
     margin-right:50%;
     text-align:left;
+    height: 200px;
 }
 
 .paragraphR
 {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top:50px;
+    margin-bottom:50px;
     margin-left:50%;
     margin-right:10%;
     text-align:right;
+    height: 200px;
 }
 
 .paragraphC
 {
-    margin-top: 100px;
-    margin-bottom: 100px;
+    margin-top:50px;
+    margin-bottom:50px;
     margin-left: 22%;
     margin-right: 22%;
     text-align:center;
+    height: 200px;
 }
 
 h1
@@ -121,41 +129,9 @@ h1
     font-size:50px;
 }
 
-
-
-
-
-
-
-
-
-
-
-.paraLold
-{
-    font-size: 18px;
-    text-align: left;
-    margin-left: 10%;
-    margin-right: 45%;
-    
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
-.paraRold
-{
-    font-size: 18px;
-    text-align: right;
-    margin-left: 45%;
-    margin-right: 10%;
-    
-    margin-top: 100px;
-    margin-bottom: 100px;
-}
-
 .spacer
 {
-    height: 200px;
+    height: 100px;
 }
 
 footer
