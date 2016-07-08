@@ -34,14 +34,20 @@
 @media (orientation: portrait) and (max-device-width: 480px)
 {
     .paragraphL {
-        font-size:30px;
+        font-size:16px;
+		margin-top:100px;
+		margin-bottom:100px;
     }
 
     .paragraphR {
-        font-size:30px;
+        font-size:16px;
+		margin-top:100px;
+		margin-bottom:100px;
     }
 
     .paragraphC {
-        font-size:30px;
+        font-size:16px;
+		margin-top:100px;
+		margin-bottom:100px;
     }
 }
