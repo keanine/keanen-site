@@ -1,22 +1,19 @@
 ﻿
-@media (orientation: portrait)
+@media (max-width: 600px) 
 {
     .paragraphL {
         margin-left: 10%;
         margin-right: 30%;
-        font-size:30px;
     }
 
     .paragraphR {
         margin-left: 30%;
         margin-right: 10%;
-        font-size:30px;
     }
 
     .paragraphC {
         margin-left: 22%;
         margin-right: 22%;
-        font-size:30px;
     }
 
     .logo
