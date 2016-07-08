@@ -1,76 +1,26 @@
-@charset "utf-8";
+﻿
+@media (max-width: 600px) 
+{
+    .paragraphL {
+        margin-left: 10%;
+        margin-right: 30%;
+    }
 
-@media screen and (max-width: 679px)
-{	
-.logoText {
-	display:none;
-}	
+    .paragraphR {
+        margin-left: 30%;
+        margin-right: 10%;
+    }
 
-.navButtons
-{
-	font-size: 10px;
-	width:50px;
-	height:35px;
-	line-height:35px;
-	
-}
+    .paragraphC {
+        margin-left: 22%;
+        margin-right: 22%;
+    }
 
-.navBar
-{
-	height:35px;
-}
-.logo
-{
-	 height:150px;
-}
-.mainBody
-{
-	width:260px;
-	padding-left:25px;
-	padding-right:25px;
-}
-.wideBody
-{
-	height:300px;
-	margin-left:0;
-	margin-right:0;
-	width:auto;
-}
-
-#header
-{
-	display:none;
-}
-
-.sideviewtoggle
-{
-	display:inline;
-}
-
-.mobileHeader
-{
-	display:inline;
-}
-
-}
-@media screen and (min-width: 680px) and (max-width:1200px)
-{	
-.logo
-{
-	 height:220px;
-}
-
-.mainBody
-{
-	width:600px;
-	padding-left:25px;
-	padding-right:25px;
-}
-
-.wideBody
-{
-	width:600px;
-	padding-left:25px;
-	padding-right:25px;
-}
+    .logo
+    {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        text-align:center;
+    }
 }

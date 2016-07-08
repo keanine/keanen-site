@@ -1,0 +1,76 @@
+@charset "utf-8";
+
+@media screen and (max-width: 679px)
+{	
+.logoText {
+	display:none;
+}	
+
+.navButtons
+{
+	font-size: 10px;
+	width:50px;
+	height:35px;
+	line-height:35px;
+	
+}
+
+.navBar
+{
+	height:35px;
+}
+.logo
+{
+	 height:150px;
+}
+.mainBody
+{
+	width:260px;
+	padding-left:25px;
+	padding-right:25px;
+}
+.wideBody
+{
+	height:300px;
+	margin-left:0;
+	margin-right:0;
+	width:auto;
+}
+
+#header
+{
+	display:none;
+}
+
+.sideviewtoggle
+{
+	display:inline;
+}
+
+.mobileHeader
+{
+	display:inline;
+}
+
+}
+@media screen and (min-width: 680px) and (max-width:1200px)
+{	
+.logo
+{
+	 height:220px;
+}
+
+.mainBody
+{
+	width:600px;
+	padding-left:25px;
+	padding-right:25px;
+}
+
+.wideBody
+{
+	width:600px;
+	padding-left:25px;
+	padding-right:25px;
+}
+}
