@@ -1,22 +1,19 @@
 ﻿
-@media (orientation: portrait)
+@media (max-width: 700px), (orientation: portrait) and (max-device-width: 480px)
 {
     .paragraphL {
         margin-left: 10%;
-        margin-right: 30%;
-        font-size:30px;
+        margin-right: 25%;
     }
 
     .paragraphR {
-        margin-left: 30%;
+        margin-left: 25%;
         margin-right: 10%;
-        font-size:30px;
     }
 
     .paragraphC {
         margin-left: 22%;
         margin-right: 22%;
-        font-size:30px;
     }
 
     .logo
@@ -25,5 +22,20 @@
         margin-right: auto;
         width: 90%;
         text-align:center;
+    }
+}
+
+@media (orientation: portrait) and (max-device-width: 480px)
+{
+    .paragraphL {
+        font-size:30px;
+    }
+
+    .paragraphR {
+        font-size:30px;
+    }
+
+    .paragraphC {
+        font-size:30px;
     }
 }
