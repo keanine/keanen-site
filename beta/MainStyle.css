@@ -163,7 +163,7 @@ section
     margin-left:10%;
     margin-right:50%;
     text-align:left;
-    height: 200px;
+    min-height: 200px;
 }
 
 .paragraphR
@@ -173,7 +173,7 @@ section
     margin-left:50%;
     margin-right:10%;
     text-align:right;
-    height: 200px;
+    min-height: 200px;
 }
 
 .paragraphC
@@ -183,7 +183,7 @@ section
     margin-left: 22%;
     margin-right: 22%;
     text-align:center;
-    height: 200px;
+    min-height: 200px;
 }
 
 h1
