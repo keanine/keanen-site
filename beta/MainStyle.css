@@ -69,17 +69,17 @@ section
 
 .sectTags
 {
-    background-color: #DDD; 
+    background-color: #E5E5E5; 
     color: black;
     font-size: 17px;
     padding:5px;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #555;
     text-align:center;
 }
 
 .tag
 {
-    border: 1px solid #777;
+    border: 1px solid #888;
     width: 100px;
     text-align:center;
     background-color: white;
@@ -88,8 +88,8 @@ section
 
 .teamMember
 {
-    border: 1px solid #777;
-    width: 200px;
+    border: 1px solid #888;
+    width: 150px;
     text-align:center;
     background-color: white;
     display:inline-block;
@@ -99,7 +99,7 @@ section
 {
     margin: 0;
     padding: 0;
-    border-top: 3px solid #666;
+    border-bottom: 3px solid #666;
 }
 
 .background
