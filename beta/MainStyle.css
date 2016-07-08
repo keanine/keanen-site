@@ -148,6 +148,14 @@ section
     filter: invert(100%);
 }
 
+.embedded
+{
+	margin-left: 0;
+	margin-right: 0;
+	display:block;
+	text-align: center;
+}
+
 .paragraphL
 {
     margin-top:50px;
