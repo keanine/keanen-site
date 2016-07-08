@@ -1,12 +1,12 @@
 ﻿body 
 {
     margin:0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lato', sans-serif;
 }
 
 nav
 {
-    background-color: #333;
+    background-color: #222;
     color: white;
     font-weight: bold;
     position: fixed;
@@ -15,6 +15,7 @@ nav
     line-height: 50px;
     text-align: center;
     font-size: 20px;
+    opacity:0.9;
 }
 .navBar
 {
@@ -43,6 +44,7 @@ nav
 .navSpacer 
 {
     height:50px;
+    background-color:black;
 }
 
 section
@@ -61,8 +63,7 @@ section
 {
     background-color: white; 
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 17px;
 
 
     height: 850px;
