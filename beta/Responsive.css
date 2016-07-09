@@ -34,22 +34,34 @@
 @media (orientation: portrait) and (max-device-width: 480px)
 {
     .paragraphL {
-        font-size:16px;
+/*         font-size:16px;
 		margin-top:100px;
 		margin-bottom:100px;
-        margin-right: 30%;
-    }
+        margin-right: 30%; */
+		
+    margin-top:100px;
+    margin-bottom:100px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align:center;
+}
 
     .paragraphR {
-        font-size:16px;
+/*         font-size:16px;
 		margin-top:100px;
 		margin-bottom:100px;
-        margin-lefts: 30%;
+        margin-left: 30%; */
+		
+		margin-top:100px;
+		margin-bottom:100px;
+		margin-left: 20%;
+		margin-right: 20%;
+		text-align:center;
     }
 
     .paragraphC {
         font-size:16px;
 		margin-top:100px;
 		margin-bottom:100px;
-    }
+	}
 }
