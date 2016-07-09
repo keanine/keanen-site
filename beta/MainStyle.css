@@ -119,7 +119,7 @@ section
 
 .b-MusicPuzzler
 {
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("Resources/Backgrounds/musPuz1.png");
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url("Resources/Backgrounds/musPuz1.png");
 }
 
 .b-Vain
@@ -143,6 +143,7 @@ section
     margin-left:auto;
     margin-right:auto;
     width: 500px;
+	text-align: center;
 }
 
 .invert
@@ -189,6 +190,28 @@ section
     min-height: 200px;
 }
 
+.cv
+{
+	font-weight: normal;
+	color: #222;
+	text-align: left;
+	margin-left: 20%;
+	font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+	font-size: 18px;
+	
+	min-height: 50px;
+}
+
+.cv-small
+{
+	font-weight:normal;
+	font-size: 15px;
+}
+	
+.m_navButton {
+	display: none;
+}
+
 h1
 {
     text-align:center;
@@ -198,6 +221,11 @@ h1
 .spacer
 {
     height: 100px;
+}
+
+.center
+{
+	text-align:center;
 }
 
 footer
