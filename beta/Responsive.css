@@ -66,4 +66,25 @@
 		margin-left: 10%;
 		margin-right: 10%;
 	}
+	
+	nav
+	{
+		height: 125px;
+		text-align: left;
+	}
+	
+	.navButton {
+		display: none;
+	}
+	
+	.m_navButton {
+		display: inline-block;
+		height: 125px;
+		width: 125px;
+		text-align: center;
+		line-height: 125px;
+		font-size: 60px;
+		text-decoration: none;
+		color: white;
+	}
 }
