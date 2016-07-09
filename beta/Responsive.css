@@ -69,7 +69,7 @@
 	
 	nav
 	{
-		height: 125px;
+		height: 150px;
 		text-align: left;
 	}
 	
@@ -79,12 +79,13 @@
 	
 	.m_navButton {
 		display: inline-block;
-		height: 125px;
-		width: 125px;
+		height: 150px;
+		width: 150px;
 		text-align: center;
-		line-height: 125px;
-		font-size: 60px;
+		line-height: 150px;
+		font-size: 80px;
 		text-decoration: none;
 		color: white;
+		font-weight: bold;
 	}
 }
