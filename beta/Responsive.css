@@ -68,6 +68,11 @@
 		display: none;
 	}
 	
+	.navSpacer {
+		height: 150px;
+	}
+
+	
 	.m_navButton {
 		display: inline-block;
 		height: 150px;
