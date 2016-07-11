@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+body
+{
+	margin:0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	background-color:#2F2F2F;
+	//background-image:url(Resources/ScanLines.png);
+}
+
+.logo
+{
+	 text-align:center;
+	 height:300px;
+}
+
+#header
+{
+	background-color:#D2E1ED;
+	clear:both;
+	width:100%;
+	font-size:12px;
+	font-weight:bold;
+	position:fixed;
+	background-color:#1e1c1d;
+
+}
+
+.navBar
+{
+	list-style:none;
+	clear:both;
+	height:50px;
+	border-bottom:#171616 solid thin;
+	padding:0;
+	margin-top:0;
+	margin-bottom:0;
+}
+
+.navButtons
+{
+	border-right:#171616 solid thin;
+	width:100px;
+	text-align:center;
+	text-decoration:none;
+	color:#EFEFEF;
+	padding-left:10px;
+	padding-right:10px;
+	display:inline;
+	height:50px;
+	float:left;
+	line-height:50px;
+}
+
+#donateButton
+{
+	 float:right;
+	 border-left:#7A2820 solid thin;
+	 border-right:none;	 
+	 border-bottom:#7A2820 solid thin;
+	 background-color:#E74C3C;
+	 margin-left:-99px;
+}
+
+.mainBody
+{
+	margin-top: 25px;
+	margin-left: auto;
+	margin-right: auto;
+
+	
+	background-color:#FFF;
+	min-height: 500px;
+	border-top:#BDBDBD solid thin;
+	border-right:#BDBDBD solid thin;
+	border-left:#7B7B7B solid thin;
+	border-bottom:#7B7B7B solid thin;
+	padding-left:90px;
+	padding-right:90px;
+	width:1000px;
+	text-align:center;
+}
+
+.wideBody
+{
+	margin-top: 25px;
+	margin-left: auto;
+	margin-right: auto;	
+	background-image:url('Resources/Gallery/field.jpg');
+	background-position:center;
+	background-repeat:no-repeat;
+	background-attachment:scroll;
+	height: 500px;
+	width:1080px;
+	border-top:#BDBDBD solid thin;
+	border-bottom:#7B7B7B solid thin;
+	padding-left:50px;
+	padding-right:50px;
+
+}
+
+.contactOutside
+{
+	clear:both;
+	text-align:center;
+	margin-top: 25px;
+}
+
+.footer
+{
+	margin-top: 25px;
+	height:80px;
+	background-color:#1e1c1d;
+	border-top:#171616 solid thin;
+	clear:both;
+	color:white;
+	font-size:12px;
+	padding-right:10px;
+	text-align:right;
+}
+
+.copyright
+{	
+	padding-top:50px;
+	float:right;
+
+}
+
+.socialMedia
+{	
+	padding-left:10px;
+	padding-top:20px;
+	text-align:left;
+	height:50%;
+	float:left;
+	display:inline-block;
+	vertical-align: middle;
+	text-decoration:none;
+
+}
+
+h2
+{
+	color:#e74c3c;
+}
+
+h3
+{
+	padding-left:15px;
+	text-align:left;
+}
+
+
+a, img {
+    border:none;
+    outline:none
+}
+
+.sideviewtoggle
+{
+	display:none;
+	width:56px;
+	height:56px;
+	color:white;
+	background-color:#1e1c1d;
+	font-size:35px;
+	position:fixed;
+	border:none;
+	outline:none;
+}
+
+.sideviewtoggle:active
+{
+	background-color:#181617;
+}
+
+.mobileHeader
+{
+	display:none;
+	clear:both;
+	height:56px;
+	width:100%;
+	position:fixed;
+	background-color:#1e1c1d;
+	border-bottom:#171616 solid thin;
+	text-decoration:none;
+}
