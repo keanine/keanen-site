@@ -28,7 +28,7 @@ function AmntSeen() {
 
 function Create()
 {
-    if (false)
+    if (localStorage.getItem("list_names") !== "undefined")
     {
         SetData();
     }
