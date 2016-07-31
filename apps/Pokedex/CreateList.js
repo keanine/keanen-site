@@ -60,9 +60,11 @@ function Create()
 
                 document.getElementById(imageID).style.backgroundImage = "url('Resources/Gen" + gen + "/" + "Pokemon/" + i + ".png')";
 
-                if (pokeOwn[i - 1] == true)
-                {
+                if (pokeOwn[i - 1] == true) {
                     document.getElementById(ownID).style.backgroundImage = "url('Resources/Gen" + gen + "/CaughtBall.png')";
+                }
+                else {
+                    document.getElementById(ownID).style.backgroundImage = "url('Resources/Gen" + gen + "/EmptyBall.png')";
                 }
             }
             else
@@ -77,7 +79,7 @@ function Create()
         }
     }
     document.getElementById("PokeList").innerHTML +=
-        '<li class="PokeEntry" onClick="ClearLocalStorage()">Clear Data</li>';
+        '<li class="PokeEntry" onClick="ClearLocalStorage()" align="middle">Clear Data</li>';
 
     //    if(greenMode)
     //    {
@@ -187,6 +189,9 @@ function UpdateList(num, formattedNum)
 
         if (pokeOwn[num - 1] == true) {
             document.getElementById(ownID).style.backgroundImage = "url('Resources/Gen" + gen + "/CaughtBall.png')";
+        }
+        else {
+            document.getElementById(ownID).style.backgroundImage = "url('Resources/Gen" + gen + "/EmptyBall.png')";
         }
     }
     else {
