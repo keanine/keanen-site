@@ -1,7 +1,12 @@
 ﻿@media (max-device-width: 500px) {
 
     body {
-        font-size: 28px;
+        font-size: 30px;
+    }
+
+    #Stats
+    {
+        width: 90%;
     }
 
     #PokeList {
@@ -14,16 +19,16 @@
 
     .PokeEntry {
         margin-bottom: 10px;
-        height: 100px;
-        line-height: 100px;
+        height: 140px;
+        line-height: 140px;
         background-color: white;
     }
 
     .PokeImage {
-        margin-left: 40px;
-        height: 100px;
-        width: 100px;
-        background-size: 75px 75px;
+        margin-left: 30px;
+        height: 140px;
+        width: 140px;
+        background-size: 100px 100px;
         background-position: center;
         background-repeat: no-repeat;
         float: left;
@@ -36,9 +41,9 @@
 
     .PokeCatch {
         margin-right: 15px;
-        height: 80px;
-        width: 80px;
-        background-size: 60px 60px;
+        height: 140px;
+        width: 140px;
+        background-size: 65px 65px;
         background-position: center;
         background-repeat: no-repeat;
         float: right;

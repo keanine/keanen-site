@@ -9,6 +9,13 @@
   src: url('Resources/Fonts/Pokemon GB.ttf') format("truetype");
 }
 
+#Stats
+{
+     display:block;
+     margin:auto;
+     width: 500px;
+}
+
 #PokeList
 {
     list-style: none;
