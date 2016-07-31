@@ -55,7 +55,7 @@ function Create()
                 document.getElementById("PokeList").innerHTML +=
                     '<li class="PokeEntry" id="' + entryID + '"> <div class="PokeImage" id="' + imageID + '" onClick="ToggleSeen(' + imageID + ')"></div> <a href="' + link + '" ' + style + '><div class="PokeInfo">' + FormatNum(i, 3) + ' - ' + pokeNames[i - 1] + '</div></a></li>';
 
-                document.getElementById(imageID).style.backgroundImage = "url('Resources/Pokemon/" + pokeNames[i - 1] + ".png')";
+                document.getElementById(imageID).style.backgroundImage = "url('Resources/Pokemon/" + pokeNames[i - 1].toLowerCase() + ".png')";
             }
             else if(i != 151)
             {
@@ -168,7 +168,7 @@ function ToggleSeen(imageId)
         var style = 'style = "text-decoration: none; color: #000;"';
 
         document.getElementById(entryID).innerHTML = '<div class="PokeImage" id="' + imageID + '" onClick="ToggleSeen(' + imageID + ')"></div> <a href="' + link + '" ' + style + '><div class="PokeInfo">' + formattedNum + ' - ' + pokeNames[num - 1] + '</div></a>';
-        document.getElementById(imageID).style.backgroundImage = "url('Resources/Pokemon/" + pokeNames[num - 1] + ".png')";
+        document.getElementById(imageID).style.backgroundImage = "url('Resources/Pokemon/" + pokeNames[num - 1].toLowerCase() + ".png')";
     }
     else
     {
