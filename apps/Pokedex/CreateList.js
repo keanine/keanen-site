@@ -28,7 +28,7 @@ function AmntSeen() {
 
 function Create()
 {
-    if (localStorage.getItem("list_names") !== "undefined")
+    if (localStorage.getItem("list_names") === null)
     {
         SetData();
     }
@@ -67,6 +67,8 @@ function Create()
             alert("Sorry! No Web Storage support..");
         }
     }
+    document.getElementById("PokeList").innerHTML +=
+        '<li class="PokeEntry" onclick"ClearLocalStorage()">Clear Data</li>';
 
     //    if(greenMode)
     //    {
@@ -79,6 +81,11 @@ function Create()
     //            elements[i].style.backgroundColor = "#83b60f";
     //        }
     //    }
+}
+
+function ClearLocalStorage()
+{
+    localStorage.clear();
 }
 
 var nameArray = [];
