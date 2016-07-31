@@ -1,9 +1,0 @@
-Bulbasaur, Grass, Poison, true, false;
-Venusaur, Grass, Poision, true, false;
-Ivysaur, Grass, Poision, true, false;
-Charmander, Fire, ---, true, false;
-Charmeleon, Fire, ---, true, false;
-Charizard, Fire, Flying, true, false;
-Squirtle, Water, ---, true, false;
-Wartortle, Water, ---, true, false;
-Blastoise, Water, ---, true, false;

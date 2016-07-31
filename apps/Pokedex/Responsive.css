@@ -1,0 +1,46 @@
+﻿@media (orientation: portrait) and (max-device-width: 500px) {
+
+    body {
+        font-size: 25px;
+    }
+
+    #PokeList {
+        list-style: none;
+        padding-left: 0;
+        display: block;
+        margin: auto;
+        width: 800px;
+    }
+
+    .PokeEntry {
+        margin-bottom: 5px;
+        height: 80px;
+        line-height: 80px;
+        background-color: white;
+    }
+
+    .PokeImage {
+        margin-left: 55px;
+        height: 80px;
+        width: 80px;
+        background-size: 75px 75px;
+        background-position: center;
+        background-repeat: no-repeat;
+        float: left;
+    }
+
+    .PokeInfo {
+        float: left;
+        padding-left: 30px;
+    }
+
+    .PokeCatch {
+        margin-right: 15px;
+        height: 80px;
+        width: 80px;
+        background-size: 45px 45px;
+        background-position: center;
+        background-repeat: no-repeat;
+        float: right;
+    }
+}
