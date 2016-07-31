@@ -28,6 +28,7 @@ function AmntSeen() {
 
 function Create()
 {
+    document.getElementById("PokeList").innerHTML = ""
     if (localStorage.getItem("list_names") === null)
     {
         SetData();
@@ -68,7 +69,7 @@ function Create()
         }
     }
     document.getElementById("PokeList").innerHTML +=
-        '<li class="PokeEntry" onclick"ClearLocalStorage()">Clear Data</li>';
+        '<li class="PokeEntry" onClick="ClearLocalStorage()">Clear Data</li>';
 
     //    if(greenMode)
     //    {
@@ -86,6 +87,7 @@ function Create()
 function ClearLocalStorage()
 {
     localStorage.clear();
+    Create();
 }
 
 var nameArray = [];
