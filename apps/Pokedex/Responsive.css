@@ -1,7 +1,7 @@
-﻿@media (orientation: portrait) and (max-device-width: 500px) {
+﻿@media (max-device-width: 500px) {
 
     body {
-        font-size: 25px;
+        font-size: 28px;
     }
 
     #PokeList {
@@ -9,20 +9,20 @@
         padding-left: 0;
         display: block;
         margin: auto;
-        width: 800px;
+        width: 90%;
     }
 
     .PokeEntry {
-        margin-bottom: 5px;
-        height: 80px;
-        line-height: 80px;
+        margin-bottom: 10px;
+        height: 100px;
+        line-height: 100px;
         background-color: white;
     }
 
     .PokeImage {
-        margin-left: 55px;
-        height: 80px;
-        width: 80px;
+        margin-left: 40px;
+        height: 100px;
+        width: 100px;
         background-size: 75px 75px;
         background-position: center;
         background-repeat: no-repeat;
@@ -38,7 +38,7 @@
         margin-right: 15px;
         height: 80px;
         width: 80px;
-        background-size: 45px 45px;
+        background-size: 60px 60px;
         background-position: center;
         background-repeat: no-repeat;
         float: right;
