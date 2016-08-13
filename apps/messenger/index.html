@@ -1,30 +1,44 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-
-<meta name="HandheldFriendly" content="true" />
-<meta name="viewport" content="width=device-width, height=device-height, user-scalable=no" />
-
-<title>New Messenger</title>
-<link href="style.css" rel="stylesheet" type="text/css" />
-<link href="responsive.css" rel="stylesheet" type="text/css" />
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <meta name="HandheldFriendly" content="true" />
+    <meta name="viewport" content="width=device-width, height=device-height, user-scalable=no" />
+    
+    <title>New Messenger</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="responsive.css" rel="stylesheet" type="text/css" />
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    
+    <script src="General.js"></script>
 
 </head>
 
-<body>
-	<nav>
-		<div class="mobileHeader">
-			<div class="titleText">
-				Messenger
-			</div>
-		</div>
-	</nav>
+<body onscroll="ResizeMainHeight()">
 	
-	<section>
-		<br/>Test
+	<section id="MainBox">
+        <div class="mobileHeader">
+            <div class="titleText"> Bunch of Human Beans </div>
+        </div>
+
+        <div class="MessageBubble"><div class="Incoming">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eleifend blandit turpis ut pretium. Praesent sed sodales nulla. Mauris vulputate non enim non volutpat. Mauris venenatis, mauris eu gravida suscipit, ipsum augue lacinia lorem, ut dignissim odio magna nec nulla. Vestibulum placerat vehicula lorem ut sollicitudin.</div></div>
+        <div class="MessageBubble"><div class="Outgoing">Donec a dictum ante. Curabitur dignissim bibendum velit, sed convallis diam pharetra id.</div></div>
+        <div class="MessageBubble"><div class="Incoming">Lorem ipsum dolor sit amet.</div></div>
+
+
 	</section>
+
+    <nav id="SideBox">
+        <div class="mobileHeader">
+            <div class="titleText"> Messenger </div>
+        </div>
+
+        <div id="conversations">
+            <div class="Conversation"><div class="ConvTitle">Bunch of Human Beans</div>  <div class="ConvPreview">Max: I didn't find the grind an issue ...</div></div>
+            <div id="tempConv" class="Conversation" onclick="AddConversation()"><div class="ConvTitle">Create New Conversation</div>  <div class="ConvPreview"></div></div>
+        </div>
+    </nav>
 </body>
 </html>

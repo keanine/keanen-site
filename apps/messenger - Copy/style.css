@@ -1,0 +1,57 @@
+body
+{
+	margin:0;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:17px;
+}
+
+nav
+{
+	//display:inline;
+	//position:fixed;
+	
+    background-color:#eeeeee;
+    height:100vh;
+	
+    float:left;
+	//border-right:1px solid gray;
+	//box-sizing: border-box;
+	
+    width:20%;
+}
+
+section
+{
+	margin:auto;
+    width:80%;
+    float:left;
+    height:100vh;
+}
+
+
+
+.mobileHeader
+{
+	clear:both;
+	height:56px;
+	background-color:#343434;
+	border-bottom:#171616 solid thin;
+	text-decoration:none;
+	width:100%;
+}
+
+.titleText
+{
+	//background-color:aqua;
+	margin-left:10px;
+	padding-left:50px;
+	width:100px;
+	height:56px;
+	line-height:56px;
+	background-image:url('Resources/Icon.png');
+	background-position:left;
+	background-repeat:no-repeat;
+	background-size:40px;
+	color: white;
+
+}
