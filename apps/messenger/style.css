@@ -82,9 +82,12 @@ section
 
 .titleText
 {
+    text-overflow:ellipsis;
 	margin-left:10px;
 	padding-left:50px;
 	height:56px;
+    max-height:56px;
+    width:100%;
 	line-height:56px;
 	background-image:url('Resources/Icon.png');
 	background-position:left;
