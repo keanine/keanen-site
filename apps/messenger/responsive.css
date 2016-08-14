@@ -59,4 +59,10 @@
     {
         width: 80px;
     }
+
+    .img-circle 
+    {
+        margin-left: 16px;
+        margin-top: 16px;
+    }
 }

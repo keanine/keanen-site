@@ -71,7 +71,7 @@ section
     top:0px;
     bottom:0px;
 
-        -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none;   /* Chrome/Safari/Opera */
     -khtml-user-select: none;    /* Konqueror */
     -moz-user-select: none;      /* Firefox */
@@ -100,7 +100,7 @@ section
 {
     height: 50px;
     padding-top: 18px;
-    padding-left: 18px;
+    //padding-left: 70px;
     border-bottom: 1px solid #BBBBBB;
 
     cursor: pointer;
@@ -119,9 +119,20 @@ section
     font-size: 16px;
 }
 
+.ConvTitleC
+{
+    font-size: 16px;
+    text-align:center;
+    padding-top: 8px;
+}
+
 .ConvPreview
 {
     font-size: 14px;
+    width: 220px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .MessageBubble
@@ -175,7 +186,7 @@ section
 
     margin-left: 320px;
     padding-left: 12px;
-    padding-right: 12px;
+    //padding-right: 12px;
     line-height: 50px;
 
     border-top: 1px solid #AAAAAA;
@@ -199,9 +210,23 @@ section
 #sendMsg
 {
     float: right;
-    width: 75px;
-    height: 40px;
+    width: 85px;
+    height: 100%;
     margin-left: 2px;
-    margin-top: 6px;
+    //margin-top: 6px;
     border: none;
+}
+
+.img-circle {
+    border-radius: 50%;
+
+    background-image:url('Resources/groupImg.jpg');
+    background-position: center;
+	background-repeat:no-repeat;
+	background-size:40px;
+    width: 40px;
+    height: 40px;
+    margin-left:20px;
+    margin-right: 20px;
+    float:left;
 }

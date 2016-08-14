@@ -8,8 +8,8 @@ function AddConversation()
         AddConvButton.parentNode.removeChild(AddConvButton);
     }
 
-    document.getElementById("conversations").innerHTML += '<div class="Conversation"><div class="ConvTitle">Unnamed Conversation</div>  <div class="ConvPreview">Conversation preview</div></div>';
-    document.getElementById("conversations").innerHTML += '<div id="tempConv" class="Conversation" onclick="AddConversation()"><div class="ConvTitle">Create New Conversation</div>  <div class="ConvPreview"></div></div>';
+    document.getElementById("conversations").innerHTML += '<div class="Conversation"><div class="img-circle"></div><div class="ConvTitle">Unnamed Conversation</div>  <div class="ConvPreview">Conversation preview</div></div>';
+    document.getElementById("conversations").innerHTML += '<div id="tempConv" class="Conversation" onclick="AddConversation()"><div class="ConvTitleC">Create New Conversation</div>  <div class="ConvPreview"></div></div>';
 
 }
 
