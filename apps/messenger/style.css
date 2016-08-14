@@ -25,10 +25,11 @@ body
 {
     position:fixed;
     top:56px;
-    bottom:50px;
+    bottom:0px;
     overflow:auto;
     width: 319px;
     z-index:-1;
+    overflow-x:hidden;
 }
 
 #messages

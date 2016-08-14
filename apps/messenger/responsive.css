@@ -24,14 +24,13 @@
     #conversations
     {
         width: 80px;
-
     }
 
     .Conversation
     {
         color: transparent;
         width: 80px;
-        height: 80px;
+        height: 70px;
         padding:0;
     }
 
