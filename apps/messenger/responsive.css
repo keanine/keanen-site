@@ -1,13 +1,63 @@
 @media screen and (max-width: 680px)
 {
-	nav
-	{
-		//width:100%;
-		//border:0;
-	}
-	
 	section
 	{
-		//width:0%;
+        min-width: 300px;
+        padding-left: 80px;
 	}
+
+    #messages
+    {
+        min-width: 300px;
+    }
+
+    #inputBox
+    {
+        min-width: 260px;
+    }
+
+    #txtMsg
+    {
+        width: 65%;
+    }
+
+    #conversations
+    {
+        width: 80px;
+
+    }
+
+    .Conversation
+    {
+        color: transparent;
+        width: 80px;
+        height: 80px;
+        padding:0;
+    }
+
+    .ConvTitle, .ConvPreview
+    {
+        visibility: hidden;
+        width: 80px;
+        font-size:0;
+    }
+
+    #sideTitle1
+    {
+        color: transparent;
+        background-position: center;
+        width: 80px;
+        margin:0;
+        padding: 0;
+    }
+
+    #inputBox
+    {
+        margin-left:80px;
+    }
+
+    #SideBox
+    {
+        width: 80px;
+    }
 }

@@ -33,15 +33,15 @@
         </div>
 
         <div id="inputBox">
-                <input type="text" id="txtMsg" name="messageEntry" value="" placeholder="Enter a message..."  onkeypress="return OnEnterDown(event)"/>
-                <button type="button" value="Send" style="width: 75px; height: 40px; margin-left: 2px;" onclick="SendMessage('', true)">Send</button>
+                <input type="text" id="txtMsg" name="messageEntry" autocomplete="off" value="" placeholder="Enter a message..."  onkeypress="return OnEnterDown(event)"/>
+                <button type="button" id="sendMsg"  value="Send" onclick="SendMessage('', true)">Send</button>
             
         </div>
 	</section>
 
     <nav id="SideBox">
         <div class="mobileHeader">
-            <div class="titleText"> Messenger </div>
+            <div class="titleText" id="sideTitle1"> Messenger </div>
         </div>
 
         <div id="conversations">
