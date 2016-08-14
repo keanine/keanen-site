@@ -23,11 +23,20 @@
             <div class="titleText"> Bunch of Human Beans </div>
         </div>
 
-        <div class="MessageBubble"><div class="Incoming">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eleifend blandit turpis ut pretium. Praesent sed sodales nulla. Mauris vulputate non enim non volutpat. Mauris venenatis, mauris eu gravida suscipit, ipsum augue lacinia lorem, ut dignissim odio magna nec nulla. Vestibulum placerat vehicula lorem ut sollicitudin.</div></div>
-        <div class="MessageBubble"><div class="Outgoing">Donec a dictum ante. Curabitur dignissim bibendum velit, sed convallis diam pharetra id.</div></div>
-        <div class="MessageBubble"><div class="Incoming">Lorem ipsum dolor sit amet.</div></div>
+        <div id="messages">
+            <script>
+                RecieveMessage("Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eleifend blandit turpis ut pretium. Praesent sed sodales nulla. Mauris vulputate non enim non volutpat. Mauris venenatis, mauris eu gravida suscipit, ipsum augue lacinia lorem, ut dignissim odio magna nec nulla. Vestibulum placerat vehicula lorem ut sollicitudin.", false);
+                SendMessage("Donec a dictum ante. Curabitur dignissim bibendum velit, sed convallis diam pharetra id.", false);
+                RecieveMessage("Lorem ipsum dolor sit amet.", false);
 
+            </script>
+        </div>
 
+        <div id="inputBox">
+                <input type="text" id="txtMsg" name="messageEntry" value="" placeholder="Enter a message..."  onkeypress="return OnEnterDown(event)"/>
+                <button type="button" value="Send" style="width: 75px; height: 40px; margin-left: 2px;" onclick="SendMessage('', true)">Send</button>
+            
+        </div>
 	</section>
 
     <nav id="SideBox">

@@ -25,9 +25,19 @@ nav
 {
     position:fixed;
     top:56px;
-    bottom:0px;
+    bottom:50px;
     overflow:auto;
     width: 319px;
+    z-index:-1;
+}
+
+#messages
+{
+    padding-top: 20px;
+    position:fixed;
+    top:56px;
+    bottom:50px;
+    overflow:auto;
     z-index:-1;
 }
 
@@ -35,7 +45,6 @@ section
 {
 	box-sizing: border-box;
     height:100vh;
-    //background-color:aqua;
 
 	margin:auto;
     width:100%;
@@ -44,9 +53,9 @@ section
     padding-left: 320px;
 
     position:fixed;
-    top:0px;
-    bottom:0px;
-    overflow:auto;
+    top:50px;
+    bottom:50px;
+    overflow: hidden;
 }
 
 .mobileHeader
@@ -56,7 +65,10 @@ section
 	background-color:#343434;
 	border-bottom:#171616 solid thin;
 	text-decoration:none;
+    position:relative;
 	width:100%;
+    top:0px;
+    bottom:0px;
 }
 
 .titleText
@@ -92,19 +104,17 @@ section
 
 .ConvTitle
 {
-    //background-color:green;
     font-size: 16px;
 }
 
 .ConvPreview
 {
-    //background-color:yellow;
     font-size: 14px;
 }
 
 .MessageBubble
 {
-    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 14px;
 }
 
@@ -140,4 +150,36 @@ section
 #tempConv:hover
 {
     cursor: pointer;
+}
+
+#inputBox
+{
+    position:fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+
+    height: 50px;
+
+    margin-left: 320px;
+    padding-left: 12px;
+    padding-right: 12px;
+    line-height: 50px;
+
+    border-top: 1px solid #AAAAAA;
+    
+    background-color: white;
+}
+
+#txtMsg
+{
+    width: 88%;
+    height: 88%;
+    font-size: 14px;
+    border: none;
+    border-color: transparent;
+}
+
+#txtMsg:focus {
+    outline: none;
 }

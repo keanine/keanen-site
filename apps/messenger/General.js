@@ -13,7 +13,33 @@ function AddConversation()
 
 }
 
-function ResizeMainHeight()
+function RecieveMessage(message)
 {
-    //document.getElementById("SideBox").style.minHeight = "100%";
+    document.getElementById("messages").innerHTML += '<div class="MessageBubble"><div class="Incoming">' + message + '</div></div>';
+
+    document.getElementById('messages').scrollTop = document.getElementById('messages').scrollHeight;
+}
+
+function SendMessage(message, isNew) {
+    if (isNew) {
+        message = document.getElementById("txtMsg").value;
+        document.getElementById("txtMsg").value = "";
+        document.getElementById("txtMsg").focus();
+    }
+
+    if (message != "") {
+        document.getElementById("messages").innerHTML += '<div class="MessageBubble"><div class="Outgoing">' + message + '</div></div>';
+    }
+    document.getElementById('messages').scrollTop = document.getElementById('messages').scrollHeight;
+
+}
+
+function OnEnterDown(e)
+{
+    if (e.which == 13 || e.keyCode == 13)
+    {
+        SendMessage("", true);
+        return false;
+    }
+    return true;
 }
