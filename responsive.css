@@ -1,26 +1,27 @@
-﻿
-@media (max-width: 600px) 
+@media (max-width: 750px), (orientation: portrait) and (max-device-width: 480px)
 {
-    .paragraphL {
-        margin-left: 10%;
-        margin-right: 30%;
-    }
+  .icon
+  {
+    height: 50px;
+  }
 
-    .paragraphR {
-        margin-left: 30%;
-        margin-right: 10%;
-    }
+  .navBar
+  {
+    width: 450px;
+  }
 
-    .paragraphC {
-        margin-left: 22%;
-        margin-right: 22%;
-    }
+  .navButtonL
+  {
+    width: 80px;
+    margin-right: 5px;
+    font-size: 12px;
+  }
 
-    .logo
-    {
-        margin-left: auto;
-        margin-right: auto;
-        width: 90%;
-        text-align:center;
-    }
+  .navButtonR
+  {
+    width: 80px;
+    margin-left: 5px;
+    font-size: 12px;
+  }
+
 }
