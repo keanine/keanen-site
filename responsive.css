@@ -1,24 +1,46 @@
 @media only screen and (min-width: 600px)
 {
-  body
-  {
-    background-color: green;
-  }
     .gameIcon
     {
-      width:200px;
+      width:180px;
+      margin-bottom: 10px;
+
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    .navBar
+    {
+      background-color: green;
+      width: 550px;
+    }
+    .navButtonL
+    {
+      width: 100px;
+      margin-right: 5px;
+      font-size: 14px;
+    }
+    .navButtonR
+    {
+      width: 100px;
+      margin-left: 5px;
+      font-size: 14px;
+    }
+    .icon
+    {
+      height: 100px;
     }
 }
 
 @media only screen and (min-width: 769px)
 {
-  body
+  .navContainer
   {
-    background-color: red;
+	  height: 200px;
   }
-
   .navBar
   {
+    background-color: red;
     width: 750px;
   }
   .navButtonL
