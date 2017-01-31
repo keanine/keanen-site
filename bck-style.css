@@ -7,7 +7,7 @@ body
 }
 .icon
 {
-  height: 50px;
+  height: 120px;
 }
 
 
@@ -35,13 +35,12 @@ body
 
     display:block;
     margin:auto;
-    width: 450px;
+    width: 750px;
 }
 .navButtonL
 {
-    font-size: 12px;
-    width:80px;
-    margin-right: 5px;
+    width:125px;
+    margin-right: 25px;
     margin-bottom: 25px;
     display:inline-block;
 	  height: 40px;
@@ -55,9 +54,8 @@ body
 }
 .navButtonR
 {
-    font-size: 12px;
-    width:80px;
-    margin-left: 5px;
+    width:125px;
+    margin-left: 25px;
     display:inline-block;
 	  height: 40px;
     color: #949494;
@@ -88,7 +86,7 @@ body
 
 .gameIcon
 {
-  width: 150px;
+  width: 250px;
   margin-left: 10px;
   margin-right: 10px;
   margin-bottom: 10px;
@@ -100,17 +98,18 @@ h1
     font-weight: normal;
     text-align:left;
 
+
+
     clear:both;
     padding:0;
     height: 40px;
-    width: 100%;
+    width: 850px;
 
     display:block;
     margin:auto;
     margin-top: 50px;
     margin-bottom: 20px;
     padding-bottom: 8px;
-    padding-left: 15px;
     border-bottom: solid 3px;
 
 }

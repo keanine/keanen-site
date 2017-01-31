@@ -1,0 +1,33 @@
+@media only screen and (max-width: 760px)
+{
+  .icon
+  {
+    height: 50px;
+  }
+
+  .navBar
+  {
+    width: 450px;
+  }
+
+  .navButtonL
+  {
+    width: 80px;
+    margin-right: 5px;
+    font-size: 12px;
+  }
+
+  .navButtonR
+  {
+    width: 80px;
+    margin-left: 5px;
+    font-size: 12px;
+  }
+
+  h1
+  {
+    padding-left: 15px;
+    width: 100%;
+  }
+
+}
