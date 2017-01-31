@@ -105,6 +105,11 @@ body
   height: 56.25vw;
 }
 
+.cv
+{
+  width: 100vw;
+}
+
 h1
 {
   color:#aeaeae;

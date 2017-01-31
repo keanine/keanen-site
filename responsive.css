@@ -35,6 +35,11 @@
       height: 100px;
     }
 
+    .cv
+    {
+      width: 550px;
+    }
+
     .youtubeVideo
     {
       width: 550px;
@@ -80,6 +85,11 @@
   {
     width: 768px;
     height: calc(768px * 0.5625);
+  }
+
+  .cv
+  {
+    width: 768px;
   }
 
     h1
