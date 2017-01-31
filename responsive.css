@@ -1,5 +1,9 @@
 @media only screen and (min-width: 600px)
 {
+  .navContainer
+  {
+	  height: 150px;
+  }
     .gameIcon
     {
       width:180px;
@@ -11,7 +15,7 @@
 
     .navBar
     {
-      background-color: green;
+      //background-color: green;
       width: 550px;
     }
     .navButtonL
@@ -30,6 +34,12 @@
     {
       height: 100px;
     }
+
+    .youtubeVideo
+    {
+      width: 550px;
+      height: calc(550px * 0.5625);
+    }
 }
 
 @media only screen and (min-width: 769px)
@@ -40,7 +50,7 @@
   }
   .navBar
   {
-    background-color: red;
+    //background-color: red;
     width: 750px;
   }
   .navButtonL
@@ -65,9 +75,21 @@
     width:250px;
     margin-bottom: 10px;
   }
+
+  .youtubeVideo
+  {
+    width: 768px;
+    height: calc(768px * 0.5625);
+  }
+
     h1
     {
       padding-left: 0px;
-      width: 850px;
+      width: 768px;
+    }
+
+    p
+    {
+      width: 768px;
     }
 }

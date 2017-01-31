@@ -5,6 +5,9 @@ body
   background-color: #222;
   height: 100%;
   overflow-x: hidden;
+
+  background-image: url("Resources/bg.png");
+  background-size: 300px;
 }
 .icon
 {
@@ -19,7 +22,7 @@ body
     //background-color: white;
     color: #949494;
     //font-weight: bold;
-    width: 100%;
+    width: calc(100% - 10px);
 	  height: 100px;
     line-height: 50px;
     text-align: center;
@@ -79,9 +82,8 @@ body
 
 .gameList
 {
-  //background-color: red;
   color: #949494;
-  width: 100vw;
+  width: calc(100% - 10px);
   //height: 2000px;
   line-height: 50px;
   text-align: center;
@@ -97,23 +99,63 @@ body
   margin-bottom: 50px;
 }
 
+.youtubeVideo
+{
+  width: 100vw;
+  height: 56.25vw;
+}
+
 h1
 {
-    color:#aeaeae;
-    font-weight: normal;
-    text-align:left;
+  color:#aeaeae;
+  font-weight: normal;
+  text-align:left;
 
-    clear:both;
-    padding:0;
-    height: 40px;
-    width: 100vw;
+  clear:both;
+  padding:0;
+  height: 40px;
+  width: 100vw;
 
-    display:block;
-    margin:auto;
-    margin-top: 50px;
-    margin-bottom: 20px;
-    padding-bottom: 8px;
-    padding-left: 15px;
-    border-bottom: solid 3px;
+  display:block;
+  margin:auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+  border-bottom: solid 3px;
 
+}
+
+h2
+{
+  margin: 0;
+  padding:0;
+
+  height: 30px;
+  margin-top: 30px;
+  color: #e74c3c;
+}
+
+h3
+{
+  margin: 0;
+  padding:0;
+
+  height: 30px;
+  font-weight: normal;
+  color: white;
+}
+
+p
+{
+  display:block;
+  margin:auto;
+  padding:0;
+  clear:both;
+
+  margin-top: 22px;
+  margin-bottom: 66px;
+  width: calc(100% - 50px);
+  text-align:left;
+  line-height: 20px;
 }
