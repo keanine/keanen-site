@@ -1,4 +1,4 @@
-@media (max-width: 750px), (orientation: portrait) and (max-device-width: 480px)
+@media only screen and (max-width: 760px)
 {
   .icon
   {
@@ -22,6 +22,12 @@
     width: 80px;
     margin-left: 5px;
     font-size: 12px;
+  }
+
+  h1
+  {
+    padding-left: 15px;
+    width: 100%;
   }
 
 }
