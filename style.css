@@ -99,7 +99,7 @@ body
   margin-bottom: 50px;
 }
 
-.youtubeVideo
+.img16x9
 {
   width: 100vw;
   height: 56.25vw;
@@ -144,6 +144,11 @@ h3
   height: 30px;
   font-weight: normal;
   color: white;
+}
+
+a
+{
+  text-decoration: none;
 }
 
 p
