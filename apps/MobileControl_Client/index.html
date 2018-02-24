@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>Keanen Collins</title>
+        <link rel="icon" type="image/png"  href="favicon.png"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!--<link href="style.css" rel="stylesheet" />-->
+    </head>
+
+    <body>
+        <h1>Client for Unity Packet Test v1</h1>
+        <p id="demo"> </p>
+    </body>
+</html>
+
+<script>
+    var ip = "192.168.0.6";
+
+    var connection = new WebSocket('ws://192.168.0.6:24846');
+
+    connection.onopen = function () 
+    {
+        connection.send('Ping');
+    };
+
+    document.getElementById("demo").innerHTML = "Server IP: " + ip;
+</script>
+        
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
