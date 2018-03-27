@@ -15,11 +15,11 @@ function Start()
         maxResults: 5,
         order: "viewCount"
     });
+    document.getElementById("results").innerText = "TEST";
 
     request.execute(function(response)
     {
         console.log(response);
-        document.getElementById("results").innerText = "TEST";
     });
 
     GetChannelName();
