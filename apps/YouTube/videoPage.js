@@ -1,5 +1,5 @@
 //AIzaSyAh8VJaUj7tQHZxiLw8zIRywHgAmqL1c1Y
-var channelName = "error";
+//var channelName = "error";
 
 document.addEventListener('DOMContentLoaded', function() {
     //alert("Ready!");
@@ -24,7 +24,7 @@ function Start()
     });
 
     GetChannelName();
-    document.getElementById("channelName").innerText = channelName;
+    //document.getElementById("channelName").innerText = channelName;
 }
 
 function GetChannelName()
@@ -37,6 +37,6 @@ function init()
     gapi.client.setApiKey("AIzaSyAh8VJaUj7tQHZxiLw8zIRywHgAmqL1c1Y");
     gapi.client.load("youtube", "v3", function()
     {
-        //alert("YouTube API Ready!");
+        alert("YouTube API Ready!");
     });
 }
