@@ -96,8 +96,12 @@
 
   function executeRequest(request) {
     request.execute(function(response) {
-      console.log(response);
-      document.getElementById("page-comments").innerText = response.items[0].snippet.title;
+        console.log(response);
+        document.getElementById("page-comments").innerText = "";
+        for (i = 0; i < cars.length; i++)
+        {
+            document.getElementById("page-comments").innerText += response.items[0].snippet.title + "<br/>";
+        }
     });
   }
 
@@ -132,6 +136,7 @@
 buildApiRequest('GET',
                 '/youtube/v3/subscriptions',
                 {'mine': 'true',
-                 'part': 'snippet,contentDetails'});
+                 'part': 'snippet,contentDetails',
+                 'maxResults': '1000'});
 
   }
