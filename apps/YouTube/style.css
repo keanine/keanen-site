@@ -4,6 +4,7 @@ body
     font-family: "Roboto";
     font-size: 14px;
     color: white;
+    //overflow-y: hidden;
 }
 :root { --sidebarSize: 300px; }
 
@@ -47,8 +48,8 @@ a
     position: absolute;
     right: var(--sidebarSize);
     width: calc(100% - var(--sidebarSize));
-    height:100%;
-    //overflow-y:auto;
+    height: calc((100vw - var(--sidebarSize)) * 0.565);
+    max-height: calc(100vh - 50px);
 }
 
 #rightSide
@@ -106,10 +107,13 @@ a
 #videoInfo
 {
     background-color: #121212;
-    position: absolute;
-    bottom: 0;
+/*    position: absolute;*/
+/*    top:calc((100vw - var(--sidebarSize)) * 0.565);*/
     width:100%;
-    height: calc(100% - 52px - ((100vw - var(--sidebarSize)) * 0.565));
+    min-height: 50px;
+    height:calc(100vh - ((100vw - var(--sidebarSize)) * 0.565));
+    overflow-y: auto;
+    //height: calc(100% - 52px - ((100vw - var(--sidebarSize)) * 0.565));
 /*    height: calc(100% - 50px - ((100vw - var(--sidebarSize)) * 0.5625));*/
 }
 
@@ -129,5 +133,5 @@ a
 {
     background-color: #121212;
     height: calc(100% - 50px);
-    overflow-y:auto;
+    overflow-y: auto;
 }
