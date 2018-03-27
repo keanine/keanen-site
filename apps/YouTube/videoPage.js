@@ -98,7 +98,8 @@
     request.execute(function(response) {
         console.log(response);
         document.getElementById("page-comments").innerText = "";
-        for (i = 0; i < (response.items).length; i++)
+        var items = response.items;
+        for (i = 0; i < items.length; i++)
         {
             document.getElementById("page-comments").innerText += response.items[0].snippet.title + "<br/>";
         }
