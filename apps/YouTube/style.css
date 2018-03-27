@@ -1,0 +1,105 @@
+body
+{
+    margin: 0;
+    font-family: "Roboto";
+    font-size: 14px;
+    color: white;
+}
+:root { --sidebarSize: 300px; }
+
+a
+{
+    font-size: 16px;
+    color: white;
+    text-decoration: none;
+}
+
+#mainContainer
+{
+    width:100%;
+}
+
+#leftSide
+{
+    background-color: yellow;
+    position: absolute;
+    right: var(--sidebarSize);
+    width: calc(100% - var(--sidebarSize));
+    height:100%;
+}
+
+#rightSide
+{
+    background-color: green;
+    position: absolute;
+    right: 0;
+    width: var(--sidebarSize);
+    height:100%;
+    border-left: #777777 1px solid; 
+}
+
+.rightSideButton
+{
+    width:100%; /*temp. Should be 25%*/
+    height: 100%;
+    background: red;
+}
+
+#videoBox
+{
+    background-color: black;
+    height: calc((100vw - var(--sidebarSize)) * 0.5625);
+    max-height: calc(100vh - 50px);
+}
+
+.video
+{
+    height: 100%;
+    width: 100%;
+}
+
+#channelInfo
+{
+    background-color: #121212;
+    height: 50px;
+    line-height: 50px;
+    padding-left: 25px;
+    border-bottom: #232323 1px solid; 
+    border-top:    #232323 1px solid; 
+}
+
+.watchLaterImg
+{
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+#videoInfo
+{
+    background-color: #121212;
+    position: absolute;
+    bottom: 0;
+    width:100%;
+    height: calc(100% - 50px - ((100vw - var(--sidebarSize)) * 0.565));
+/*    height: calc(100% - 50px - ((100vw - var(--sidebarSize)) * 0.5625));*/
+}
+
+.description
+{
+    padding: 15px;
+    font-size: 13px;
+}
+
+#rightHeader
+{
+    background-color: #232323;
+    height: 50px;
+}
+
+#page-comments
+{
+    background-color: #121212;
+    height: calc(100% - 50px);
+}
