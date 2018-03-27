@@ -97,6 +97,7 @@
   function executeRequest(request) {
     request.execute(function(response) {
       console.log(response);
+      document.getElementById("page-comments").innerText = response.items[0].snippet.title;
     });
   }
 
