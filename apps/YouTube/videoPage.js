@@ -1,4 +1,4 @@
- /***** START BOILERPLATE CODE: Load client library, authorize user. *****/
+  /***** START BOILERPLATE CODE: Load client library, authorize user. *****/
 
   // Global variables for GoogleAuth object, auth status.
   var GoogleAuth;
@@ -130,7 +130,7 @@
 
 buildApiRequest('GET',
                 '/youtube/v3/subscriptions',
-                {'channelId': 'UC_x5XG1OV2P6uZZ5FSM9Ttw',
+                {'mine': 'true',
                  'part': 'snippet,contentDetails'});
 
   }
