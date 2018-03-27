@@ -22,7 +22,7 @@ function startAPI()
     // Initializes the client with the API key and the Translate API.
     gapi.client.init({
         'apiKey': 'AIzaSyAh8VJaUj7tQHZxiLw8zIRywHgAmqL1c1Y',
-        'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/translate/v2/rest'],
+        'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest'],
     }).then(function() {
     // Executes an API request, and returns a Promise.
     // The method name `language.translations.list` comes from the API discovery.
