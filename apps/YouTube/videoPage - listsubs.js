@@ -1,9 +1,3 @@
-
-<html><head><title>Google APIs - Sample JS Page</title></head>
-<body>
-
-<script>
-
   /***** START BOILERPLATE CODE: Load client library, authorize user. *****/
 
   // Global variables for GoogleAuth object, auth status.
@@ -102,7 +96,13 @@
 
   function executeRequest(request) {
     request.execute(function(response) {
-      console.log(response);
+        console.log(response);
+        document.getElementById("page-comments").innerHTML = "";
+        var items = response.items;
+        for (i = 0; i < items.length; i++)
+        {
+            document.getElementById("page-comments").innerHTML += items[i].snippet.title + "<br/>";
+        }
     });
   }
 
@@ -137,16 +137,7 @@
 buildApiRequest('GET',
                 '/youtube/v3/subscriptions',
                 {'mine': 'true',
-                 'part': 'snippet,contentDetails'});
+                 'part': 'snippet,contentDetails',
+                 'maxResults': '50'});
 
   }
-</script>
-
-<button id="execute-request-button">Authorize</button>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script async defer src="https://apis.google.com/js/api.js" 
-        onload="this.onload=function(){};handleClientLoad()" 
-        onreadystatechange="if (this.readyState === 'complete') this.onload()">
-</script>
-</body></html>

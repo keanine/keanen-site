@@ -97,12 +97,13 @@
   function executeRequest(request) {
     request.execute(function(response) {
         console.log(response);
-        document.getElementById("page-comments").innerHTML = "";
+        /*document.getElementById("page-comments").innerHTML = "";
         var items = response.items;
         for (i = 0; i < items.length; i++)
         {
             document.getElementById("page-comments").innerHTML += items[i].snippet.title + "<br/>";
-        }
+        }*/
+
     });
   }
 
@@ -134,10 +135,15 @@
     // See full sample for buildApiRequest() code, which is not 
 // specific to a particular API or API method.
 
-buildApiRequest('GET',
+/*buildApiRequest('GET',
                 '/youtube/v3/subscriptions',
                 {'mine': 'true',
                  'part': 'snippet,contentDetails',
-                 'maxResults': '50'});
+                 'maxResults': '50'});*/
+buildApiRequest('GET',
+                '/youtube/v3/search',
+                {'part': 'snippet',
+                 'relatedToVideoId': 'Xc4xYacTu-E',
+                 'type': 'video'});
 
   }
