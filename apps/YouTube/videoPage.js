@@ -159,7 +159,7 @@ function CreateRelatedVideo(elementId, thumbnail, title, channel, url)
   
     document.getElementById(elementId).innerHTML += 
     '<div class="relatedVideo">' +
-    '<a href="' + url + '"><img src="' + thumbnail + '" class="relatedVideoThumbnail"></img></a>'
-    '<a href="' + url + '">' + title + '</a>'
+    '<a href="' + url + '"><img src="' + thumbnail + '" class="relatedVideoThumbnail"></img></a>' + 
+    '<a href="' + url + '">' + title + '</a>' + 
     '</div>'
 }
