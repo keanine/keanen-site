@@ -3,7 +3,7 @@ body
     margin: 0;
     font-family: "Roboto";
     font-size: 14px;
-    color: white;
+    color: #e2e2e2;
     overflow-y: hidden;
 }
 :root { --sidebarSize: 300px; }
@@ -15,13 +15,12 @@ body
 
 a
 {
-    color: white;
+    color: #e2e2e2;
     text-decoration: none;
 }
 
 .relatedVideo
 {
-/*    background-color: green;*/
     height: 80px;
     padding-top: 20px;
     padding-right: 10px;
@@ -30,7 +29,7 @@ a
 .relatedVideoThumbnail
 {
     float: left;
-    background-color: purple;
+    background-color: black;
     height: 80px;
     margin-left: 10px;
     margin-right: 10px;
@@ -44,7 +43,6 @@ a
 
 #leftSide
 {
-    background-color: yellow;
     position: absolute;
     right: var(--sidebarSize);
     width: calc(100% - var(--sidebarSize));
@@ -54,7 +52,7 @@ a
 
 #rightSide
 {
-    background-color: green;
+    background-color: #121212;
     position: absolute;
     right: 0;
     width: var(--sidebarSize);
@@ -66,7 +64,7 @@ a
 {
     width:100%; /*temp. Should be 25%*/
     height: 100%;
-    background: red;
+    background: #eb1010;
 
     text-align: center;
     line-height: 50px;
@@ -107,14 +105,10 @@ a
 #videoInfo
 {
     background-color: #121212;
-/*    position: absolute;*/
-/*    top:calc((100vw - var(--sidebarSize)) * 0.565);*/
     width:100%;
     min-height: 50px;
     height:calc(100vh - ((100vw - var(--sidebarSize)) * 0.565));
     overflow-y: auto;
-    //height: calc(100% - 52px - ((100vw - var(--sidebarSize)) * 0.565));
-/*    height: calc(100% - 50px - ((100vw - var(--sidebarSize)) * 0.5625));*/
 }
 
 .description
