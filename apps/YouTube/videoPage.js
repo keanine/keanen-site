@@ -106,7 +106,7 @@
         var items = response.items;
         for (i = 0; i < items.length; i++)
         {
-            CreateRelatedVideo("page-comments", items[i].snippet.thumbnails.default.url, items[i].snippet.title, items[i].snippet.channelTitle);
+            CreateRelatedVideo("page-comments", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle);
             //document.getElementById("page-comments").innerHTML += items[i].snippet.title + "<br/>";
         }
     });
