@@ -106,7 +106,7 @@
         var items = response.items;
         for (i = 0; i < items.length; i++)
         {
-            CreateRelatedVideo("page-comments", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle);
+            CreateRelatedVideo("page-comments", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "https://www.youtube.com/watch?v=" + items[i].snippet.id.videoId);
             //document.getElementById("page-comments").innerHTML += items[i].snippet.title + "<br/>";
         }
     });
@@ -153,7 +153,13 @@ buildApiRequest('GET',
 
   }
 
-  function CreateRelatedVideo(elementId, thumbnail, title, channel)
-  {
-      document.getElementById(elementId).innerHTML += '<div class="relatedVideo"><img src=' + thumbnail +' class="relatedVideoThumbnail"></img>' + title + '</div>'
-  }
+function CreateRelatedVideo(elementId, thumbnail, title, channel, url)
+{
+    //document.getElementById(elementId).innerHTML += '<div class="relatedVideo"><img src=' + thumbnail +' class="relatedVideoThumbnail"></img>' + title + '</div>'
+  
+    document.getElementById(elementId).innerHTML += 
+    '<div class="relatedVideo">' +
+    '<a href="' + url + '"><img src="' + thumbnail + '" class="relatedVideoThumbnail"></img></a>'
+    '<a href="' + url + '">' + title + '</a>'
+    '</div>'
+}
