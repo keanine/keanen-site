@@ -20,7 +20,7 @@ function Start()
 
     request.execute(function(response)
     {
-        document.getElementById("results").innerText = response;
+        console.log(response);
     });
 
     GetChannelName();
