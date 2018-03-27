@@ -101,7 +101,7 @@
         var items = response.items;
         for (i = 0; i < items.length; i++)
         {
-            document.getElementById("page-comments").innerText += response.items[0].snippet.title + "<br/>";
+            document.getElementById("page-comments").innerText += items[i].snippet.title + "<br/>";
         }
     });
   }
@@ -138,6 +138,6 @@ buildApiRequest('GET',
                 '/youtube/v3/subscriptions',
                 {'mine': 'true',
                  'part': 'snippet,contentDetails',
-                 'maxResults': '1000'});
+                 'maxResults': '50'});
 
   }
