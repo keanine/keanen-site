@@ -149,7 +149,8 @@ buildApiRequest('GET',
                 '/youtube/v3/search',
                 {'part': 'snippet',
                  'relatedToVideoId': 'Xc4xYacTu-E',
-                 'type': 'video'});
+                 'type': 'video',
+                'maxResults': '40'});
 
   }
 
