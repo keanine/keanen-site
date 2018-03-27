@@ -3,8 +3,6 @@
 
 document.addEventListener('DOMContentLoaded', function() {
     //alert("Ready!");
-    init();
-    Start();
 }, false);
 
 
@@ -40,4 +38,6 @@ function init()
     {
         alert("YouTube API Ready!");
     });
+    
+    Start();
 }
