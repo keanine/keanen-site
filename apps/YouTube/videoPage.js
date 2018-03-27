@@ -103,7 +103,12 @@
         {
             document.getElementById("page-comments").innerHTML += items[i].snippet.title + "<br/>";
         }*/
-
+        var items = response.items;
+        for (i = 0; i < items.length; i++)
+        {
+            CreateRelatedVideo("page-comments", items[i].snippet.thumbnails.default.url, items[i].snippet.title, items[i].snippet.channelTitle);
+            //document.getElementById("page-comments").innerHTML += items[i].snippet.title + "<br/>";
+        }
     });
   }
 
@@ -146,4 +151,9 @@ buildApiRequest('GET',
                  'relatedToVideoId': 'Xc4xYacTu-E',
                  'type': 'video'});
 
+  }
+
+  function CreateRelatedVideo(elementId, thumbnail, title, channel)
+  {
+      document.getElementById(elementId).innerHTML += '<div class="relatedVideo"><img src=' + thumbnail +' class="relatedVideoThumbnail"></img>' + title + '</div>'
   }
