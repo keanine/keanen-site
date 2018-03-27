@@ -7,7 +7,7 @@
   /***** START BOILERPLATE CODE: Load client library, authorize user. *****/
 
   // Global variables for GoogleAuth object, auth status.
-  var GoogleAuth = "AIzaSyAh8VJaUj7tQHZxiLw8zIRywHgAmqL1c1Y";
+  var GoogleAuth;
 
   /**
    * Load the API's client and auth2 modules.
@@ -23,7 +23,7 @@
     // 'scope' field specifies space-delimited list of access scopes
 
     gapi.client.init({
-        'clientId': 'REPLACE_ME',
+        'clientId': '132484806299-sjjkhh07be2h6s6l1h1uuvl7lrudh1s5.apps.googleusercontent.com',
         'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest'],
         'scope': 'https://www.googleapis.com/auth/youtube.force-ssl https://www.googleapis.com/auth/youtubepartner'
     }).then(function () {
@@ -135,9 +135,9 @@
 // specific to a particular API or API method.
 
 buildApiRequest('GET',
-                '/youtube/v3/channels',
-                {'forUsername': 'GoogleDevelopers',
-                 'part': 'snippet,contentDetails,statistics'});
+                '/youtube/v3/subscriptions',
+                {'channelId': 'UC_x5XG1OV2P6uZZ5FSM9Ttw',
+                 'part': 'snippet,contentDetails'});
 
   }
 </script>
