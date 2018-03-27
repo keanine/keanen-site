@@ -97,11 +97,11 @@
   function executeRequest(request) {
     request.execute(function(response) {
         console.log(response);
-        document.getElementById("page-comments").innerText = "";
+        document.getElementById("page-comments").innerHTML = "";
         var items = response.items;
         for (i = 0; i < items.length; i++)
         {
-            document.getElementById("page-comments").innerText += items[i].snippet.title + "<br/>";
+            document.getElementById("page-comments").innerHTML += items[i].snippet.title + "<br/>";
         }
     });
   }
