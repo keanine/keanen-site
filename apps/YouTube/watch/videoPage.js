@@ -104,31 +104,31 @@
         if (document.documentMode || /Edge/.test(navigator.userAgent)) {
           vidID = gup('v', window.location.href) 
 
-          if(gup('s', window.location.href) == 'off')
-            html.style.setProperty("--sidebarSize", "0px");
-          else
-            html.style.setProperty("--sidebarSize", "300px");
+          //if(gup('s', window.location.href) == 'off')
+          //  html.style.setProperty("--sidebarSize", "0px");
+          //else
+          //  html.style.setProperty("--sidebarSize", "300px");
         }
         else
         {
           var url = new URL(window.location.href);
           vidID = url.searchParams.get("v");
 
-          if(url.searchParams.get("s") == 'off')
-            html.style.setProperty("--sidebarSize", "0px");
-          else
-            html.style.setProperty("--sidebarSize", "300px");  
+          //if(url.searchParams.get("s") == 'off')
+          //  html.style.setProperty("--sidebarSize", "0px");
+          //else
+          //  html.style.setProperty("--sidebarSize", "300px");  
         }
 
         console.log(vidID);
-        var sidebar = "";
-        if (html.style.getPropertyValue('--sidebarSize') == 0)
-        sidebar = "off";
+        //var sidebar = "";
+        //if (html.style.getPropertyValue('--sidebarSize') == 0)
+        //sidebar = "off";
 
         var items = response.items;
         document.getElementById("page-comments").innerHTML = "";
         for (i = 0; i < items.length; i++)
-            CreateRelatedVideo("page-comments", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "http://www.keanencollins.co.uk/apps/YouTube/watch?v=" + items[i].id.videoId + "&s=" + sidebar);
+            CreateRelatedVideo("page-comments", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "http://www.keanencollins.co.uk/apps/YouTube/watch?v=" + items[i].id.videoId);
             
     });
   }
@@ -190,28 +190,32 @@ function LoadVideo()
 {
   var html = document.getElementsByTagName('html')[0];
 
+  if(getCookie('sidebar') == 'off')
+  {
+    html.style.setProperty("--sidebarSize", "0px");
+  }
 
   if (document.documentMode || /Edge/.test(navigator.userAgent)) {
     vidID = gup('v', window.location.href) 
 
-    if(gup('s', window.location.href) == 'off')
-      html.style.setProperty("--sidebarSize", "0px");
-    else
-      html.style.setProperty("--sidebarSize", "300px");
+    //if(gup('s', window.location.href) == 'off')
+    //  html.style.setProperty("--sidebarSize", "0px");
+    //else
+    //  html.style.setProperty("--sidebarSize", "300px");
   }
   else
   {
     var url = new URL(window.location.href);
     vidID = url.searchParams.get("v");
 
-    if(url.searchParams.get("s") == 'off')
-      html.style.setProperty("--sidebarSize", "0px");
-    else
-      html.style.setProperty("--sidebarSize", "300px");  
+    //if(url.searchParams.get("s") == 'off')
+    //  html.style.setProperty("--sidebarSize", "0px");
+    //else
+    //  html.style.setProperty("--sidebarSize", "300px");  
   }
 
   console.log(vidID);
-  console.log(html.style.getPropertyValue("--sidebarSize"));
+  //console.log(html.style.getPropertyValue("--sidebarSize"));
     document.getElementById("videoIframe").src = "https://www.youtube.com/embed/" + vidID + "?autoplay=1";
 }
 
@@ -222,4 +226,37 @@ function gup( name, url ) {
   var regex = new RegExp( regexS );
   var results = regex.exec( url );
   return results == null ? null : results[1];
+}
+
+function ToggleSidebar()
+{
+  document.cookie = "sidebar=off";    
+  var html = document.getElementsByTagName('html')[0];
+  console.log(getCookie('sidebar'));
+  if(getCookie('sidebar') == "on")
+  {
+    document.cookie = "sidebar=off";    
+    html.style.setProperty("--sidebarSize", "0px");
+  }
+  else
+  {
+    document.cookie = "sidebar=on";
+    html.style.setProperty("--sidebarSize", "300px");
+  }
+}
+
+function getCookie(cname) {
+  var name = cname + "=";
+  var decodedCookie = decodeURIComponent(document.cookie);
+  var ca = decodedCookie.split(';');
+  for(var i = 0; i <ca.length; i++) {
+      var c = ca[i];
+      while (c.charAt(0) == ' ') {
+          c = c.substring(1);
+      }
+      if (c.indexOf(name) == 0) {
+          return c.substring(name.length, c.length);
+      }
+  }
+  return "";
 }
