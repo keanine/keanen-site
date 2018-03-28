@@ -1,3 +1,5 @@
+  var vidID = "cQHmBjB6lOU";
+  
   /***** START BOILERPLATE CODE: Load client library, authorize user. *****/
 
   // Global variables for GoogleAuth object, auth status.
@@ -104,13 +106,7 @@
             document.getElementById("page-comments").innerHTML += items[i].snippet.title + "<br/>";
         }*/
 
-        document.getElementById("page-comments").innerHTML = "";
-        var items = response.items;
-        for (i = 0; i < items.length; i++)
-        {
-            CreateRelatedVideo("page-comments", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "https://www.youtube.com/watch?v=" + items[i].id.videoId);
-            //document.getElementById("page-comments").innerHTML += items[i].snippet.title + "<br/>";
-        }
+        LoadVideoInfo();
     });
   }
 
@@ -165,4 +161,20 @@ function CreateRelatedVideo(elementId, thumbnail, title, channel, url)
     '<a href="' + url + '"><img src="' + thumbnail + '" class="relatedVideoThumbnail"></img></a>' + 
     '<a href="' + url + '">' + title + '</a>' + 
     '</div>'
+}
+
+function LoadVideo()
+{
+    document.getElementById("videoIframe").src = "https://www.youtube.com/embed/" + vidID + "?autoplay=1";
+}
+
+function LoadVideoInfo()
+{    
+    //channel name
+    //video description etc
+    
+    var items = response.items;
+    document.getElementById("page-comments").innerHTML = "";
+    for (i = 0; i < items.length; i++)
+        CreateRelatedVideo("page-comments", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "https://www.youtube.com/watch?v=" + items[i].id.videoId);
 }
