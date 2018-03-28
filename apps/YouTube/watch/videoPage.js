@@ -162,5 +162,7 @@ function CreateRelatedVideo(elementId, thumbnail, title, channel, url)
 
 function LoadVideo()
 {
+  var url = new URL(window.location.href);
+  vidID = url.searchParams.get("v");
     document.getElementById("videoIframe").src = "https://www.youtube.com/embed/" + vidID + "?autoplay=1";
 }
