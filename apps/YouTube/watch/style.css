@@ -159,13 +159,13 @@ a
 #LikeCount
 {
     float: right;
-    width: 60px;
+    width: 40px;
 }
 
 #DislikeCount
 {
     float: right;
-    width: 60px;
+    width: 40px;
 }
 
 #LikeButton
@@ -241,7 +241,7 @@ a
     margin-left: 15px;
 }
 
-@media (max-width: 940px)
+@media (max-width: 905px)
 {    
     #LikeButton
     {
@@ -275,7 +275,7 @@ a
     }
 }
 
-@media (max-width: 620px)
+@media (max-width: 640px)
 {
     #subButton
     {
@@ -289,7 +289,7 @@ a
     }
 }
 
-@media (max-width: 530px)
+@media (max-width: 540px)
 {
     #LikeButton
     {
