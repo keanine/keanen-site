@@ -126,6 +126,14 @@
         console.log(response);
           
         //DO SOMETHING WITH IT
+        document.getElementById("channelName").innerHTML = response.items[0].snippet.channelTitle;
+        document.getElementById("description").innerHTML = "Published on " + response.items[0].snippet.publishedAt + "<br/><br/>";
+        document.getElementById("description").innerHTML += response.items[0].snippet.description;
+
+        //response.items[0].statistics.commentCount
+        //response.items[0].statistics.dislikeCount
+        //response.items[0].statistics.likeCount
+        //response.items[0].statistics.viewCount
     });
   }
 
@@ -173,7 +181,7 @@ buildApiRequest('GET',
 buildApiRequest('GET',
                 '/youtube/v3/videos',
                 {'id': vidID,
-                 'part': 'snippet,contentDetails,statistics'});
+                 'part': 'snippet,statistics'});
 
   }
 
