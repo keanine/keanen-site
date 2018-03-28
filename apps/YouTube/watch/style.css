@@ -93,6 +93,7 @@ a
     height: 50px;
     line-height: 50px;
     padding-left: 25px;
+    overflow: hidden;
 
 }
 
@@ -112,7 +113,7 @@ a
     width:100%;
     min-height: 50px;
     height:calc(100vh - ((100vw - var(--sidebarSize)) * 0.565));
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 #description
