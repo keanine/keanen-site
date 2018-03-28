@@ -121,6 +121,7 @@ a
 {
     padding: 15px;
     font-size: 13px;
+    white-space: pre-line;
 }
 
 #rightHeader
