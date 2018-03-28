@@ -119,13 +119,14 @@
             CreateRelatedVideo("page-comments", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "http://www.keanencollins.co.uk/apps/YouTube/watch?v=" + items[i].id.videoId);
             
     });
+  }
 
-    function executeVideoRequest(request) {
-      request.execute(function(response) {
-          console.log(response);
+  function executeVideoRequest(request) {
+    request.execute(function(response) {
+        console.log(response);
           
-          //DO SOMETHING WITH IT
-      });
+        //DO SOMETHING WITH IT
+    });
   }
 
   function buildApiRequest(requestMethod, path, params, properties) {
