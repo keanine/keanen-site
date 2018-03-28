@@ -143,7 +143,7 @@
 buildApiRequest('GET',
                 '/youtube/v3/search',
                 {'part': 'snippet',
-                 'relatedToVideoId': 'Xc4xYacTu-E',
+                 'relatedToVideoId': vidID,
                  'type': 'video',
                 'maxResults': '21'});
 
