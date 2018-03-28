@@ -120,6 +120,7 @@
             html.style.setProperty("--sidebarSize", "300px");  
         }
 
+        console.log(vidID);
         var sidebar = "";
         if (html.style.getPropertyValue('--sidebarSize') == 0)
         sidebar = "off";
