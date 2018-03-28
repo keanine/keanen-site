@@ -146,6 +146,5 @@ a
 
 @keyframes spin {
     0% { transform: rotate(0deg); }
-    50% { transform: rotate(150deg); } /*//maybenot*/
     100% { transform: rotate(360deg); }
 }
