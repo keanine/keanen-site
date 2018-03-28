@@ -126,6 +126,7 @@
         console.log(response);
           
         //DO SOMETHING WITH IT
+        document.title = response.items[0].snippet.title;
         document.getElementById("channelName").innerHTML = response.items[0].snippet.channelTitle;
         document.getElementById("channelName").href = "https://www.youtube.com/channel/" + response.items[0].snippet.channelId;
         document.getElementById("description").innerHTML = "Published on " + response.items[0].snippet.publishedAt + "<br/><br/>";
