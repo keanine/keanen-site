@@ -155,8 +155,15 @@
           'params': params
       });
     }
-    executeRelatedVidsRequest(request);
-    executeVideoRequest(request);
+
+    if(path == '/youtube/v3/search')
+    {
+      executeRelatedVidsRequest(request);
+    }
+    else if(path == '/youtube/v3/videos')
+    {
+      executeVideoRequest(request);
+    }
   }
 
   /***** END BOILERPLATE CODE *****/
