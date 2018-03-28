@@ -6,7 +6,7 @@ body
     color: #e2e2e2;
     overflow-y: hidden;
 }
-:root { --sidebarSize: 320px; }
+:root { --sidebarSize: 300px; }
 
 #channelName
 {
@@ -24,6 +24,7 @@ a
     height: 80px;
     padding-top: 20px;
     padding-right: 10px;
+    font-size: 13px;
 }
 
 .relatedVideoThumbnail
