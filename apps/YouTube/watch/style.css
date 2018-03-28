@@ -122,7 +122,7 @@ a
     font-size: 13px;
     white-space: pre-line;
     overflow-y: auto;
-    height:calc(100vh - 50px - ((100vw - var(--sidebarSize)) * 0.565));
+    height:calc(100vh - 75px - ((100vw - var(--sidebarSize)) * 0.565));
 }
 
 #rightHeader
@@ -239,15 +239,13 @@ a
 {
     #LikeButton
     {
-        display: none;
         margin-left: 5px;
         margin-right: 5px;
     }
     #DislikeButton
     {
-        display: none;
         margin-left: 5px;
-        margin-right: 5px;
+        margin-right: 0px;
     }
     #LikeCount
     {
