@@ -64,7 +64,8 @@ a
     right: 0;
     width: var(--sidebarSize);
     height:100%;
-    border-left: #777777 1px solid; 
+    //border-left: #777777 1px solid; 
+    border-left: #282828 1px solid; 
 }
 
 .rightSideButton
@@ -93,20 +94,21 @@ a
 
 #channelInfo
 {
-    background-color: #121212;
+    background-color: #232323;
     height: 50px;
     line-height: 50px;
     padding-left: 25px;
-    border-bottom: #232323 1px solid; 
-    border-top:    #232323 1px solid; 
+    //border-bottom: #444444 1px solid; 
+    //border-top:    #444444 1px solid; 
 }
 
 .watchLaterImg
 {
     float: right;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-right: 12px;
+    height: 26px;
 }
 
 #videoInfo

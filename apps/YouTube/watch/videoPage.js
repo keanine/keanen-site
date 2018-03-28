@@ -128,7 +128,13 @@
         //DO SOMETHING WITH IT
         document.getElementById("channelName").innerHTML = response.items[0].snippet.channelTitle;
         document.getElementById("description").innerHTML = "Published on " + response.items[0].snippet.publishedAt + "<br/><br/>";
-        document.getElementById("description").innerHTML += response.items[0].snippet.description;
+        
+        var description = response.items[0].snippet.description;
+        //Split the string, store in array
+        //if begins with http, use array[i].link(array[i])
+        //combine string
+        //apply
+        document.getElementById("description").innerHTML += description;
 
         //response.items[0].statistics.commentCount
         //response.items[0].statistics.dislikeCount
