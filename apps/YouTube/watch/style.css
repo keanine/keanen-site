@@ -7,7 +7,10 @@ body
     overflow: hidden;
     background-color: #121212;
 }
-:root { --sidebarSize: 300px; }
+:root 
+{
+    --sidebarSize: 300px;
+}
 
 #sidebarButton:hover
 {
@@ -59,7 +62,6 @@ a
     right: 0;
     width: var(--sidebarSize);
     height:100%;
-    //border-left: #777777 1px solid; 
     border-left: #282828 1px solid; 
 }
 
@@ -159,14 +161,12 @@ a
 {
     float: right;
     width: 60px;
-    //background-color: yellow;
 }
 
 #DislikeCount
 {
     float: right;
     width: 60px;
-    //background-color: green;
 }
 
 #LikeButton
@@ -178,7 +178,6 @@ a
     margin-left: 10px;
     margin-right: 5px;
     height: 32px;
-    //background-color: #3498db; /* Blue */
 }
 
 #DislikeButton
@@ -190,7 +189,6 @@ a
     margin-left: 10px;
     margin-right: 5px;
     height: 32px;
-    //background-color: fuchsia;
     transform: rotate(180deg);
 }
 
@@ -229,11 +227,10 @@ a
 {
     float: left;
     font-size: 16px;
-    //background-color: #3498db; /* Blue */
     width: 180px;
 }
 
-@media (max-width: calc(980px - --sidebarSize)
+@media (max-width: 900px)
 {    #LikeButton
     {
         margin-left: 5px;
@@ -252,6 +249,14 @@ a
     {
         display: none;
     }
+    #subButton
+    {
+        margin-right: 5px;
+    }
+}
+
+@media (max-width: 780px)
+{
     #subButton
     {
         width: 34px;
