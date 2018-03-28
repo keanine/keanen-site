@@ -121,7 +121,7 @@ a
     padding: 15px;
     font-size: 13px;
     white-space: pre-line;
-    overflow: hidden;
+    overflow-y: visible;
 }
 
 #rightHeader
