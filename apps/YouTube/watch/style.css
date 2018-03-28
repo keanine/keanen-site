@@ -119,6 +119,7 @@ a
 #description
 {
     padding: 15px;
+    padding-bottom: 30px;
     font-size: 13px;
     white-space: pre-line;
     overflow-y: auto;
@@ -235,7 +236,7 @@ a
     width: 180px;
 }
 
-@media (max-width: 980px)
+@media (max-width: calc(980px - --sidebarSize)
 {
     #LikeButton
     {
