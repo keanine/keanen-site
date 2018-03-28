@@ -113,7 +113,8 @@
         var items = response.items;
         document.getElementById("page-comments").innerHTML = "";
         for (i = 0; i < items.length; i++)
-            CreateRelatedVideo("page-comments", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "http://www.keanencollins.co.uk/apps/YouTube/watch?v=" + items[i].id.videoId);
+            CreateRelatedVideo("page-comments", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "http://www.keanencollins.co.uk/apps/YouTube/watch?v=" + items[i].id.videoId + "&s=" + html.style.getPropertyValue("--sidebarSize") + "px");
+            
     });
   }
 
@@ -172,16 +173,22 @@ function CreateRelatedVideo(elementId, thumbnail, title, channel, url)
 
 function LoadVideo()
 {
+  var html = document.getElementsByTagName('html')[0];
+
+
   if (document.documentMode || /Edge/.test(navigator.userAgent)) {
     vidID = gup('v', window.location.href) 
+    html.style.setProperty("--sidebarSize", gup('s', window.location.href) + "px");
   }
   else
   {
     var url = new URL(window.location.href);
     vidID = url.searchParams.get("v");
+    html.style.setProperty("--sidebarSize", url.searchParams.get("s") + "px");
   }
 
   console.log(vidID);
+  console.log(html.style.getPropertyValue("--sidebarSize"));
     document.getElementById("videoIframe").src = "https://www.youtube.com/embed/" + vidID + "?autoplay=1";
 }
 
