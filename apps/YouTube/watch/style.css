@@ -14,11 +14,6 @@ body
     cursor: pointer;
 }
 
-#channelName
-{
-    font-size: 16px;
-}
-
 a
 {
     color: #e2e2e2;
@@ -105,10 +100,11 @@ a
 .watchLaterImg
 {
     float: right;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    padding-right: 12px;
-    height: 26px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 30px;
 }
 
 #videoInfo
@@ -157,4 +153,82 @@ a
 @keyframes spin {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+
+#LikeCount
+{
+    float: right;
+    //text-align: right;
+    width: 60px;
+    //background-color: #3498db; /* Blue */
+}
+
+#DislikeCount
+{
+    float: right;
+    //text-align: right;
+    width: 60px;
+    //background-color: #3498db; /* Blue */
+}
+
+#LikeButton
+{
+    float: right;
+    text-align: right;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 36px;
+    //background-color: #3498db; /* Blue */
+}
+
+#DislikeButton
+{
+    float: right;
+    text-align: right;
+    margin-top: 9px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 36px;
+    //background-color: #3498db; /* Blue */
+    transform: rotate(180deg);
+}
+
+#LikeButton:hover
+{
+    cursor: pointer;
+}
+
+#DislikeButton:hover
+{
+    cursor: pointer;
+}
+
+#SubButton
+{
+    float: right;
+    border-radius: 2px;
+    background: #eb1010;
+    margin-top: 8px;
+    margin-right: 20px;
+    text-align: center;
+    line-height: 34px;
+    width: 125px;
+    height: 34px;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: 'Roboto', 'Noto', sans-serif;
+}
+
+#SubButton:hover
+{
+    cursor: pointer;
+}
+
+#channelName
+{
+    float: left;
+    font-size: 16px;
+    //background-color: #3498db; /* Blue */
+    width: 200px;
 }
