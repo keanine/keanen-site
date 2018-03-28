@@ -1,5 +1,3 @@
-window.onload = LoadVideo;
-
   var vidID = "";
   
   /***** START BOILERPLATE CODE: Load client library, authorize user. *****/
