@@ -102,17 +102,25 @@
         
         if (document.documentMode || /Edge/.test(navigator.userAgent)) {
           vidID = gup('v', window.location.href) 
+
+          if(gup('s', window.location.href) == 'off')
+            html.style.setProperty("--sidebarSize", "0px");
+          else
+            html.style.setProperty("--sidebarSize", "300px");
         }
         else
         {
           var url = new URL(window.location.href);
           vidID = url.searchParams.get("v");
+
+          if(url.searchParams.get("s") == 'off')
+            html.style.setProperty("--sidebarSize", "0px");
+          else
+            html.style.setProperty("--sidebarSize", "300px");  
         }
         console.log(vidID);
 
         var html = document.getElementsByTagName('html')[0];
-        //var sidebar = html.style.getPropertyValue('--sidebarSize');
-        //sidebar = sidebar.substring(0, sidebar.length - 2);
         var sidebar = "";
         if (html.style.getPropertyValue('--sidebarSize') == 0)
         sidebar = "off";
@@ -199,7 +207,8 @@ function LoadVideo()
     if(url.searchParams.get("s") == 'off')
       html.style.setProperty("--sidebarSize", "0px");
     else
-      html.style.setProperty("--sidebarSize", "300px");  }
+      html.style.setProperty("--sidebarSize", "300px");  
+  }
 
   console.log(vidID);
   console.log(html.style.getPropertyValue("--sidebarSize"));
