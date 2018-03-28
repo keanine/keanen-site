@@ -230,9 +230,7 @@ function gup( name, url ) {
 
 function ToggleSidebar()
 {
-  document.cookie = "sidebar=off";    
   var html = document.getElementsByTagName('html')[0];
-  console.log(getCookie('sidebar'));
   if(getCookie('sidebar') == "on")
   {
     document.cookie = "sidebar=off";    
