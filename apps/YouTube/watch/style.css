@@ -8,6 +8,11 @@ body
 }
 :root { --sidebarSize: 300px; }
 
+#sidebarButton:hover
+{
+    cursor: pointer;
+}
+
 #channelName
 {
     font-size: 16px;

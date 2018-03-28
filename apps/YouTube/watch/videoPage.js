@@ -96,9 +96,10 @@
     return params;
   }
 
-  function executeRequest(request) {
+  function executeRelatedVidsRequest(request) {
     request.execute(function(response) {
         console.log(response);
+
         var html = document.getElementsByTagName('html')[0];
         
         if (document.documentMode || /Edge/.test(navigator.userAgent)) 
@@ -118,6 +119,13 @@
             CreateRelatedVideo("page-comments", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "http://www.keanencollins.co.uk/apps/YouTube/watch?v=" + items[i].id.videoId);
             
     });
+
+    function executeVideoRequest(request) {
+      request.execute(function(response) {
+          console.log(response);
+          
+          //DO SOMETHING WITH IT
+      });
   }
 
   function buildApiRequest(requestMethod, path, params, properties) {
@@ -138,7 +146,8 @@
           'params': params
       });
     }
-    executeRequest(request);
+    executeRelatedVidsRequest(request);
+    executeVideoRequest(request);
   }
 
   /***** END BOILERPLATE CODE *****/
@@ -159,6 +168,11 @@ buildApiRequest('GET',
                  'relatedToVideoId': vidID,
                  'type': 'video',
                 'maxResults': '21'});
+
+buildApiRequest('GET',
+                '/youtube/v3/videos',
+                {'id': vidID,
+                 'part': 'snippet,contentDetails,statistics'});
 
   }
 
@@ -207,7 +221,12 @@ function LoadVideo()
   }
 
   console.log(vidID);
-    document.getElementById("videoIframe").src = "https://www.youtube.com/embed/" + vidID + "?autoplay=1&rel=0";
+  document.getElementById("videoIframe").src = "https://www.youtube.com/embed/" + vidID + "?autoplay=1&rel=0";
+
+
+  //Set Title
+  //Set Description
+  //Set Date
 }
 
 function gup( name, url ) {
