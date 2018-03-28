@@ -99,6 +99,7 @@
   function executeRequest(request) {
     request.execute(function(response) {
         console.log(response);
+        var html = document.getElementsByTagName('html')[0];
         
         if (document.documentMode || /Edge/.test(navigator.userAgent)) {
           vidID = gup('v', window.location.href) 
@@ -119,7 +120,6 @@
             html.style.setProperty("--sidebarSize", "300px");  
         }
 
-        var html = document.getElementsByTagName('html')[0];
         var sidebar = "";
         if (html.style.getPropertyValue('--sidebarSize') == 0)
         sidebar = "off";
