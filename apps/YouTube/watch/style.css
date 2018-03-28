@@ -113,17 +113,14 @@ a
     width:100%;
     min-height: 50px;
     height:calc(100vh - ((100vw - var(--sidebarSize)) * 0.565));
-
+    overflow-y: auto;
 }
 
 #description
 {
     padding: 15px;
-    padding-bottom: 30px;
     font-size: 13px;
     white-space: pre-line;
-    overflow-y: auto;
-    height:calc(100vh - 80px - ((100vw - var(--sidebarSize)) * 0.565));
 }
 
 #rightHeader
@@ -237,8 +234,7 @@ a
 }
 
 @media (max-width: calc(980px - --sidebarSize)
-{
-    #LikeButton
+{    #LikeButton
     {
         margin-left: 5px;
         margin-right: 5px;
@@ -246,7 +242,7 @@ a
     #DislikeButton
     {
         margin-left: 5px;
-        margin-right: 0px;
+        margin-right: 5px;
     }
     #LikeCount
     {
