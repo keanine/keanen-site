@@ -138,8 +138,9 @@ a
 }
 
 .loader {
-    border: 5px solid #f3f3f3; /* Light grey */
-    border-top: 5px solid #3498db; /* Blue */
+    border: 4px solid #f3f3f3; /* Light grey */
+    //background: #eb1010;
+    border-top: 4px solid #eb1010; /* Blue */
     border-radius: 50%;
     width: 30px;
     height: 30px;

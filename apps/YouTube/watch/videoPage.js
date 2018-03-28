@@ -139,9 +139,9 @@
         //apply
         document.getElementById("description").innerHTML += description;
 
+        document.getElementById("LikeCount").innerHTML = response.items[0].statistics.likeCount;
+        document.getElementById("DislikeCount").innerHTML = response.items[0].statistics.dislikeCount;
         //response.items[0].statistics.commentCount
-        //response.items[0].statistics.dislikeCount
-        //response.items[0].statistics.likeCount
         //response.items[0].statistics.viewCount
     });
   }
