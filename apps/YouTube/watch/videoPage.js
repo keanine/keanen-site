@@ -216,7 +216,7 @@ function LoadVideo()
 
   console.log(vidID);
   //console.log(html.style.getPropertyValue("--sidebarSize"));
-    document.getElementById("videoIframe").src = "https://www.youtube.com/embed/" + vidID + "?autoplay=1";
+    document.getElementById("videoIframe").src = "https://www.youtube.com/embed/" + vidID + "?autoplay=1&rel=0";
 }
 
 function gup( name, url ) {
