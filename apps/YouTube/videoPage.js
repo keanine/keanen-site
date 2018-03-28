@@ -152,7 +152,7 @@ buildApiRequest('GET',
                 {'part': 'snippet',
                  'relatedToVideoId': 'Xc4xYacTu-E',
                  'type': 'video',
-                'maxResults': '40'});
+                'maxResults': '20'});
 
   }
 
