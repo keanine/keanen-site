@@ -171,6 +171,22 @@ function CreateRelatedVideo(elementId, thumbnail, title, channel, url)
     '</div>'
 }
 
+function SetVidID()
+{
+  var html = document.getElementsByTagName('html')[0];
+        
+  if (document.documentMode || /Edge/.test(navigator.userAgent)) 
+  {
+    vidID = gup('v', window.location.href) 
+  }
+  else
+  {
+    var url = new URL(window.location.href);
+    vidID = url.searchParams.get("v"); 
+  }
+  console.log(vidID);
+}
+
 function LoadVideo()
 {
   var html = document.getElementsByTagName('html')[0];
