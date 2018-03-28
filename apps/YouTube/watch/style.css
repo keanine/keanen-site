@@ -158,27 +158,25 @@ a
 #LikeCount
 {
     float: right;
-    //text-align: right;
     width: 60px;
-    //background-color: #3498db; /* Blue */
+    //background-color: yellow;
 }
 
 #DislikeCount
 {
     float: right;
-    //text-align: right;
     width: 60px;
-    //background-color: #3498db; /* Blue */
+    //background-color: green;
 }
 
 #LikeButton
 {
     float: right;
     text-align: right;
-    margin-top: 5px;
+    margin-top: 8px;
     margin-left: 10px;
-    margin-right: 10px;
-    height: 36px;
+    margin-right: 5px;
+    height: 32px;
     //background-color: #3498db; /* Blue */
 }
 
@@ -186,11 +184,11 @@ a
 {
     float: right;
     text-align: right;
-    margin-top: 9px;
+    margin-top: 10px;
     margin-left: 10px;
-    margin-right: 10px;
-    height: 36px;
-    //background-color: #3498db; /* Blue */
+    margin-right: 5px;
+    height: 32px;
+    //background-color: fuchsia;
     transform: rotate(180deg);
 }
 
@@ -210,7 +208,6 @@ a
     border-radius: 2px;
     background: #eb1010;
     margin-top: 8px;
-    margin-right: 20px;
     text-align: center;
     line-height: 34px;
     width: 125px;
