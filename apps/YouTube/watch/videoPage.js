@@ -111,8 +111,11 @@
         console.log(vidID);
 
         var html = document.getElementsByTagName('html')[0];
-        var sidebar = html.style.getPropertyValue('--sidebarSize');
-        sidebar = sidebar.substring(0, sidebar.length - 2);
+        //var sidebar = html.style.getPropertyValue('--sidebarSize');
+        //sidebar = sidebar.substring(0, sidebar.length - 2);
+        var sidebar = "";
+        if (html.style.getPropertyValue('--sidebarSize') == 0)
+        sidebar = "off";
 
         var items = response.items;
         document.getElementById("page-comments").innerHTML = "";
@@ -182,14 +185,21 @@ function LoadVideo()
 
   if (document.documentMode || /Edge/.test(navigator.userAgent)) {
     vidID = gup('v', window.location.href) 
-    html.style.setProperty("--sidebarSize", gup('s', window.location.href) + "px");
+
+    if(gup('s', window.location.href) == 'off')
+      html.style.setProperty("--sidebarSize", "0px");
+    else
+      html.style.setProperty("--sidebarSize", "300px");
   }
   else
   {
     var url = new URL(window.location.href);
     vidID = url.searchParams.get("v");
-    html.style.setProperty("--sidebarSize", url.searchParams.get("s") + "px");
-  }
+
+    if(url.searchParams.get("s") == 'off')
+      html.style.setProperty("--sidebarSize", "0px");
+    else
+      html.style.setProperty("--sidebarSize", "300px");  }
 
   console.log(vidID);
   console.log(html.style.getPropertyValue("--sidebarSize"));
