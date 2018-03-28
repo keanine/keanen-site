@@ -113,7 +113,7 @@ a
     width:100%;
     min-height: 50px;
     height:calc(100vh - ((100vw - var(--sidebarSize)) * 0.565));
-    overflow-y: hidden;
+
 }
 
 #description
