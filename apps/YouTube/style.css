@@ -6,7 +6,7 @@ body
     color: #e2e2e2;
     overflow-y: hidden;
 }
-:root { --sidebarSize: 300px; }
+:root { --sidebarSize: 320px; }
 
 #channelName
 {
