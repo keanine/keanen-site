@@ -112,7 +112,7 @@
 
         var items = response.items;
         document.getElementById("page-comments").innerHTML = "";
-        var sidebar = html.style.getPropertyValue("--sidebarSize");
+        var sidebar = html.style.getPropertyValue('--sidebarSize');
         sidebar = sidebar.substring(0, sidebar.length - 2);
 
         for (i = 0; i < items.length; i++)
