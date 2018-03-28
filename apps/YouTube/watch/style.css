@@ -94,7 +94,6 @@ a
     background-color: #232323;
     height: 50px;
     line-height: 50px;
-    padding-left: 25px;
     overflow: hidden;
 
 }
@@ -228,10 +227,23 @@ a
     float: left;
     font-size: 16px;
     width: 180px;
+    margin-left: 10px;
 }
 
-@media (max-width: 900px)
-{    #LikeButton
+#channelIcon
+{
+    float: left;
+    width: 34px;
+    height: 34px;
+    background-color: black;
+    border-radius: 50%;
+    margin-top: 8px;
+    margin-left: 15px;
+}
+
+@media (max-width: 940px)
+{    
+    #LikeButton
     {
         margin-left: 5px;
         margin-right: 5px;
@@ -255,7 +267,15 @@ a
     }
 }
 
-@media (max-width: 780px)
+@media (max-width: 820px)
+{
+    #channelName
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 620px)
 {
     #subButton
     {
@@ -266,5 +286,17 @@ a
         background-size: 26px 26px;
         background-position-x: 4px;
         background-position-y: 4px;
+    }
+}
+
+@media (max-width: 530px)
+{
+    #LikeButton
+    {
+        display: none;
+    }
+    #DislikeButton
+    {
+        display: none;
     }
 }
