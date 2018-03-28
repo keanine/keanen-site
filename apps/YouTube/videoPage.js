@@ -103,6 +103,8 @@
         {
             document.getElementById("page-comments").innerHTML += items[i].snippet.title + "<br/>";
         }*/
+
+        document.getElementById("page-comments").innerHTML = "";
         var items = response.items;
         for (i = 0; i < items.length; i++)
         {
