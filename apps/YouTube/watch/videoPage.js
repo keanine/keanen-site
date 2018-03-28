@@ -1,3 +1,5 @@
+window.onload = LoadVideo;
+
   var vidID = "";
   
   /***** START BOILERPLATE CODE: Load client library, authorize user. *****/
@@ -118,7 +120,6 @@
           else
             html.style.setProperty("--sidebarSize", "300px");  
         }
-        console.log(vidID);
 
         var html = document.getElementsByTagName('html')[0];
         var sidebar = "";
