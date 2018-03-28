@@ -99,14 +99,11 @@
   function executeRequest(request) {
     request.execute(function(response) {
         console.log(response);
-        /*document.getElementById("page-comments").innerHTML = "";
-        var items = response.items;
-        for (i = 0; i < items.length; i++)
-        {
-            document.getElementById("page-comments").innerHTML += items[i].snippet.title + "<br/>";
-        }*/
 
-        LoadVideoInfo();
+        var items = response.items;
+        document.getElementById("page-comments").innerHTML = "";
+        for (i = 0; i < items.length; i++)
+            CreateRelatedVideo("page-comments", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "https://www.youtube.com/watch?v=" + items[i].id.videoId);
     });
   }
 
@@ -166,15 +163,4 @@ function CreateRelatedVideo(elementId, thumbnail, title, channel, url)
 function LoadVideo()
 {
     document.getElementById("videoIframe").src = "https://www.youtube.com/embed/" + vidID + "?autoplay=1";
-}
-
-function LoadVideoInfo()
-{    
-    //channel name
-    //video description etc
-    
-    var items = response.items;
-    document.getElementById("page-comments").innerHTML = "";
-    for (i = 0; i < items.length; i++)
-        CreateRelatedVideo("page-comments", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "https://www.youtube.com/watch?v=" + items[i].id.videoId);
 }
