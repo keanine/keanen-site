@@ -1,4 +1,4 @@
-  var vidID = "cQHmBjB6lOU";
+  var vidID = "";
   
   /***** START BOILERPLATE CODE: Load client library, authorize user. *****/
 
@@ -99,6 +99,10 @@
   function executeRequest(request) {
     request.execute(function(response) {
         console.log(response);
+        
+        var url = new URL(window.location.href);
+        vidID = url.searchParams.get("v");
+        console.log(vidID);
 
         var items = response.items;
         document.getElementById("page-comments").innerHTML = "";
