@@ -118,6 +118,7 @@
         for (i = 0; i < items.length; i++)
             CreateRelatedVideo("page-comments", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "http://www.keanencollins.co.uk/apps/YouTube/watch?v=" + items[i].id.videoId);
             
+        document.getElementById("execute-request-button").display = "none";
     });
   }
 
@@ -143,7 +144,9 @@
         document.getElementById("DislikeCount").innerHTML = response.items[0].statistics.dislikeCount;
         //response.items[0].statistics.commentCount
         //response.items[0].statistics.viewCount
-    });
+    
+        document.getElementById("execute-request-button").display = "none";
+      });
   }
 
   function buildApiRequest(requestMethod, path, params, properties) {
