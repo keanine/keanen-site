@@ -101,29 +101,16 @@
         console.log(response);
         var html = document.getElementsByTagName('html')[0];
         
-        if (document.documentMode || /Edge/.test(navigator.userAgent)) {
+        if (document.documentMode || /Edge/.test(navigator.userAgent)) 
+        {
           vidID = gup('v', window.location.href) 
-
-          //if(gup('s', window.location.href) == 'off')
-          //  html.style.setProperty("--sidebarSize", "0px");
-          //else
-          //  html.style.setProperty("--sidebarSize", "300px");
         }
         else
         {
           var url = new URL(window.location.href);
-          vidID = url.searchParams.get("v");
-
-          //if(url.searchParams.get("s") == 'off')
-          //  html.style.setProperty("--sidebarSize", "0px");
-          //else
-          //  html.style.setProperty("--sidebarSize", "300px");  
+          vidID = url.searchParams.get("v"); 
         }
-
         console.log(vidID);
-        //var sidebar = "";
-        //if (html.style.getPropertyValue('--sidebarSize') == 0)
-        //sidebar = "off";
 
         var items = response.items;
         document.getElementById("page-comments").innerHTML = "";
@@ -177,8 +164,6 @@ buildApiRequest('GET',
 
 function CreateRelatedVideo(elementId, thumbnail, title, channel, url)
 {
-    //document.getElementById(elementId).innerHTML += '<div class="relatedVideo"><img src=' + thumbnail +' class="relatedVideoThumbnail"></img>' + title + '</div>'
-  
     document.getElementById(elementId).innerHTML += 
     '<div class="relatedVideo">' +
     '<a href="' + url + '"><img src="' + thumbnail + '" class="relatedVideoThumbnail"></img></a>' + 
@@ -195,27 +180,17 @@ function LoadVideo()
     html.style.setProperty("--sidebarSize", "0px");
   }
 
-  if (document.documentMode || /Edge/.test(navigator.userAgent)) {
-    vidID = gup('v', window.location.href) 
-
-    //if(gup('s', window.location.href) == 'off')
-    //  html.style.setProperty("--sidebarSize", "0px");
-    //else
-    //  html.style.setProperty("--sidebarSize", "300px");
+  if (document.documentMode || /Edge/.test(navigator.userAgent))
+  {
+    vidID = gup('v', window.location.href)
   }
   else
   {
     var url = new URL(window.location.href);
     vidID = url.searchParams.get("v");
-
-    //if(url.searchParams.get("s") == 'off')
-    //  html.style.setProperty("--sidebarSize", "0px");
-    //else
-    //  html.style.setProperty("--sidebarSize", "300px");  
   }
 
   console.log(vidID);
-  //console.log(html.style.getPropertyValue("--sidebarSize"));
     document.getElementById("videoIframe").src = "https://www.youtube.com/embed/" + vidID + "?autoplay=1&rel=0";
 }
 
