@@ -100,8 +100,14 @@
     request.execute(function(response) {
         console.log(response);
         
-        var url = new URL(window.location.href);
-        vidID = url.searchParams.get("v");
+        if (document.documentMode || /Edge/.test(navigator.userAgent)) {
+          vidID = gup('v', window.location.href) 
+        }
+        else
+        {
+          var url = new URL(window.location.href);
+          vidID = url.searchParams.get("v");
+        }
         console.log(vidID);
 
         var items = response.items;
@@ -166,8 +172,24 @@ function CreateRelatedVideo(elementId, thumbnail, title, channel, url)
 
 function LoadVideo()
 {
-  var url = new URL(window.location.href);
-  vidID = url.searchParams.get("v");
+  if (document.documentMode || /Edge/.test(navigator.userAgent)) {
+    vidID = gup('v', window.location.href) 
+  }
+  else
+  {
+    var url = new URL(window.location.href);
+    vidID = url.searchParams.get("v");
+  }
+
   console.log(vidID);
     document.getElementById("videoIframe").src = "https://www.youtube.com/embed/" + vidID + "?autoplay=1";
+}
+
+function gup( name, url ) {
+  if (!url) url = location.href;
+  name = name.replace(/[\[]/,"\\\[").replace(/[\]]/,"\\\]");
+  var regexS = "[\\?&]"+name+"=([^&#]*)";
+  var regex = new RegExp( regexS );
+  var results = regex.exec( url );
+  return results == null ? null : results[1];
 }
