@@ -219,7 +219,8 @@ function searchVideos()
     document.getElementsByClassName("rightSideButton")[i].style.backgroundColor = "#eb1010";
   document.getElementById("searchButton").style.backgroundColor = "#232323";
 
-  document.getElementById("rightSubheader").innerHTML = '<form><input id="searchQuery" type="text" name="searchQuery"></form>';
+  if(!document.getElementById("rightSubheader").innerHTML.includes('<form>'))
+    document.getElementById("rightSubheader").innerHTML = '<form><input id="searchQuery" type="text" name="searchQuery"></form>';
 
   buildApiRequest('GET',
   '/youtube/v3/search',
