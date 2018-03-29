@@ -230,8 +230,6 @@ function searchVideos()
   'maxResults': '21'});
 }
 
-document.onkeydown = getKey();
-
 function CreateRelatedVideo(elementId, thumbnail, title, channel, url)
 {
     document.getElementById(elementId).innerHTML += 
