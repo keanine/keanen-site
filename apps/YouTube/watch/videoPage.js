@@ -234,7 +234,7 @@ buildApiRequest('GET',
                 {'part': 'snippet',
                  'relatedToVideoId': vidID,
                  'type': 'video',
-                'maxResults': '21'},
+                'maxResults': '20'},
                 "RelatedVids");
 
 buildApiRequest('GET',
@@ -300,7 +300,7 @@ function searchVideos()
   {'part': 'snippet',
    'q': document.getElementById("searchQuery").value,
    'type': 'video',
-  'maxResults': '21'},
+  'maxResults': '20'},
     'SearchResults');
 }
 
