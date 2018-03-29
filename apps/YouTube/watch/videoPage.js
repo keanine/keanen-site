@@ -331,6 +331,7 @@ function SetVidID()
 
 function LoadVideo()
 {
+  relatedButton();
   var html = document.getElementsByTagName('html')[0];
 
   if(getCookie('sidebar') == 'off')
