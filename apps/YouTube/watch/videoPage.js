@@ -198,6 +198,7 @@
                 {'mine': 'true',
                  'part': 'snippet,contentDetails',
                  'maxResults': '50'});*/
+
 buildApiRequest('GET',
                 '/youtube/v3/search',
                 {'part': 'snippet',
@@ -211,6 +212,18 @@ buildApiRequest('GET',
                  'part': 'snippet,statistics'});
 
   }
+
+function searchVideos()
+{
+  buildApiRequest('GET',
+  '/youtube/v3/search',
+  {'part': 'snippet',
+   'q': document.getElementById("searchQuery").value,
+   'type': 'video',
+  'maxResults': '21'});
+}
+
+document.onkeydown = getKey();
 
 function CreateRelatedVideo(elementId, thumbnail, title, channel, url)
 {
