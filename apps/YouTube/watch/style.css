@@ -67,9 +67,10 @@ a
 
 .rightSideButton
 {
-    width:100%; /*temp. Should be 25%*/
+    float: left;
+    width:25%; /*temp. Should be 25%*/
     height: 100%;
-    background: #eb1010;
+    background-color: #eb1010;
 
     text-align: center;
     line-height: 50px;
@@ -130,10 +131,19 @@ a
     height: 50px;
 }
 
+#rightSubheader
+{
+    background-color: #232323;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 17px;
+}
+
 #page-comments
 {
     background-color: #121212;
-    height: calc(100% - 50px);
+    height: calc(100% - 75px);
     overflow-y: auto;
 }
 
@@ -159,13 +169,13 @@ a
 #LikeCount
 {
     float: right;
-    width: 40px;
+    max-width: 40px;
 }
 
 #DislikeCount
 {
     float: right;
-    width: 40px;
+    max-width: 40px;
 }
 
 #LikeButton
@@ -239,6 +249,15 @@ a
     border-radius: 50%;
     margin-top: 8px;
     margin-left: 15px;
+}
+
+#subscriptionList
+{
+    background-image: url(Images/Subscriptions.png);
+    background-size: 40px;
+    background-position-x: 20px;
+    background-position-y: 5px;
+    background-repeat: no-repeat;
 }
 
 @media (max-width: 905px)
