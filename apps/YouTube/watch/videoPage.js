@@ -238,14 +238,6 @@ buildApiRequest('GET',
                 "RelatedVids");
 
 buildApiRequest('GET',
-                '/youtube/v3/search',
-                {'part': 'snippet',
-                 'relatedToVideoId': vidID,
-                 'type': 'video',
-                'maxResults': '21'},
-                "SearchResults");
-
-buildApiRequest('GET',
                 '/youtube/v3/videos',
                 {'id': vidID,
                  'part': 'snippet,statistics'},
