@@ -300,7 +300,8 @@ function searchVideos()
   {'part': 'snippet',
    'q': document.getElementById("searchQuery").value,
    'type': 'video',
-  'maxResults': '21'});
+  'maxResults': '21'},
+    'SearchResults');
 }
 
 function CreateRelatedVideo(elementId, thumbnail, title, channel, url)
