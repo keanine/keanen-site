@@ -251,6 +251,7 @@ function ResetButtons()
   {
     document.getElementsByClassName("rightSideButton")[i].style.backgroundColor = "#eb1010";
     document.getElementsByClassName("page")[i].style.display = "none";
+    document.getElementsByClassName("rightSideButton")[i].style.cursor = "pointer";
   }    
 }
 
@@ -258,35 +259,39 @@ function relatedButton()
 {
   ResetButtons();
   document.getElementById("relatedButton").style.backgroundColor = "#232323";
+  document.getElementById("relatedButton").style.cursor = "default";
   document.getElementById("rightSubheader").innerHTML = 'Related Videos';
-  document.getElementById("page-related").style.display = "inline";
+  document.getElementById("page-related").style.display = "block";
 }
 
 function commentsButton()
 {
   ResetButtons();
   document.getElementById("commentsButton").style.backgroundColor = "#232323";
+  document.getElementById("commentsButton").style.cursor = "default";
   document.getElementById("rightSubheader").innerHTML = 'Comments';
-  document.getElementById("page-comments").style.display = "inline";
+  document.getElementById("page-comments").style.display = "block";
 }
 
 function subscriptionsButton()
 {
   ResetButtons();
   document.getElementById("subscriptionsButton").style.backgroundColor = "#232323";
+  document.getElementById("subscriptionsButton").style.cursor = "default";
   document.getElementById("rightSubheader").innerHTML = 'Subscription Feed';
-  document.getElementById("page-subscriptions").style.display = "inline";
+  document.getElementById("page-subscriptions").style.display = "block";
 }
 
 function searchButton()
 {
   ResetButtons();
   document.getElementById("searchButton").style.backgroundColor = "#232323";
+  document.getElementById("searchButton").style.cursor = "default";
 
   if(!document.getElementById("rightSubheader").innerHTML.includes('<form>'))
-    document.getElementById("rightSubheader").innerHTML = '<form><input id="searchQuery" type="text" name="searchQuery"></form>';
-    document.getElementById("page-search").style.display = "inline";
-}
+    document.getElementById("rightSubheader").innerHTML = '<form id="sForm"><input id="searchQuery" type="text" name="searchQuery"><div id="executeSearch" onclick="searchVideos()"></div></form>';
+    document.getElementById("page-search").style.display = "block";
+  }
 
 function searchVideos()
 {

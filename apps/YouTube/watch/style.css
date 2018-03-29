@@ -261,17 +261,51 @@ a
 
 #searchQuery
 {
-    width: 94%;
-    margin-top:    7px;
-    margin-left:  2%;
-    margin-right: 2%;
+    /* width: 50%;
+    height:100%;
+    margin: 0px; */
+    float: left;
+    width: 75%;
+    margin: 0;
+    height: 100%;
+    position: relative;
+    top:-0px;
+    border: none;
+    padding-left: 5px;
+}
+
+#executeSearch
+{
+    /* margin-top:    0px;
+    width: 30%;
+    height:100%;
+    margin: 0px; */
+    float: right;
+    width: 25%;
+    height: 100%;
+    position: relative;
+    top:0px;
+    background-image: url(Images/Search.png);
+    background-position: 50%;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-color: #eb1010;
+    border: none;
+    cursor: pointer;
+}
+
+#sForm
+{
+    margin:0;
+    padding:0;
+    border:0;
 }
 
 #relatedButton
 {
+    background-color: #232323; /* TEMP */
     background-image: url(Images/Related.png);
 /*    background-color: #f33b3b; /* TEMP */
-    background-color: #232323; /* TEMP */
 }
 
 #commentsButton
