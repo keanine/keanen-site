@@ -208,7 +208,7 @@
     }
     if(identifier == "SearchResults")
     {
-      executeSearchRequest(request);
+      executeSearchResultsRequest(request);
     }
     if(identifier == "VideoInfo")
     {
