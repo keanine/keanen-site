@@ -112,7 +112,7 @@
           vidID = url.searchParams.get("v"); 
         }
         console.log(vidID);
-        document.getElementById("execute-request-button").display = none;
+        document.getElementById("execute-request-button").style.display = "none";
 
         var items = response.items;
         document.getElementById("page-comments").innerHTML = "";
@@ -145,7 +145,7 @@
         //response.items[0].statistics.commentCount
         //response.items[0].statistics.viewCount
     
-        document.getElementById("execute-request-button").display = "none";
+        document.getElementById("execute-request-button").style.display = "none";
       });
   }
 
