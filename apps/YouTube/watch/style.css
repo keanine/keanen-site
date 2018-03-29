@@ -129,11 +129,12 @@ a
     font-size: 17px;
 }
 
-#page-comments
+.page
 {
     background-color: #121212;
     height: calc(100% - 85px);
     overflow-y: auto;
+    display:none;
 }
 
 .loader {
@@ -255,6 +256,7 @@ a
     background-position-x: 50%;
     background-position-y: 50%;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 #searchQuery

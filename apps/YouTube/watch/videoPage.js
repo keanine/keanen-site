@@ -213,15 +213,51 @@ buildApiRequest('GET',
 
   }
 
-function searchVideos()
+function ResetButtons()
 {
   for(i = 0; i < document.getElementsByClassName("rightSideButton").length; i++)
+  {
     document.getElementsByClassName("rightSideButton")[i].style.backgroundColor = "#eb1010";
+    document.getElementsByClassName("page")[i].style.display = "none";
+  }    
+}
+
+function relatedButton()
+{
+  ResetButtons();
+  document.getElementById("relatedButton").style.backgroundColor = "#232323";
+  document.getElementById("rightSubheader").innerHTML = 'Related Videos';
+  document.getElementById("page-related").style.display = "inline";
+}
+
+function commentsButton()
+{
+  ResetButtons();
+  document.getElementById("commentsButton").style.backgroundColor = "#232323";
+  document.getElementById("rightSubheader").innerHTML = 'Comments';
+  document.getElementById("page-comments").style.display = "inline";
+}
+
+function subscriptionsButton()
+{
+  ResetButtons();
+  document.getElementById("subscriptionsButton").style.backgroundColor = "#232323";
+  document.getElementById("rightSubheader").innerHTML = 'Subscription Feed';
+  document.getElementById("page-subscriptions").style.display = "inline";
+}
+
+function searchButton()
+{
+  ResetButtons();
   document.getElementById("searchButton").style.backgroundColor = "#232323";
 
   if(!document.getElementById("rightSubheader").innerHTML.includes('<form>'))
     document.getElementById("rightSubheader").innerHTML = '<form><input id="searchQuery" type="text" name="searchQuery"></form>';
+    document.getElementById("page-search").style.display = "inline";
+}
 
+function searchVideos()
+{
   buildApiRequest('GET',
   '/youtube/v3/search',
   {'part': 'snippet',

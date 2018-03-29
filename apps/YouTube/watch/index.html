@@ -16,7 +16,7 @@
                 onreadystatechange="if (this.readyState === 'complete') this.onload()">
         </script>
         <link rel="stylesheet" type="text/css" href="style.css">
-        
+        <!-- Load a "page" on load -->
     </head>
     <body onload="LoadVideo()">
         <div id="mainContainer">
@@ -46,19 +46,28 @@
             </div>
             <div id="rightSide">
                 <div id="rightHeader">
-                    <div id="relatedButton" class="rightSideButton"></div>
-                    <div id="commentsButton" class="rightSideButton"></div>
-                    <div id="subscriptionsButton" class="rightSideButton"></div>
-                    <div id="searchButton" class="rightSideButton" onclick="searchVideos()"></div>
+                    <div id="relatedButton" class="rightSideButton" onclick="relatedButton()"></div>
+                    <div id="commentsButton" class="rightSideButton" onclick="commentsButton()"></div>
+                    <div id="subscriptionsButton" class="rightSideButton" onclick="subscriptionsButton()"></div>
+                    <div id="searchButton" class="rightSideButton" onclick="searchButton()"></div>
                 </div>
                 <div id="rightSubheader">Related Videos</div>
-                <div id="page-comments"> 
+                <div id="page-related" class="page">
+                    <div class="loader"></div>
+                </div>
+                <div id="page-comments" class="page"> 
                     <!--comments, subscriptions, watchlater, search-->
                     <!--<div class="relatedVideo">
                         <a href="https://www.w3schools.com"><img src="testimg.jpg" class="relatedVideoThumbnail"></img></a>
                         <a href="https://www.w3schools.com">This is the title of the video</a>
                     </div>-->
                     
+                    <div class="loader"></div>
+                </div>
+                <div id="page-subscriptions" class="page">
+                    <div class="loader"></div>
+                </div>
+                <div id="page-search" class="page">
                     <div class="loader"></div>
                 </div>
 
