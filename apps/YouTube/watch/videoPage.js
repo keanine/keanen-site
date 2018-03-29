@@ -273,12 +273,30 @@ function commentsButton()
   document.getElementById("page-comments").style.display = "block";
 }
 
+function recommendedButton()
+{
+  ResetButtons();
+  document.getElementById("recommendedButton").style.backgroundColor = "#232323";
+  document.getElementById("recommendedButton").style.cursor = "default";
+  document.getElementById("rightSubheader").innerHTML = 'Recommended Videos';
+  document.getElementById("page-recommended").style.display = "block";
+}
+
 function subscriptionsButton()
 {
   ResetButtons();
   document.getElementById("subscriptionsButton").style.backgroundColor = "#232323";
   document.getElementById("subscriptionsButton").style.cursor = "default";
   document.getElementById("rightSubheader").innerHTML = 'Subscription Feed';
+  document.getElementById("page-subscriptions").style.display = "block";
+}
+
+function watchLaterButton()
+{
+  ResetButtons();
+  document.getElementById("watchLaterButton").style.backgroundColor = "#232323";
+  document.getElementById("watchLaterButton").style.cursor = "default";
+  document.getElementById("rightSubheader").innerHTML = 'Watch Later';
   document.getElementById("page-subscriptions").style.display = "block";
 }
 

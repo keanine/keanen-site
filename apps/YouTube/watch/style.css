@@ -244,7 +244,7 @@ a
 .rightSideButton
 {
     float: left;
-    width:25%; /*temp. Should be 25%*/
+    width:20%; /*temp. Should be 25%*/
     height: 100%;
     background-color: #eb1010;
 
@@ -252,7 +252,7 @@ a
     line-height: 50px;
     font-size: 18px;
     
-    background-size: 50%;
+    background-size: 60%;
     background-position-x: 50%;
     background-position-y: 50%;
     background-repeat: no-repeat;
@@ -313,9 +313,19 @@ a
     background-image: url(Images/Comments.png);
 }
 
+#recommendedButton
+{
+    background-image: url(Images/Recommended.png);
+}
+
 #subscriptionsButton
 {
     background-image: url(Images/Subscriptions.png);
+}
+
+#watchLaterButton
+{
+    background-image: url(Images/WatchLater.png);
 }
 
 #searchButton
