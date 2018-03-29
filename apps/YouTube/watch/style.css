@@ -10,6 +10,7 @@ body
 :root 
 {
     --sidebarSize: 270px;
+    --likePercent: 0%;
 }
 
 #sidebarButton:hover
@@ -67,7 +68,7 @@ a
 
 #videoBox
 {
-    background-color: black;
+    background-color: #232323;
     height: calc((100vw - var(--sidebarSize)) * 0.565);
     max-height: calc(100vh - 50px);
 }
@@ -250,15 +251,17 @@ a
     line-height: 50px;
     font-size: 18px;
     
-    background-size: 34px;
-    background-position-x: 21px;
-    background-position-y: 8px;
+    background-size: 50%;
+    background-position-x: 50%;
+    background-position-y: 50%;
     background-repeat: no-repeat;
 }
 
 #relatedButton
 {
     background-image: url(Images/Related.png);
+/*    background-color: #f33b3b; /* TEMP */
+    background-color: #232323; /* TEMP */
 }
 
 #commentsButton
@@ -274,6 +277,20 @@ a
 #searchButton
 {
     background-image: url(Images/Search.png);
+}
+
+#likeBar
+{
+    background-color: #BBBBBB;
+/*    background-color: white;*/
+    height: 3px;
+}
+
+#likeBlue
+{
+    background-color: #2793e6;
+    height: 3px;
+    width: var(--likePercent);
 }
 
 @media (max-width: 905px)

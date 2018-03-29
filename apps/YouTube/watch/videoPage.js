@@ -146,6 +146,10 @@
         //response.items[0].statistics.viewCount
     
         document.getElementById("execute-request-button").style.display = "none";
+        
+        var html = document.getElementsByTagName('html')[0];
+        var likePercent = (response.items[0].statistics.likeCount / (response.items[0].statistics.dislikeCount + response.items[0].statistics.dislikeCount)) * 100 //(like / dislike) * 100;
+        html.style.setProperty("--likePercent", likePercent + "%");
       });
   }
 
