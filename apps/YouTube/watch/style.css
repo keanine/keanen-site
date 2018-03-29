@@ -143,7 +143,7 @@ a
 #page-comments
 {
     background-color: #121212;
-    height: calc(100% - 75px);
+    height: calc(100% - 90px);
     overflow-y: auto;
 }
 
@@ -251,7 +251,7 @@ a
     margin-left: 15px;
 }
 
-#relatedPage
+#relatedButton
 {
     background-image: url(Images/Related.png);
     background-size: 40px;
@@ -260,7 +260,7 @@ a
     background-repeat: no-repeat;
 }
 
-#subscriptionsPage
+#subscriptionsButton
 {
     background-image: url(Images/Subscriptions.png);
     background-size: 40px;
@@ -269,7 +269,7 @@ a
     background-repeat: no-repeat;
 }
 
-#commentsPage
+#commentsButton
 {
     background-image: url(Images/Comments.png);
     background-size: 40px;
@@ -278,7 +278,7 @@ a
     background-repeat: no-repeat;
 }
 
-#searchPage
+#searchButton
 {
     background-image: url(Images/Search.png);
     background-size: 40px;
