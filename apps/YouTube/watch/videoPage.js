@@ -297,7 +297,7 @@ function watchLaterButton()
   document.getElementById("watchLaterButton").style.backgroundColor = "#232323";
   document.getElementById("watchLaterButton").style.cursor = "default";
   document.getElementById("rightSubheader").innerHTML = 'Watch Later';
-  document.getElementById("page-subscriptions").style.display = "block";
+  document.getElementById("page-watchLater").style.display = "block";
 }
 
 function searchButton()
