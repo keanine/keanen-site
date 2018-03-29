@@ -115,9 +115,35 @@
         document.getElementById("execute-request-button").style.display = "none";
 
         var items = response.items;
-        document.getElementById("page-comments").innerHTML = "";
+        document.getElementById("page-related").innerHTML = "";
         for (i = 0; i < items.length; i++)
-            CreateRelatedVideo("page-comments", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "http://www.keanencollins.co.uk/apps/YouTube/watch?v=" + items[i].id.videoId);
+            CreateRelatedVideo("page-related", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "http://www.keanencollins.co.uk/apps/YouTube/watch?v=" + items[i].id.videoId);
+            
+    });
+  }
+
+  function executeSearchResultsRequest(request) {
+    request.execute(function(response) {
+        console.log(response);
+
+        var html = document.getElementsByTagName('html')[0];
+        
+        if (document.documentMode || /Edge/.test(navigator.userAgent)) 
+        {
+          vidID = gup('v', window.location.href) 
+        }
+        else
+        {
+          var url = new URL(window.location.href);
+          vidID = url.searchParams.get("v"); 
+        }
+        console.log(vidID);
+        document.getElementById("execute-request-button").style.display = "none";
+
+        var items = response.items;
+        document.getElementById("page-search").innerHTML = "";
+        for (i = 0; i < items.length; i++)
+            CreateRelatedVideo("page-search", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "http://www.keanencollins.co.uk/apps/YouTube/watch?v=" + items[i].id.videoId);
             
     });
   }
@@ -157,7 +183,7 @@
       });
   }
 
-  function buildApiRequest(requestMethod, path, params, properties) {
+  function buildApiRequest(requestMethod, path, params, identifier, properties) {
     params = removeEmptyParams(params);
     var request;
     if (properties) {
@@ -176,11 +202,15 @@
       });
     }
 
-    if(path == '/youtube/v3/search')
+    if(identifier == "RelatedVids")
     {
       executeRelatedVidsRequest(request);
     }
-    else if(path == '/youtube/v3/videos')
+    if(identifier == "SearchResults")
+    {
+      executeRelatedVidsRequest(request);
+    }
+    if(identifier == "VideoInfo")
     {
       executeVideoRequest(request);
     }
@@ -204,12 +234,22 @@ buildApiRequest('GET',
                 {'part': 'snippet',
                  'relatedToVideoId': vidID,
                  'type': 'video',
-                'maxResults': '21'});
+                'maxResults': '21'},
+                "RelatedVids");
+
+buildApiRequest('GET',
+                '/youtube/v3/search',
+                {'part': 'snippet',
+                 'relatedToVideoId': vidID,
+                 'type': 'video',
+                'maxResults': '21'},
+                "SearchResults");
 
 buildApiRequest('GET',
                 '/youtube/v3/videos',
                 {'id': vidID,
-                 'part': 'snippet,statistics'});
+                 'part': 'snippet,statistics'},
+                 "VideoInfo");
 
   }
 
