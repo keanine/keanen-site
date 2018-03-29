@@ -9,7 +9,7 @@ body
 }
 :root 
 {
-    --sidebarSize: 300px;
+    --sidebarSize: 270px;
 }
 
 #sidebarButton:hover

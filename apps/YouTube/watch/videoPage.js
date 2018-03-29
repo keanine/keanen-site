@@ -277,7 +277,7 @@ function ToggleSidebar()
   else
   {
     document.cookie = "sidebar=on";
-    html.style.setProperty("--sidebarSize", "300px");
+    html.style.setProperty("--sidebarSize", "270px");
   }
 }
 
