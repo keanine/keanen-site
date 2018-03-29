@@ -257,6 +257,14 @@ a
     background-repeat: no-repeat;
 }
 
+#searchQuery
+{
+    width: 94%;
+    margin-top:    7px;
+    margin-left:  2%;
+    margin-right: 2%;
+}
+
 #relatedButton
 {
     background-image: url(Images/Related.png);

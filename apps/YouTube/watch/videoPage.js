@@ -215,6 +215,12 @@ buildApiRequest('GET',
 
 function searchVideos()
 {
+  for(i = 0; i < document.getElementsByClassName("rightSideButton").length; i++)
+    document.getElementsByClassName("rightSideButton")[i].style.backgroundColor = "#eb1010";
+  document.getElementById("searchButton").style.backgroundColor = "#232323";
+
+  document.getElementById("rightSubheader").innerHTML = '<form><input id="searchQuery" type="text" name="searchQuery"></form>';
+
   buildApiRequest('GET',
   '/youtube/v3/search',
   {'part': 'snippet',
