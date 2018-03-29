@@ -112,13 +112,13 @@
           vidID = url.searchParams.get("v"); 
         }
         console.log(vidID);
+        document.getElementById("execute-request-button").display = none;
 
         var items = response.items;
         document.getElementById("page-comments").innerHTML = "";
         for (i = 0; i < items.length; i++)
             CreateRelatedVideo("page-comments", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "http://www.keanencollins.co.uk/apps/YouTube/watch?v=" + items[i].id.videoId);
             
-        document.getElementById("execute-request-button").display = "none";
     });
   }
 
