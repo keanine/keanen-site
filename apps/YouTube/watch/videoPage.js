@@ -149,6 +149,7 @@
         
         var html = document.getElementsByTagName('html')[0];
         var likePercent = (response.items[0].statistics.likeCount / (response.items[0].statistics.dislikeCount + response.items[0].statistics.dislikeCount)) * 100 //(like / dislike) * 100;
+        console.log("LIKE PERCENT" + likePercent);
         html.style.setProperty("--likePercent", likePercent + "%");
       });
   }
