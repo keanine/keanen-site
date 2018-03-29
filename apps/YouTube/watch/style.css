@@ -251,9 +251,36 @@ a
     margin-left: 15px;
 }
 
-#subscriptionList
+#relatedPage
+{
+    background-image: url(Images/Related.png);
+    background-size: 40px;
+    background-position-x: 20px;
+    background-position-y: 5px;
+    background-repeat: no-repeat;
+}
+
+#subscriptionsPage
 {
     background-image: url(Images/Subscriptions.png);
+    background-size: 40px;
+    background-position-x: 20px;
+    background-position-y: 5px;
+    background-repeat: no-repeat;
+}
+
+#commentsPage
+{
+    background-image: url(Images/Comments.png);
+    background-size: 40px;
+    background-position-x: 20px;
+    background-position-y: 5px;
+    background-repeat: no-repeat;
+}
+
+#searchPage
+{
+    background-image: url(Images/Search.png);
     background-size: 40px;
     background-position-x: 20px;
     background-position-y: 5px;
