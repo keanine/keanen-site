@@ -148,10 +148,10 @@
         document.getElementById("execute-request-button").style.display = "none";
         
         var html = document.getElementsByTagName('html')[0];
-        var likePercent = (response.items[0].statistics.likeCount / (response.items[0].statistics.dislikeCount + response.items[0].statistics.dislikeCount)) * 100 //(like / dislike) * 100;
-        console.log("Like " + response.items[0].statistics.likeCount);
-        console.log("Dislike " + response.items[0].statistics.dislikeCount);
-        console.log("Total " + (response.items[0].statistics.likeCount + response.items[0].statistics.dislikeCount));
+        
+        var likeCount = parseFloat(response.items[0].statistics.likeCount);
+        var dislikeCount = parseFloat(response.items[0].statistics.dislikeCount);
+        var likePercent = (likeCount / (likeCount + dislikeCount)) * 100.0 //(like / dislike) * 100;
         console.log("LIKE PERCENT" + likePercent);
         html.style.setProperty("--likePercent", likePercent + "%");
       });
