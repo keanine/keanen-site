@@ -333,8 +333,8 @@ function CreateRelatedVideo(elementId, thumbnail, title, channel, url, code)
 {
     document.getElementById(elementId).innerHTML += 
     '<div class="relatedVideo">' +
-    '<img src="' + thumbnail + '" onclick="ClickVideo(' + code + ')" class="relatedVideoThumbnail vidLink"></img></a>' + 
-    '<pre class="vidLink" onclick="ClickVideo(' + code + ')" >' + title + '</pre>' + 
+    '<img src="' + thumbnail + '" onclick="ClickVideo(\'' + code + '\')" class="relatedVideoThumbnail vidLink"></img></a>' + 
+    '<pre class="vidLink" onclick="ClickVideo(\'' + code + '\')" >' + title + '</pre>' + 
     '</div>'
 }
 
