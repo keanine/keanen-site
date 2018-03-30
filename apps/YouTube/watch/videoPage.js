@@ -355,14 +355,14 @@ function ClickVideo(code)
   buildApiRequest('GET',
                   '/youtube/v3/search',
                   {'part': 'snippet',
-                   'relatedToVideoId': vidID,
+                   'relatedToVideoId': code,
                    'type': 'video',
                   'maxResults': '20'},
                   "RelatedVids");
   
   buildApiRequest('GET',
                   '/youtube/v3/videos',
-                  {'id': vidID,
+                  {'id': code,
                    'part': 'snippet,statistics'},
                    "VideoInfo");
 }
