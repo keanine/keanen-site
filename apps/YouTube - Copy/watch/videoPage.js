@@ -329,42 +329,13 @@ function searchVideos()
     'SearchResults');
 }
 
-function CreateRelatedVideo(elementId, thumbnail, title, channel, url, code)
-{
-    document.getElementById(elementId).innerHTML += 
-    '<div class="relatedVideo">' +
-    '<img src="' + thumbnail + '" onclick="ClickVideo(' + code + ') class="relatedVideoThumbnail vidLink"></img></a>' + 
-    '<pre class="vidLink" onclick="ClickVideo(' + code + ')" >' + title + '</pre>' + 
-    '</div>'
-}
-
-/*function CreateRelatedVideo(elementId, thumbnail, title, channel, url)
+function CreateRelatedVideo(elementId, thumbnail, title, channel, url)
 {
     document.getElementById(elementId).innerHTML += 
     '<div class="relatedVideo">' +
     '<a href="' + url + '"><img src="' + thumbnail + '" class="relatedVideoThumbnail"></img></a>' + 
     '<a href="' + url + '">' + title + '</a>' + 
     '</div>'
-}*/
-
-function ClickVideo(code)
-{
-  vidID = code;
-  LoadVideo();
-
-  buildApiRequest('GET',
-                  '/youtube/v3/search',
-                  {'part': 'snippet',
-                   'relatedToVideoId': vidID,
-                   'type': 'video',
-                  'maxResults': '20'},
-                  "RelatedVids");
-  
-  buildApiRequest('GET',
-                  '/youtube/v3/videos',
-                  {'id': vidID,
-                   'part': 'snippet,statistics'},
-                   "VideoInfo");
 }
 
 function SetVidID()

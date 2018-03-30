@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>YouTube Lite</title>
+
+        <link rel="icon" type="image/png" href="favicon.png"/>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Roboto" rel="stylesheet">
+
+        <script type="text/javascript">
+            window.addEventListener('keydown',function(e){if(e.keyIdentifier=='U+000A'||e.keyIdentifier=='Enter'||e.keyCode==13){if(e.target.nodeName=='INPUT'&&e.target.type=='text'){e.preventDefault();return false;}}},true);
+        </script>
+
+        <script onload="SetVidID()" src="videoPage.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://apis.google.com/js/api.js" 
+                onload="this.onload=function(){};handleClientLoad()" 
+                onreadystatechange="if (this.readyState === 'complete') this.onload()">
+        </script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <!-- Load a "page" on load -->
+    </head>
+    <body onload="LoadVideo()">
+        <div id="mainContainer">
+            <div id="leftSide">
+                <div id="videoBox">
+                        <iframe id="videoIframe" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen class="video"></iframe>
+                </div>
+                <div id="videoInfo">
+                    <div id="likeBar"><div id="likeBlue"></div></div>
+                    <div id="channelInfo">
+                        <a id="channelIcon"></a>
+                        <a id="channelName"></a>
+                        <img onclick="ToggleSidebar()" src="Images/Sidebar.png" id="SidebarButton" class="watchLaterImg">
+                        
+                        <div id="DislikeCount">0</div>
+                        <img src="Images/Thumb.png" id="DislikeButton"/>
+                        <div id="LikeCount">0</div>
+                        <img src="Images/Thumb.png" id="LikeButton"/>
+                        <div id="SubButton">SUBSCRIBE</div>
+
+                    </div>
+                    <div id="description">
+                            
+                    </div>
+                    <button id="execute-request-button">Authorize</button>
+                </div>
+            </div>
+            <div id="rightSide">
+                <div id="rightHeader">
+                    <div id="relatedButton" class="rightSideButton" onclick="relatedButton()"></div>
+                    <!--<div id="commentsButton" class="rightSideButton" onclick="commentsButton()"></div>-->
+                    <div id="recommendedButton" class="rightSideButton" onclick="recommendedButton()"></div>
+                    <div id="subscriptionsButton" class="rightSideButton" onclick="subscriptionsButton()"></div>
+                    <div id="watchLaterButton" class="rightSideButton" onclick="watchLaterButton()"></div>
+                    <div id="searchButton" class="rightSideButton" onclick="searchButton()"></div>
+                </div>
+                <div id="rightSubheader"></div>
+                <div id="page-related" class="page">
+                    <div class="loader"></div>
+                </div>
+                <div id="page-recommended" class="page">
+                    <div class="loader"></div>
+                </div>
+                <div id="page-subscriptions" class="page">
+                    <div class="loader"></div>
+                </div>
+                <div id="page-watchLater" class="page">
+                    <div class="loader"></div>
+                </div>
+                <div id="page-search" class="page">
+                </div>
+
+            </div>
+        </div>
+    </body>
+    <!--
+                <div id="page-comments" class="page"> 
+                    comments, subscriptions, watchlater, search
+                    <div class="relatedVideo">
+                        <a href="https://www.w3schools.com"><img src="testimg.jpg" class="relatedVideoThumbnail"></img></a>
+                        <a href="https://www.w3schools.com">This is the title of the video</a>
+                    </div>
+                    
+                    <div class="loader"></div>
+                </div>-->
+</html>
