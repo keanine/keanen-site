@@ -350,7 +350,9 @@ function CreateRelatedVideo(elementId, thumbnail, title, channel, url, code)
 function ClickVideo(code)
 {
   vidID = code;
-  LoadVideo();
+  relatedButton();
+  var html = document.getElementsByTagName('html')[0];
+  document.getElementById("videoIframe").src = "https://www.youtube.com/embed/" + vidID + "?autoplay=1&rel=0";
 
   buildApiRequest('GET',
                   '/youtube/v3/search',
