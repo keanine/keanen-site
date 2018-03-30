@@ -309,7 +309,8 @@ function searchButton()
   document.getElementById("rightSubheader").innerHTML = 'Search';
   document.getElementById("page-search").style.display = "block";
 
-  document.getElementById("page-search").innerHTML = searchBarHTML;
+  //document.getElementById("page-search").innerHTML = searchBarHTML;
+  document.getElementById("rightSubheader").innerHTML = "Search" + searchBarHTML;
       //document.getElementById("rightSubheader").innerHTML = '<form id="sForm"><input id="searchQuery" type="text" name="searchQuery"><div id="executeSearch" onclick="searchVideos()"></div></form>';
 }
 

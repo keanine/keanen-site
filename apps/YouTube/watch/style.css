@@ -138,6 +138,11 @@ a
     display:none;
 }
 
+#page-search
+{
+    padding-top: 35px;
+}
+
 .loader {
     border: 4px solid #f3f3f3; /* Light grey */
     border-top: 4px solid #eb1010; /* Blue */
