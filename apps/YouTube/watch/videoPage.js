@@ -141,7 +141,7 @@
         document.getElementById("execute-request-button").style.display = "none";
 
         var items = response.items;
-        document.getElementById("rightSubheader").innerHTML = "Search" + searchBarHTML;
+        document.getElementById("rightSubheader").innerHTML = searchBarHTML;
 
         for (i = 0; i < items.length; i++)
             CreateRelatedVideo("page-search", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "http://www.keanencollins.co.uk/apps/YouTube/watch?v=" + items[i].id.videoId);
@@ -310,7 +310,7 @@ function searchButton()
   document.getElementById("page-search").style.display = "block";
 
   //document.getElementById("page-search").innerHTML = searchBarHTML;
-  document.getElementById("rightSubheader").innerHTML = "Search" + searchBarHTML;
+  document.getElementById("rightSubheader").innerHTML = searchBarHTML;
       //document.getElementById("rightSubheader").innerHTML = '<form id="sForm"><input id="searchQuery" type="text" name="searchQuery"><div id="executeSearch" onclick="searchVideos()"></div></form>';
 }
 
