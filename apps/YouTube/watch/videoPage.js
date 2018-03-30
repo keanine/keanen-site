@@ -141,7 +141,8 @@
         document.getElementById("execute-request-button").style.display = "none";
 
         var items = response.items;
-        document.getElementById("page-search").innerHTML = "";
+        document.getElementById("page-search").innerHTML = searchBarHTML;
+
         for (i = 0; i < items.length; i++)
             CreateRelatedVideo("page-search", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "http://www.keanencollins.co.uk/apps/YouTube/watch?v=" + items[i].id.videoId);
             
@@ -305,11 +306,14 @@ function searchButton()
   ResetButtons();
   document.getElementById("searchButton").style.backgroundColor = "#232323";
   document.getElementById("searchButton").style.cursor = "default";
+  document.getElementById("rightSubheader").innerHTML = 'Search';
+  document.getElementById("page-search").style.display = "block";
 
-  if(!document.getElementById("rightSubheader").innerHTML.includes('<form>'))
-    document.getElementById("rightSubheader").innerHTML = '<form id="sForm"><input id="searchQuery" type="text" name="searchQuery"><div id="executeSearch" onclick="searchVideos()"></div></form>';
-    document.getElementById("page-search").style.display = "block";
-  }
+  document.getElementById("page-search").innerHTML = searchBarHTML;
+      //document.getElementById("rightSubheader").innerHTML = '<form id="sForm"><input id="searchQuery" type="text" name="searchQuery"><div id="executeSearch" onclick="searchVideos()"></div></form>';
+}
+
+var searchBarHTML = '<form id="sForm"><input id="searchQuery" type="text" name="searchQuery"><div id="executeSearch" onclick="searchVideos()"></div></form>';
 
 function searchVideos()
 {
