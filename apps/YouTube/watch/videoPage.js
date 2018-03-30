@@ -141,7 +141,7 @@
         document.getElementById("execute-request-button").style.display = "none";
 
         var items = response.items;
-        document.getElementById("pag-search").innerHTML = "";
+        document.getElementById("page-search").innerHTML = "";
         //document.getElementById("rightSubheader").innerHTML = searchBarHTML;
 
         for (i = 0; i < items.length; i++)
