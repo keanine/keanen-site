@@ -121,7 +121,7 @@
             
         //CREATE LOAD MORE
         if (response.nextPageToken)
-        CreateLoadNextPageButton("page-related", response.nextPageToken);
+        CreateLoadNextPageButton("page-related", "loadNextRelatedPage", response.nextPageToken);
     });
   }
 
@@ -148,13 +148,13 @@
             CreateRelatedVideo("page-related", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "http://www.keanencollins.co.uk/apps/YouTube/watch?v=" + items[i].id.videoId, items[i].id.videoId);
             
         if (response.nextPageToken)
-          CreateLoadNextPageButton("page-related", response.nextPageToken);
+          CreateLoadNextPageButton("page-related", "loadNextRelatedPage", response.nextPageToken);
     });
   }
 
-  function CreateLoadNextPageButton(page, token)
+  function CreateLoadNextPageButton(page, func, token)
   {
-    document.getElementById(page).innerHTML += "<div id='NextPageButton', onclick='loadNextRelatedPage(\"" + token + "\")'></div>";
+    document.getElementById(page).innerHTML += "<div id='NextPageButton', onclick='" + func + "(\"" + token + "\")'></div>";
   }
 
   function executeSearchResultsRequest(request) {
@@ -183,7 +183,7 @@
             CreateRelatedVideo("page-search", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "http://www.keanencollins.co.uk/apps/YouTube/watch?v=" + items[i].id.videoId, items[i].id.videoId);
     
         if (response.nextPageToken)
-           CreateLoadNextPageButton("page-search", response.nextPageToken);
+           CreateLoadNextPageButton("page-search", "loadNextSearchPage", response.nextPageToken);
     });
   }
 
@@ -212,7 +212,7 @@
             CreateRelatedVideo("page-search", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "http://www.keanencollins.co.uk/apps/YouTube/watch?v=" + items[i].id.videoId, items[i].id.videoId);
             
         if (response.nextPageToken)
-        CreateLoadNextPageButton("page-search", response.nextPageToken);
+        CreateLoadNextPageButton("page-search", "loadNextSearchPage", response.nextPageToken);
     });
   }
 
