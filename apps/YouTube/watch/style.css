@@ -20,9 +20,15 @@ body
 
 .NextPageButton
 {
-    width: 80%;
-    height: 100px;
-    background-color: royalblue;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 35px;
+    //background-color: royalblue;
+    background-color: #eb1010;
+    text-align: center;
+    line-height: 35px;
+    font-size: 16px;
     cursor: pointer;
 }
 
@@ -46,7 +52,7 @@ a
     float: left;
     background-color: black;
     height: 80px;
-    margin-left: 10px;
+    margin-left: 5%;
     margin-right: 10px;
     margin-top: -5px;
 }

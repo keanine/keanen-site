@@ -155,7 +155,7 @@
 
   function CreateLoadNextPageButton(page, func, token)
   {
-    document.getElementById(page).innerHTML += '<div id="NextPageButton_' + page + '" class="NextPageButton" onclick="' + func + '(\'' + token + '\')"></div>';
+    document.getElementById(page).innerHTML += '<div id="NextPageButton_' + page + '" class="NextPageButton" onclick="' + func + '(\'' + token + '\')">Load More</div>';
   }
 
   function executeSearchResultsRequest(request) {
