@@ -23,8 +23,9 @@ body
     width: 90%;
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 30px;
     height: 35px;
-    //background-color: royalblue;
+    /*background-color: royalblue;*/
     background-color: #eb1010;
     text-align: center;
     line-height: 35px;
