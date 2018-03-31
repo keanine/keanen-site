@@ -341,7 +341,7 @@ buildApiRequest('GET',
   function loadNextSearchPage(token)
   {
     $("#NextPageButton_page-search").remove(); 
-    document.getElementById("page-related").innerHTML += '<div id="searchLoader" class="loader"></div>';
+    document.getElementById("page-search").innerHTML += '<div id="searchLoader" class="loader"></div>';
 
     buildApiRequest('GET',
                      '/youtube/v3/search',
