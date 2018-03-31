@@ -119,7 +119,41 @@
         for (i = 0; i < items.length; i++)
             CreateRelatedVideo("page-related", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "http://www.keanencollins.co.uk/apps/YouTube/watch?v=" + items[i].id.videoId, items[i].id.videoId);
             
+        //CREATE LOAD MORE
+        CreateLoadNextPageButton("page-related", response.nextPageToken);
     });
+  }
+
+  function executeRelatedVidsNextRequest(request) {
+    request.execute(function(response) {
+        console.log(response);
+
+        var html = document.getElementsByTagName('html')[0];
+        
+        if (document.documentMode || /Edge/.test(navigator.userAgent)) 
+        {
+          vidID = gup('v', window.location.href) 
+        }
+        else
+        {
+          var url = new URL(window.location.href);
+          vidID = url.searchParams.get("v"); 
+        }
+        console.log(vidID);
+        document.getElementById("execute-request-button").style.display = "none";
+
+        var items = response.items;
+        for (i = 0; i < items.length; i++)
+            CreateRelatedVideo("page-related", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "http://www.keanencollins.co.uk/apps/YouTube/watch?v=" + items[i].id.videoId, items[i].id.videoId);
+            
+        //CREATE LOAD MORE
+        CreateLoadNextPageButton("page-related", response.nextPageToken);
+    });
+  }
+
+  function CreateLoadNextPageButton(page, token)
+  {
+    document.getElementById(page).innerHTML = "<div id='NextPageButton', onclick='loadNextRelatedPage(" + token + ")'></div>";
   }
 
   function executeSearchResultsRequest(request) {
@@ -208,6 +242,10 @@
     {
       executeRelatedVidsRequest(request);
     }
+    if(identifier == "RelatedVidsNext")
+    {
+      executeRelatedVidsNextRequest(request);
+    }
     if(identifier == "SearchResults")
     {
       executeSearchResultsRequest(request);
@@ -245,6 +283,18 @@ buildApiRequest('GET',
                  'part': 'snippet,statistics'},
                  "VideoInfo");
 
+  }
+
+  function loadNextRelatedPage(token)
+  {
+    buildApiRequest('GET',
+                    '/youtube/v3/search',
+                    {'part': 'snippet',
+                     'relatedToVideoId': vidID,
+                     'type': 'video',
+                     'maxResults': '20',
+                     'pageToken': token },
+                     "RelatedVidsNext");
   }
 
 function ResetButtons()

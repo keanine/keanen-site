@@ -18,6 +18,14 @@ body
     cursor: pointer;
 }
 
+#NextPageButton
+{
+    width: 80%;
+    height: 100px;
+    background-color: royalblue;
+    cursor: pointer;
+}
+
 a
 {
     color: #e2e2e2;
