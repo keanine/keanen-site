@@ -155,7 +155,6 @@
 
   function CreateLoadNextPageButton(page, func, token)
   {
-    //BROKEN FFS
     document.getElementById(page).innerHTML += '<div id="NextPageButton_' + page + '" class="NextPageButton" onclick="' + func + '(\'' + token + '\')"></div>';
   }
 
@@ -192,6 +191,7 @@
   function executeSearchResultsNextRequest(request) {
     request.execute(function(response) {
         console.log(response);
+        $("#searchLoader").remove(); 
 
         var html = document.getElementsByTagName('html')[0];
         
@@ -341,6 +341,7 @@ buildApiRequest('GET',
   function loadNextSearchPage(token)
   {
     $("#NextPageButton_page-search").remove(); 
+    document.getElementById("page-related").innerHTML += '<div id="searchLoader" class="loader"></div>';
 
     buildApiRequest('GET',
                      '/youtube/v3/search',
