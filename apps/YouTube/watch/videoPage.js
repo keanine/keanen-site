@@ -191,6 +191,7 @@
   function executeSearchResultsNextRequest(request) {
     request.execute(function(response) {
         console.log(response);
+        $("#relatedLoader").remove(); 
 
         var html = document.getElementsByTagName('html')[0];
         
@@ -324,7 +325,8 @@ buildApiRequest('GET',
 
   function loadNextRelatedPage(token)
   {
-    $("#NextPageButton_page-related").remove(); 
+    $("#NextPageButton_page-related").remove();
+    document.getElementById("page-related").innerHTML += '<div id="relatedLoader" class="loader"></div>';
 
     buildApiRequest('GET',
                     '/youtube/v3/search',
