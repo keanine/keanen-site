@@ -146,7 +146,6 @@
         for (i = 0; i < items.length; i++)
             CreateRelatedVideo("page-related", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "http://www.keanencollins.co.uk/apps/YouTube/watch?v=" + items[i].id.videoId, items[i].id.videoId);
             
-        //CREATE LOAD MORE
         if (response.nextPageToken)
           CreateLoadNextPageButton("page-related", response.nextPageToken);
     });
@@ -181,7 +180,35 @@
 
         for (i = 0; i < items.length; i++)
             CreateRelatedVideo("page-search", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "http://www.keanencollins.co.uk/apps/YouTube/watch?v=" + items[i].id.videoId, items[i].id.videoId);
+    });
+  }
+
+  function executeSearchResultsNextRequest(request) {
+    request.execute(function(response) {
+        console.log(response);
+
+        var html = document.getElementsByTagName('html')[0];
+        
+        if (document.documentMode || /Edge/.test(navigator.userAgent)) 
+        {
+          vidID = gup('v', window.location.href) 
+        }
+        else
+        {
+          var url = new URL(window.location.href);
+          vidID = url.searchParams.get("v"); 
+        }
+        console.log(vidID);
+        document.getElementById("execute-request-button").style.display = "none";
+
+        var items = response.items;
+        //document.getElementById("rightSubheader").innerHTML = searchBarHTML;
+
+        for (i = 0; i < items.length; i++)
+            CreateRelatedVideo("page-search", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "http://www.keanencollins.co.uk/apps/YouTube/watch?v=" + items[i].id.videoId, items[i].id.videoId);
             
+        if (response.nextPageToken)
+        CreateLoadNextPageButton("page-search", response.nextPageToken);
     });
   }
 
@@ -251,6 +278,10 @@
     {
       executeSearchResultsRequest(request);
     }
+    if(identifier == "SearchResultsNext")
+    {
+      executeSearchResultsNextRequest(request);
+    }
     if(identifier == "VideoInfo")
     {
       executeVideoRequest(request);
@@ -289,7 +320,7 @@ buildApiRequest('GET',
   function loadNextRelatedPage(token)
   {
     $("#NextPageButton").remove(); 
-    
+
     buildApiRequest('GET',
                     '/youtube/v3/search',
                     {'part': 'snippet',
@@ -298,6 +329,20 @@ buildApiRequest('GET',
                      'maxResults': '20',
                      'pageToken': token },
                      "RelatedVidsNext");
+  }
+
+  function loadNextSearchPage(token)
+  {
+    $("#NextPageButton").remove(); 
+
+    buildApiRequest('GET',
+                     '/youtube/v3/search',
+                     {'part': 'snippet',
+                      'q': document.getElementById("searchQuery").value,
+                      'type': 'video',
+                     'maxResults': '20',
+                      'pageToken': token },
+                       'SearchResultsNext');
   }
 
 function ResetButtons()
