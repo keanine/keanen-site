@@ -147,7 +147,8 @@
             CreateRelatedVideo("page-related", items[i].snippet.thumbnails.medium.url, items[i].snippet.title, items[i].snippet.channelTitle, "http://www.keanencollins.co.uk/apps/YouTube/watch?v=" + items[i].id.videoId, items[i].id.videoId);
             
         //CREATE LOAD MORE
-        CreateLoadNextPageButton("page-related", response.nextPageToken);
+        if (response.nextPageToken)
+          CreateLoadNextPageButton("page-related", response.nextPageToken);
     });
   }
 
@@ -287,6 +288,8 @@ buildApiRequest('GET',
 
   function loadNextRelatedPage(token)
   {
+    $("#NextPageButton").remove(); 
+    
     buildApiRequest('GET',
                     '/youtube/v3/search',
                     {'part': 'snippet',
