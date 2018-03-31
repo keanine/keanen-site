@@ -128,6 +128,7 @@
   function executeRelatedVidsNextRequest(request) {
     request.execute(function(response) {
         console.log(response);
+        $("#relatedLoader").remove(); 
 
         var html = document.getElementsByTagName('html')[0];
         
@@ -191,7 +192,6 @@
   function executeSearchResultsNextRequest(request) {
     request.execute(function(response) {
         console.log(response);
-        $("#relatedLoader").remove(); 
 
         var html = document.getElementsByTagName('html')[0];
         
