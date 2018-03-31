@@ -153,7 +153,7 @@
 
   function CreateLoadNextPageButton(page, token)
   {
-    document.getElementById(page).innerHTML = "<div id='NextPageButton', onclick='loadNextRelatedPage(" + token + ")'></div>";
+    document.getElementById(page).innerHTML += "<div id='NextPageButton', onclick='loadNextRelatedPage(" + token + ")'></div>";
   }
 
   function executeSearchResultsRequest(request) {
