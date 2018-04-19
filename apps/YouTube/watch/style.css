@@ -93,6 +93,8 @@ a
     width: var(--sidebarSize);
     height:100%;
     /*border-left: #282828 1px solid; */
+    -ms-overflow-style: none;  
+    overflow: -moz-scrollbars-none;
 }
 
 #videoBox
