@@ -258,7 +258,12 @@
       console.log("SUB FEED");
       console.log(response);
 
-
+      for (i = 0; i < response.items.length; i++)
+      {
+        var xmlPage = "https://www.youtube.com/feeds/videos.xml?channel_id=";
+        console.log(xmlPage + response.items[i].id);
+        //READXML(xmlPage + response.items[i].id);
+      }
 
         ////CREATE LOAD MORE
         //if (response.nextPageToken)
