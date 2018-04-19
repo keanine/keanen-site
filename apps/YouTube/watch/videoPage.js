@@ -439,9 +439,22 @@ function CreateRelatedVideo(elementId, thumbnail, title, channel, url, code)
 {
     document.getElementById(elementId).innerHTML += 
     '<div class="relatedVideo">' +
+    '<img src="' + thumbnail + '" onclick="ClickVideo(\'' + code + '\')" class="relatedVideoThumbnail vidLink"></img>' + 
+    '<div class="vidLink" onclick="ClickVideo(\'' + code + '\')" >' + title + '</div>' + 
+    '</div>'
+
+    /*
+    '<div class="relatedVideo">' +
     '<img src="' + thumbnail + '" onclick="ClickVideo(\'' + code + '\')" class="relatedVideoThumbnail vidLink"></img></a>' + 
     '<span class="vidLink" onclick="ClickVideo(\'' + code + '\')" >' + title + '</span>' + 
     '</div>'
+
+
+                    <div class="relatedVideo">
+                        <img src="testimg.jpg" onclick="ClickVideo('code')" class="relatedVideoThumbnail vidLink"></img></a>
+                        <div class="vidLink" onclick="ClickVideo('code')" >Artist Marcus To draws Nova - Marvel Quickdraw</div>
+                    </div>
+    */
 }
 
 /*function CreateRelatedVideo(elementId, thumbnail, title, channel, url)

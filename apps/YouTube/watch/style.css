@@ -42,21 +42,26 @@ a
 
 .relatedVideo
 {
-    height: 80px;
+    //height: 150px;
     padding-top: 8px;
     padding-bottom: 8px;
-    padding-right: 10px;
-    font-size: 12px;
+    margin-left: 4%;
+    margin-right: 4%;
+    font-family: 'Roboto', 'Noto', sans-serif;
+    font-size: 14px;
+    cursor: pointer;
 }
 
 .relatedVideoThumbnail
 {
-    float: left;
     background-color: black;
-    height: 80px;
-    margin-left: 5%;
-    margin-right: 10px;
-    margin-top: -5px;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+.vidLink
+{
+    
 }
 
 #mainContainer
@@ -322,11 +327,6 @@ a
     padding:0;
     border:0;
     height: 32px;
-}
-
-.vidLink
-{
-    
 }
 
 #relatedButton
