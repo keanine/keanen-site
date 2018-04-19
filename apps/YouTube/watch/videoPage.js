@@ -227,7 +227,7 @@
         document.getElementById("channelName").innerHTML = response.items[0].snippet.channelTitle;
         document.getElementById("channelName").href = "https://www.youtube.com/channel/" + response.items[0].snippet.channelId;
         document.getElementById("channelIcon").href = "https://www.youtube.com/channel/" + response.items[0].snippet.channelId;
-        document.getElementById("description").innerHTML = "Published on " + response.items[0].snippet.publishedAt + "<br/><br/>";
+        document.getElementById("description").innerHTML = "Published on " + FormatYoutubeDate(response.items[0].snippet.publishedAt) + "<br/><br/>";
 
         var description = response.items[0].snippet.description;
         //Split the string, store in array
@@ -457,6 +457,16 @@ function FormatNumberData(input)
     output = temp + "M";
   }
 
+  return output;
+}
+
+function FormatYoutubeDate(input)
+{
+  var day = input[8] + input[9];
+  var month = input[5] + input[6];
+  var year = input[0] + input[1] + input[2] + input[3];
+
+  var output = day + " " + month + " " + year;
   return output;
 }
 
