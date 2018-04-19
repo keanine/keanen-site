@@ -267,7 +267,7 @@
         //console.log(xmlPage);
         xmlDoc = parser.parseFromString(xmlPage,"text/xml");
         var entries = document.getElementsByTagName("entry");
-
+        console.log(entries.length);
         for(j = 0; j < entries.length; j++)
         {
           console.log(entries[j].title.childNodes[0].nodeValue);
