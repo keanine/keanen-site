@@ -12,6 +12,14 @@ body
     --sidebarSize: 270px;
     --likePercent: 0%;
 }
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
 
 #sidebarButton:hover
 {
@@ -42,7 +50,6 @@ a
 
 .relatedVideo
 {
-    //height: 150px;
     padding-top: 8px;
     padding-bottom: 8px;
     margin-left: 4%;
@@ -85,7 +92,7 @@ a
     right: 0;
     width: var(--sidebarSize);
     height:100%;
-    border-left: #282828 1px solid; 
+    /*border-left: #282828 1px solid; */
 }
 
 #videoBox
@@ -103,7 +110,8 @@ a
 
 #channelInfo
 {
-    background-color: #232323;
+    /*background-color: #232323;*/
+    background-color: #1a1a1a;
     height: 50px;
     line-height: 50px;
     overflow: hidden;
