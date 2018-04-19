@@ -467,7 +467,7 @@ function FormatYoutubeDate(input)
 ];
 
   var day = input[8] + input[9];
-  var month = monthNames[(input[5] + input[6])];
+  var month = monthNames[(input[5] + input[6]) - 1];
   var year = input[0] + input[1] + input[2] + input[3];
 
   var output = day + " " + month + " " + year;
