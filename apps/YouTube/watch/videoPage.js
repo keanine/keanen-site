@@ -268,6 +268,7 @@
         xmlDoc = parser.parseFromString(xmlPage,"text/xml");
         var entries = document.getElementsByTagName("entry");
 
+        console.log(entires);
         for(j = 0; j < entries.length; j++)
         {
           console.log(entires[j].title);
