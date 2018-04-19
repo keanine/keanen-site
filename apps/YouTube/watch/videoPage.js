@@ -268,10 +268,9 @@
         xmlDoc = parser.parseFromString(xmlPage,"text/xml");
         var entries = document.getElementsByTagName("entry");
 
-        console.log(entries);
         for(j = 0; j < entries.length; j++)
         {
-          console.log(entries[j].title);
+          console.log(entries[j].title.childNodes[0].nodeValue);
         }
         //READXML(xmlPage + response.items[i].id);
       }
