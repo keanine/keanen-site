@@ -266,7 +266,7 @@
         var xmlPage = "https://www.youtube.com/feeds/videos.xml?channel_id=" + response.items[i].snippet.resourceId.channelId;
         //console.log(xmlPage);
         xmlDoc = parser.parseFromString(xmlPage,"text/xml");
-        var entries = document.getElementsByTagName("entry");
+        var entries = xmlDoc.getElementsByTagName("entry");
         console.log(entries.length);
         for(j = 0; j < entries.length; j++)
         {
