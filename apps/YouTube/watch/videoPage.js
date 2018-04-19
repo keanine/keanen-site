@@ -261,7 +261,7 @@
       for (i = 0; i < response.items.length; i++)
       {
         var xmlPage = "https://www.youtube.com/feeds/videos.xml?channel_id=";
-        console.log(xmlPage + response.items[i].id);
+        console.log(xmlPage + response.items[i].snippet.channelId);
         //READXML(xmlPage + response.items[i].id);
       }
 
