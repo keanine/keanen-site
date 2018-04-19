@@ -265,20 +265,44 @@
       {
         var xmlPage = "https://www.youtube.com/feeds/videos.xml?channel_id=" + response.items[i].snippet.resourceId.channelId;
         //console.log(xmlPage);
-        xmlDoc = parser.parseFromString(xmlPage,"text/xml");
-        var entries = xmlDoc.getElementsByTagName("entry");
-        console.log(entries.length);
-        for(j = 0; j < entries.length; j++)
+        //xmlDoc = parser.parseFromString(xmlPage,"text/xml");
+        //var entries = xmlDoc.getElementsByTagName("entry");
+        //console.log(entries.length);
+        //for(j = 0; j < entries.length; j++)
+        //{
+        //  console.log(entries[j].title.childNodes[0].nodeValue);
+        //}
+
+        var feed = xmlPage;
+
+        $.ajax(feed,
         {
-          console.log(entries[j].title.childNodes[0].nodeValue);
-        }
-        //READXML(xmlPage + response.items[i].id);
+          accepts:
+          {
+                xml:"application/rss+xml"
+          },
+          dataType:"xml",
+          success:function(data) 
+          {
+            //Credit: http://stackoverflow.com/questions/10943544/how-to-parse-an-rss-feed-using-javascript
+
+            $(data).find("entry").each(function () { // or "item" or whatever suits your feed
+              var el = $(this);
+              console.log("------------------------");
+              console.log("title      : " + el.find("title").text());
+            });
+          }
+        });
       }
 
         ////CREATE LOAD MORE
         //if (response.nextPageToken)
         //CreateLoadNextPageButton("page-related", "loadNextRelatedPage", response.nextPageToken);
     });
+  }
+
+  function XMLRSSWHATEVER(feed)
+  {  
   }
 
   function buildApiRequest(requestMethod, path, params, identifier, properties) {
