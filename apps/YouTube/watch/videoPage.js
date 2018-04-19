@@ -253,6 +253,19 @@
       });
   }
 
+  function executeSubFeedRequest(request) {
+    request.execute(function(response) {
+      console.log("SUB FEED");
+      console.log(response);
+
+
+
+        ////CREATE LOAD MORE
+        //if (response.nextPageToken)
+        //CreateLoadNextPageButton("page-related", "loadNextRelatedPage", response.nextPageToken);
+    });
+  }
+
   function buildApiRequest(requestMethod, path, params, identifier, properties) {
     params = removeEmptyParams(params);
     var request;
@@ -292,6 +305,10 @@
     {
       executeVideoRequest(request);
     }
+    if(identifier == "SubFeed")
+    {
+      executeSubFeedRequest(request);
+    }
   }
 
   /***** END BOILERPLATE CODE *****/
@@ -321,6 +338,12 @@ buildApiRequest('GET',
                  'part': 'snippet,statistics'},
                  "VideoInfo");
 
+buildApiRequest('GET',
+                '/youtube/v3/subscriptions',
+                {'mine': 'true',
+                'part': 'snippet,contentDetails',
+                'maxResults': '50'},
+                'SubFeed');
   }
 
   function loadNextRelatedPage(token)
@@ -463,8 +486,7 @@ function FormatNumberData(input)
 function FormatYoutubeDate(input)
 {
   const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
-"Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
-];
+"Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
   var day = input[8] + input[9];
   var month = monthNames[(input[5] + input[6]) - 1];
@@ -472,6 +494,12 @@ function FormatYoutubeDate(input)
 
   var output = day + " " + month + " " + year;
   return output;
+}
+
+function GetSubFeed()
+{
+
+  
 }
 
 function CreateRelatedVideo(elementId, thumbnail, title, channel, url, code)
