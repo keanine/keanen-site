@@ -258,10 +258,20 @@
       console.log("SUB FEED");
       console.log(response);
 
+      var parser = new DOMParser();
+      var xmlDoc;
+
       for (i = 0; i < response.items.length; i++)
       {
-        var xmlPage = "https://www.youtube.com/feeds/videos.xml?channel_id=";
-        console.log(xmlPage + response.items[i].snippet.resourceId.channelId);
+        var xmlPage = "https://www.youtube.com/feeds/videos.xml?channel_id=" + response.items[i].snippet.resourceId.channelId;
+        //console.log(xmlPage);
+        xmlDoc = parser.parseFromString(xmlPage,"text/xml");
+        var entries = document.getElementsByTagName("entry");
+
+        for(j = 0; j < entries.length; j++)
+        {
+          console.log(entires[j].title);
+        }
         //READXML(xmlPage + response.items[i].id);
       }
 
