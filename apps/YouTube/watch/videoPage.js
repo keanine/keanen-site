@@ -236,8 +236,8 @@
         //apply
         document.getElementById("description").innerHTML += description;
 
-        document.getElementById("LikeCount").innerHTML = response.items[0].statistics.likeCount;
-        document.getElementById("DislikeCount").innerHTML = response.items[0].statistics.dislikeCount;
+        document.getElementById("LikeCount").innerHTML = FormatNumberData(response.items[0].statistics.likeCount);
+        document.getElementById("DislikeCount").innerHTML = FormatNumberData(response.items[0].statistics.dislikeCount);
         //response.items[0].statistics.commentCount
         //response.items[0].statistics.viewCount
     
@@ -433,6 +433,31 @@ function searchVideos()
    'type': 'video',
   'maxResults': '20'},
     'SearchResults');
+}
+
+function FormatNumberData(input)
+{
+  var output = input.toString();
+  if(output.length > 3 && output.length < 7)
+  {
+    var temp = output.substring(0, output.length - 3);
+    if(temp.length < 2)
+    {
+      temp = temp + "." + output[temp.length];
+    }
+    output = temp + "K";
+  }
+  else if (output.length > 6)
+  {
+    var temp = output.substring(0, output.length - 6);
+    if(temp.length < 2)
+    {
+      temp = temp + "." + output[temp.length];
+    }
+    output = temp + "M";
+  }
+
+  return output;
 }
 
 function CreateRelatedVideo(elementId, thumbnail, title, channel, url, code)
