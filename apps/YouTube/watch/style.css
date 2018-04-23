@@ -238,6 +238,9 @@ a
     cursor: pointer;
 }
 
+a:link { color: #0000EE; }
+a:visited { color: #551A8B; }
+
 #SubButton
 {
     float: right;
