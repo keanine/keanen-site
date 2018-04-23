@@ -579,8 +579,9 @@ function ClickVideo(code)
   var html = document.getElementsByTagName('html')[0];
   document.getElementById("videoIframe").src = "https://www.youtube.com/embed/" + vidID + "?autoplay=1&rel=0";
 
-  var targetUrl = "www.keanencollins.co.uk/apps/YouTube/watch?v=" + vidID;
-  window.history.pushState({url: "" + targetUrl + ""}, "YouTube Lite", targetUrl);
+  var targetUrl = "?v=" + vidID;
+  window.history.replaceState({url: "" + targetUrl + ""}, "YouTube Lite", targetUrl);
+  //window.history.pushState();
 
   buildApiRequest('GET',
                   '/youtube/v3/search',
