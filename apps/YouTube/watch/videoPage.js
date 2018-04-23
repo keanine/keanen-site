@@ -594,8 +594,8 @@ function ClickVideo(code)
                    "VideoInfo");
   
   var targetUrl = "?v=" + vidID;
-  //window.history.replaceState({url: "" + targetUrl + ""}, "YouTube Lite", targetUrl);
-  window.history.pushState({url: "" + targetUrl + ""}, "YouTube Lite", targetUrl);
+  window.history.replaceState({url: "" + targetUrl + ""}, "YouTube Lite", targetUrl);
+  //window.history.pushState({url: "" + targetUrl + ""}, "YouTube Lite", targetUrl);
 }
 
 function SetVidID()
