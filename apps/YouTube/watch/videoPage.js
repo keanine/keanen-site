@@ -580,8 +580,8 @@ function ClickVideo(code)
   document.getElementById("videoIframe").src = "https://www.youtube.com/embed/" + vidID + "?autoplay=1&rel=0";
 
   var targetUrl = "?v=" + vidID;
-  window.history.replaceState({url: "" + targetUrl + ""}, "YouTube Lite", targetUrl);
-  //window.history.pushState();
+  //window.history.replaceState({url: "" + targetUrl + ""}, "YouTube Lite", targetUrl);
+  window.history.pushState({url: "" + targetUrl + ""}, "YouTube Lite", targetUrl);
 
   buildApiRequest('GET',
                   '/youtube/v3/search',
