@@ -112,11 +112,14 @@ a
 
 #channelInfo
 {
-    /*background-color: #232323;*/
     background-color: #1a1a1a;
+/*    border-bottom: #232323 1px solid;*/
     height: 50px;
     line-height: 50px;
     overflow: hidden;
+    /*width:98%;*/
+    padding-left:1%;
+    padding-right:1%;
 
 }
 
@@ -197,13 +200,13 @@ a
 #LikeCount
 {
     float: right;
-    max-width: 40px;
+    width: 25px;
 }
 
 #DislikeCount
 {
     float: right;
-    max-width: 40px;
+    width: 25px;
 }
 
 #LikeButton
@@ -223,7 +226,7 @@ a
     text-align: right;
     margin-top: 10px;
     margin-bottom: 8px;
-    margin-left: 10px;
+    margin-left: 5px;
     margin-right: 5px;
     height: 32px;
     transform: rotate(180deg);
