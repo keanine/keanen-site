@@ -537,7 +537,7 @@ function FormatYoutubeDate(input)
 
 function FormatTextAddHref(text)
 {
-  var split = text.toString().split(' ');
+  var split = text.toString().split(' ').join(',').split('\n');
   var combined;
 
   for (i = 0; i < split.length; i++)
