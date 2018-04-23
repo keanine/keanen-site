@@ -234,7 +234,7 @@
         //if begins with http, use array[i].link(array[i])
         //combine string
         //apply
-        document.getElementById("description").innerHTML += description;
+        document.getElementById("description").innerHTML += FormatTextAddHref(description);
 
         document.getElementById("LikeCount").innerHTML = FormatNumberData(response.items[0].statistics.likeCount);
         document.getElementById("DislikeCount").innerHTML = FormatNumberData(response.items[0].statistics.dislikeCount);
@@ -535,6 +535,22 @@ function FormatYoutubeDate(input)
   return output;
 }
 
+function FormatTextAddHref(text)
+{
+  var split = text.toString().split(' ');
+  var combined;
+
+  for (i = 0; i < split.length; i++)
+  {
+    if (split[i].startsWith("http://") || split[i].startsWith("https://"))
+    {
+      split[i] = "<a href='" + split[i] + "'>" + split[i] + "</a>";
+    }
+    combined += split[i] + " ";
+  }
+  return combined;
+}
+
 function GetSubFeed()
 {
 
@@ -594,7 +610,7 @@ function ClickVideo(code)
                    "VideoInfo");
   
   var targetUrl = "?v=" + vidID;
-  window.history.replaceState({url: "" + targetUrl + ""}, "YouTube Lite", targetUrl);
+  //window.history.replaceState({url: "" + targetUrl + ""}, "YouTube Lite", targetUrl);
   //window.history.pushState({url: "" + targetUrl + ""}, "YouTube Lite", targetUrl);
 }
 
