@@ -200,13 +200,15 @@ a
 #LikeCount
 {
     float: right;
-    width: 25px;
+    min-width: 25px;
+    max-width: 30px;
 }
 
 #DislikeCount
 {
     float: right;
-    width: 25px;
+    min-width: 25px;
+    max-width: 30px;
 }
 
 #LikeButton
