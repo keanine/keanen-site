@@ -544,7 +544,7 @@ function FormatTextAddHref(text)
   {
     if (split[i].startsWith("http://") || split[i].startsWith("https://"))
     {
-      split[i] = "<a href='" + split[i] + "'>" + split[i] + "</a>";
+      split[i] = "<a href='" + split[i] + "' target='_blank'>" + split[i] + "</a>";
     }
     combined += split[i] + " ";
   }
