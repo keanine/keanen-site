@@ -113,6 +113,29 @@ body
   position: relative; left: 0; top: 0;
 }
 
+.specialIconContainer
+{
+  position: relative; left: 0; top: 0;
+  //left: 265px;
+  width: 200px;
+  margin-left: 5px;
+  margin-right:5px;
+}
+
+.specialIconMain
+{
+	position: relative; left: 0; bottom: 0;
+	margin-bottom: 20px;
+	width:200px;
+}
+
+.specialIconOverlay
+{
+	position: absolute; left: 0; bottom: 0;
+	margin-bottom: 23px;
+	width:200px;
+}
+
 .secretProject
 {
   width: 100%;

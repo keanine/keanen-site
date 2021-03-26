@@ -13,6 +13,26 @@
       margin-right: 5px;
     }
 
+	.specialIconContainer
+	{
+		position: relative; left: 0; top: 0;
+		width: 180px;
+	}
+	
+	.specialIconMain
+	{
+		position: relative; left: 0; bottom: 0;
+		margin-bottom: 10px;
+		width:180px;
+	}
+	
+	.specialIconOverlay
+	{
+		position: absolute; left: 0; bottom: 0;
+		margin-bottom: 13px;
+		width:180px;
+	}
+
     .secretProject
     {
       width: 100%;
@@ -88,6 +108,26 @@
     width:250px;
     margin-bottom: 10px;
   }
+
+	.specialIconContainer
+	{
+		position: relative; left: 0; top: 0;
+		width: 250px;
+	}
+	
+	.specialIconMain
+	{
+		position: relative; left: 0; bottom: 0;
+		margin-bottom: 10px;
+		width:250px;
+	}
+	
+	.specialIconOverlay
+	{
+		position: absolute; left: 0; bottom: 0;
+		margin-bottom: 13px;
+		width:250px;
+	}
 
   .secretProject
   {
