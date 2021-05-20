@@ -1,6 +1,4 @@
   var vidID = "";
-  
-  /***** START BOILERPLATE CODE: Load client library, authorize user. *****/
 
   // Global variables for GoogleAuth object, auth status.
   var GoogleAuth;
@@ -19,7 +17,7 @@
     // 'scope' field specifies space-delimited list of access scopes
 
     gapi.client.init({
-        'clientId': '132484806299-sjjkhh07be2h6s6l1h1uuvl7lrudh1s5.apps.googleusercontent.com',
+        'clientId': '1050686394108-90a1bmkpjb9ujpps5lgk5v7a41e1mh8v.apps.googleusercontent.com',
         'discoveryDocs': ['https://www.googleapis.com/discovery/v1/apis/youtube/v3/rest'],
         'scope': 'https://www.googleapis.com/auth/youtube.force-ssl https://www.googleapis.com/auth/youtubepartner'
     }).then(function () {
@@ -349,8 +347,6 @@
       executeSubFeedRequest(request);
     }
   }
-
-  /***** END BOILERPLATE CODE *****/
 
   
   function defineRequest() {
