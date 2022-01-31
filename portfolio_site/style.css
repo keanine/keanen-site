@@ -29,6 +29,7 @@ body
 
 .content
 {
+    min-width: none;
     max-width: 950px;
     margin: auto;
 }
@@ -125,7 +126,7 @@ h3
 
 .card_projecticon
 {
-    width: 250px;
+    width: 320px;
     display: block;
 
     border-radius: 6px;

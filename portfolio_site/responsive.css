@@ -1,0 +1,19 @@
+@media only screen and (max-width: 600px)
+{
+    .logo
+    {
+        width: 250px;
+        margin: auto;
+        display: block;
+    }
+
+    h1
+    {
+        margin: auto;
+        display: block;
+        text-align: center;
+        font-size: 80px;
+        line-height: 0.9em;
+        margin-top: 30px;
+    }
+}
