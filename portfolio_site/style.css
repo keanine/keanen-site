@@ -20,6 +20,11 @@ body
     background-attachment: fixed;
 }
 
+.top_break
+{
+    height: 200px;
+}
+
 .logo
 {
     width: 200px;
