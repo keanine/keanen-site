@@ -4,6 +4,11 @@
 3d3f44
 */
 
+html
+{
+    scroll-behavior: smooth;
+}
+
 body
 {
     color: #fff;
@@ -52,6 +57,8 @@ body
 
     padding-left: 300px;
     padding-right: 300px;
+    
+    scroll-margin-block-start: 120px;
 }
 
 .gallery_strip
@@ -273,10 +280,33 @@ h3
     height: 50px;
 }
 
+em
+{
+    font-style: normal;
+    color: #e74c3c;
+}
+
+/* L is Real */
+#lisreal_strip
+{
+    background-color: #4a5462;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    border-color: green;
+    border-width: 3px 0px 3px 0px;
+    border-style: solid;
+
+    height: 700px;
+}
+
+#lisreal_strip em
+{
+    color: #10af10;
+}
 
 /* Soundwave */
 
-.soundwave_strip
+#soundwave_strip
 {
     background-color: #1a173e;
     font-family: 'Montserrat', sans-serif;
@@ -288,10 +318,9 @@ h3
     height: 700px;
 }
 
-em
+#soundwave_strip em
 {
     color: #cf00ff;
-    font-style: normal;
 }
 
 #soundwave_logo
