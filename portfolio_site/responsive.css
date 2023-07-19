@@ -1,0 +1,24 @@
+/* @media only screen and (orientation: landscape) */
+
+@media only screen and (max-width: 600px)
+{
+    h1
+    {
+        font-size: 55px;
+    }
+
+    h2
+    {
+        font-size: 20px;
+    }
+
+    .top_break
+    {
+        height: 120px;
+    }
+
+    .card_projecticon
+    {
+        width: 340px;
+    }
+}
