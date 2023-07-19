@@ -258,6 +258,21 @@ h3
     height: 400px;
 }
 
+.project_hotbar
+{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.project_hotbar_project
+{
+    text-align: center;
+    margin: 5px;
+
+    width: 50px;
+    height: 50px;
+}
+
 
 /* Soundwave */
 
