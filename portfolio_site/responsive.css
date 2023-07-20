@@ -6,6 +6,8 @@
     .new_media
     {
         width: 80%;
+        height: auto;
+        aspect-ratio: 16 / 9;
     }
 }
 
