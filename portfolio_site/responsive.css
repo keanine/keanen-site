@@ -2,6 +2,10 @@
 
 @media only screen and (max-width: 600px)
 {
+}
+
+@media only screen and (max-width: 1000px)
+{
     h1
     {
         font-size: 55px;
@@ -20,5 +24,35 @@
     .card_projecticon
     {
         width: 340px;
+    }
+    
+    .new_strip_box
+    {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .new_text
+    {
+        width: auto;
+    }
+
+    .new_text_left
+    {
+        float: none;
+    }
+    
+    .new_text_right
+    {
+        float: none;
+    }
+
+    .new_media_left
+    {
+        float: none;
+    }
+    .new_media_right
+    {
+        float: none;
     }
 }
