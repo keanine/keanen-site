@@ -162,7 +162,7 @@ h2
 h3
 {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     margin: 20 20 15 20;
     --border-bottom: solid 3px #aeaeae;
 }
@@ -415,10 +415,31 @@ em
 }
 
 /* New */
+#AboutMe
+{
+    background-color: #11111199;
+    border-color: #FFFFFF;
+}
+#AboutMe em
+{
+    color: #e74c3c;
+}
+
+
+#RentalDerby
+{
+    background-color: #32190299;
+    border-color: #d86c04;
+}
+#RentalDerby em
+{
+    color: #d86c04;
+}
+
 
 #SoundWave
 {
-    background-color: #1a173e;
+    background-color: #1a173e99;
     border-color: #b800ff;
 }
 #SoundWave em
@@ -428,8 +449,8 @@ em
 
 #LIsReal
 {
-    background-color: #4a5462;
-    border-color: green;
+    background-color: #142a1499;
+    border-color: #10af10;
 }
 #LIsReal em
 {
@@ -481,6 +502,13 @@ em
     text-align: right;
 }
 
+.new_strip_box_centered
+{
+    float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .new_strip_box2
 {
     text-align: left;
@@ -521,4 +549,9 @@ em
 {
     float: left;
     clear: left;
+}
+
+.new_text_centered
+{
+    max-width: 650px;
 }
