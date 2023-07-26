@@ -457,6 +457,26 @@ em
     color: #10af10;
 }
 
+#LifeLynk
+{
+    background-color: #11111199;
+    border-color: #CCCCCC;
+}
+#LifeLynk em
+{
+    color: #fe2000;
+}
+
+#ForgeEngine
+{
+    background-color: #20222e99;
+    border-color: #3f4359;
+}
+#ForgeEngine em
+{
+    color: #ed9b40;
+}
+
 .new_strip
 {
     scroll-margin-block-start: 120px;
