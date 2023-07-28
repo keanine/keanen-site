@@ -251,6 +251,7 @@ h3
 {
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 #large_card
@@ -556,19 +557,21 @@ em
 {
     margin: 30px auto 30px auto;
     max-width: 450px;
-    text-align: left;
+    /* text-align: left; */
 }
 
 .new_text_left
 {
     float: right;
     clear: right;
+    text-align: left;
 }
 
 .new_text_right
 {
     float: left;
     clear: left;
+    text-align: left;
 }
 
 .new_text_centered

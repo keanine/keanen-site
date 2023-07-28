@@ -13,6 +13,11 @@
 
 @media only screen and (max-width: 1000px)
 {
+    .new_text
+    {
+        font-size: 1.2em;
+    }
+
     h1
     {
         font-size: 55px;
