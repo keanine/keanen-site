@@ -3,7 +3,7 @@
 @media only screen and (max-width: 480px)
 {
 
-    .new_media
+    .media
     {
         width: 90%;
         height: auto;
@@ -13,7 +13,7 @@
 
 @media only screen and (max-width: 1000px)
 {
-    .new_text
+    .text
     {
         font-size: 1.2em;
     }
@@ -38,37 +38,37 @@
         width: 340px;
     }
 
-    .new_strip_box
+    .strip_box
     {
         width: 100%;
         text-align: center;
     }
     
-    .new_text
+    .text
     {
         width: auto;
     }
 
-    .new_text_left
+    .text_left
     {
         float: none;
     }
     
-    .new_text_right
+    .text_right
     {
         float: none;
     }
 
-    .new_text_centered
+    .text_centered
     {
         max-width: 450px;
     }
 
-    .new_media_left
+    .media_left
     {
         float: none;
     }
-    .new_media_right
+    .media_right
     {
         float: none;
     }
