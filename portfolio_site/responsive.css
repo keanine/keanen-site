@@ -2,7 +2,6 @@
 
 @media only screen and (max-width: 480px)
 {
-
     .media
     {
         width: 90%;
@@ -36,6 +35,11 @@
     .card_projecticon
     {
         width: 340px;
+    }
+
+    .strip
+    {
+        scroll-margin-block-start: 100px;
     }
 
     .strip_box
@@ -76,10 +80,5 @@
     .project_logo
     {
         width: 300px;
-    }
-
-    .strip
-    {
-        scroll-margin-block-start: 100px;
     }
 }
