@@ -59,6 +59,11 @@
         float: none;
     }
 
+    .new_text_centered
+    {
+        max-width: 450px;
+    }
+
     .new_media_left
     {
         float: none;
@@ -66,5 +71,10 @@
     .new_media_right
     {
         float: none;
+    }
+
+    .project_logo
+    {
+        width: 300px;
     }
 }

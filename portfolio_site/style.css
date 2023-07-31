@@ -286,6 +286,14 @@ em
     color: #e74c3c;
 }
 
+.project_logo
+{
+    display: block;
+    width: 400px;
+    margin: auto;
+    padding-top: 50px;
+}
+
 /* L is Real */
 #lisreal_strip
 {
@@ -321,14 +329,6 @@ em
 #soundwave_strip em
 {
     color: #cf00ff;
-}
-
-#soundwave_logo
-{
-    display: block;
-    width: 400px;
-    margin: auto;
-    padding-top: 50px;
 }
 
 #padlock_container
@@ -573,7 +573,7 @@ em
 
 .new_text_centered
 {
-    max-width: 650px;
+    max-width: 850px;
     padding: 0px 15px 0px 15px;
     text-align: center;
     margin-bottom: 5px;
