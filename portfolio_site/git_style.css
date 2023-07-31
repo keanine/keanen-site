@@ -1,0 +1,78 @@
+.github_link:hover
+{
+    color:black;
+}
+
+.github_link:visited
+{
+    color:black;
+}
+
+.github
+{
+    width: 300px;
+    height: 80px;
+
+    border: 1px solid #DDD;
+    border-radius: 6px;
+    /* background-color: white; */
+    background-color: #F8F8F8;
+    /* overflow:auto; */
+    /* box-shadow: 3px 3px 3px #00000022; */
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    cursor: pointer;
+}
+
+.no_drag
+{
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.github_icon
+{
+    /* background-color: red; */
+    filter: invert(1);
+
+    float: left;
+
+    width: 40px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.git_project_name
+{
+    /* background-color: green; */
+
+    float: left;
+
+    width: 100px;
+    margin-top: 18px;
+    margin-left: 10px;
+
+    font-weight: bold;
+    font-size: 1em;
+}
+
+.git_project_desc
+{
+    /* background-color: whitesmoke; */
+
+    float: left;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+
+    width: 200px;
+    height: 32px;
+    margin-top: 0px;
+    margin-left: 10px;
+
+    font-size: 0.85em;
+    color: #222;
+
+}

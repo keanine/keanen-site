@@ -574,4 +574,12 @@ em
 .new_text_centered
 {
     max-width: 650px;
+    padding: 0px 15px 0px 15px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.iframe_seemless
+{
+    border: 0px;
 }
