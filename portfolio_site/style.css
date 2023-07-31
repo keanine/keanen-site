@@ -405,6 +405,11 @@ em
     text-align: center;
 }
 
+.download_section a:link
+{
+    color: white;
+}
+
 .download_section a:hover
 {
     color: white;
