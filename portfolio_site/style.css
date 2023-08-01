@@ -385,13 +385,15 @@ em
     aspect-ratio: 16 / 9;
 }
 
-.youtube_hover
+#video_container
 {
-    width: 17%;
-    position: absolute;
-    right: 50%;
-    bottom: 50%;
-    transform: translate(50%,50%);
+    cursor: pointer;
+}
+
+#video_container:hover .youtube_hover
+{
+    /* transform: translate(50%,50%) scale(1.05); */
+    filter: drop-shadow(4px 4px 3px rgb(0 0 0 / 0.4));
 }
 
 .youtube_thumbnail
@@ -401,6 +403,17 @@ em
     right: 50%;
     bottom: 50%;
     transform: translate(50%,50%);
+}
+
+.youtube_hover
+{
+    width: 17%;
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    /* transform: translate(50%,50%) scale(1); */
+    transform: translate(50%,50%);
+    filter: drop-shadow(3px 3px 2px rgb(0 0 0 / 0.4));
 }
 
 .media_video

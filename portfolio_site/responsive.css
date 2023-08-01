@@ -81,4 +81,12 @@
     {
         width: 300px;
     }
+
+    @media (orientation: landscape) {
+        #gallery_media
+        {
+            width: auto;
+            height: 70%;
+        }
+    }
 }
