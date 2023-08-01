@@ -1,10 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const template = document.getElementById('template_video');
-    var video_elements = document.getElementsByClassName("media_video_element");
+    const template_left = document.getElementById('template_video_left');
+    const template_right = document.getElementById('template_video_right');
+    var video_elements_left = document.getElementsByClassName("media_video_left");
+    var video_elements_right = document.getElementsByClassName("media_video_right");
     
-    console.log(video_elements);
-    for (var i = 0; i < video_elements.length; i++) {
-        create_video_button(template, video_elements.item(i).id);
+    for (var i = 0; i < video_elements_left.length; i++) {
+        create_video_button(template_left, video_elements_left.item(i).id);
+    }
+    for (var i = 0; i < video_elements_right.length; i++) {
+        create_video_button(template_right, video_elements_right.item(i).id);
     }
 });
 

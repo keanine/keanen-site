@@ -437,7 +437,7 @@ em
 .download_icon
 {
     float:left;
-    height: 40px;
+    width: 40px;
 }
 
 .download_text

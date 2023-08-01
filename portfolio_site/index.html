@@ -16,8 +16,14 @@
   
     </head>
     <body class="background" onload="initialize_js();">
-        <template id="template_video">
+        <template id="template_video_left">
             <div id="video_container" class="media media_left outline media_video">
+                <img id="video_thumbnail" class="youtube_thumbnail" src="https://img.youtube.com/vi/i31BTBffe8I/maxresdefault.jpg">
+                <img src='resources/icons/youtube_hover.svg' class="youtube_hover">
+            </div>
+        </template>
+        <template id="template_video_right">
+            <div id="video_container" class="media media_right outline media_video">
                 <img id="video_thumbnail" class="youtube_thumbnail" src="https://img.youtube.com/vi/i31BTBffe8I/maxresdefault.jpg">
                 <img src='resources/icons/youtube_hover.svg' class="youtube_hover">
             </div>
@@ -79,7 +85,7 @@
                         members of the team such as the camera, the game loop and sound systems as well as bug fixes and modifications to other systems where needed.
                     </p>
                     
-                    <div class="media_video_element" id="ijMJZMGN9uo"></div>
+                    <div class="media_video_left" id="ijMJZMGN9uo"></div>
                     <!-- <iframe src="video_template.html"  class="media media_left outline media_video" frameborder="0" scrolling="no"></iframe> -->
                     <!-- <div class="media media_left outline media_video" onclick="open_gallery('i31BTBffe8I');">
                         <img width="100%" src="https://img.youtube.com/vi/i31BTBffe8I/maxresdefault.jpg">
@@ -102,13 +108,19 @@
                 </div>
 
                 <div class="download_section">
-                    <a href="http://www.google.com">
+                    <a href="http://www.google.com" target="_blank">
                         <div class="download_group">
                             <img class="download_icon" src="resources/icons/download.svg" alt="" />
                             <div class="download_text">Download</div>
                         </div>
                     </a>
-                    <a href="http://www.google.com">
+                    <a href="http://www.google.com" target="_blank">
+                        <div class="download_group">
+                            <img class="download_icon" src="resources/icons/itchio-logo-textless-white.svg" alt="" />
+                            <div class="download_text">Play on itch.io</div>
+                        </div>
+                    </a>
+                    <a href="http://www.google.com" target="_blank">
                         <div class="download_group">
                             <img class="download_icon" src="resources/icons/file-document.svg" alt="" />
                             <div class="download_text">Source Code</div>
@@ -136,7 +148,7 @@
                         from the game.
                     </p>
 
-                    <div class="media_video_element" id="i31BTBffe8I"></div>
+                    <div class="media_video_left" id="i31BTBffe8I"></div>
                 </div>
                 <div class="strip_box strip_box2">
                     <img class="media media_right outline" src="resources/projects/2022_soundwave/screenshot.png" />
@@ -154,6 +166,15 @@
                         board and scheduled time to work together in the evenings. In the following month we made considerable
                         progress, and a portion of that time was spent polishing and bug-fixing before release.
                     </p>
+                </div>
+
+                <div class="download_section">
+                    <a href="http://team-quest.itch.io/soundwave" target="_blank">
+                        <div class="download_group">
+                            <img class="download_icon" src="resources/icons/itchio-logo-textless-white.svg" alt="" />
+                            <div class="download_text">Play on itch.io</div>
+                        </div>
+                    </a>
                 </div>
             </div>
 
@@ -177,11 +198,11 @@
                         of C practices from University I was able to create this project with only a little resistance!
                     </p>
 
-                    <div class="media_video_element" id="WhPowJWFfUg"></div>
+                    <div class="media_video_left" id="WhPowJWFfUg"></div>
                     <!-- <iframe class="media media_left outline" src="https://www.youtube.com/embed/WhPowJWFfUg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                 </div>
                 <div class="strip_box strip_box2">
-                    <div class="media_video_element" id="dLv85VsGgI8"></div>
+                    <div class="media_video_right" id="dLv85VsGgI8"></div>
                     <!-- <iframe class="media media_right outline" src="https://www.youtube.com/embed/dLv85VsGgI8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                     <p class="text text_right">
                         I gained a fair amount of traction with this mod, as of the time of writing the release video is sitting at over 12,000 
@@ -202,9 +223,15 @@
                     24 coins in a level and set the life counter to 1, then go to the castle courtyard and talk to the Boo in the fountain. Or alternatively, just beat the 
                     game with 120 stars!
                 </p>
-                <p class="text text_centered" style="margin-top: 20px; margin-bottom: 20px;">
-                    <a href="https://cdn.discordapp.com/attachments/716459185230970880%2F754856963980132473/L_is_real_2401_by_keanine.patch">Direct Download</a>
-                </p>
+                
+                <div class="download_section">
+                    <a href="ttps://cdn.discordapp.com/attachments/716459185230970880%2F754856963980132473/L_is_real_2401_by_keanine.patch">
+                        <div class="download_group">
+                            <img class="download_icon" src="resources/icons/download.svg" alt="" />
+                            <div class="download_text">Download</div>
+                        </div>
+                    </a>
+                </div>
             </div>
 
 <!-- LIFELYNK -->
@@ -227,7 +254,7 @@
                         critiques of the game including its high difficulty, its lack of tutorial and the fast reflexes required to trigger the active reload mechanic.
                     </p>
 
-                    <div class="media_video_element" id="6HNOS_I2rtQ"></div>
+                    <div class="media_video_left" id="6HNOS_I2rtQ"></div>
                     <!-- <iframe class="media media_left outline" src="https://www.youtube.com/embed/6HNOS_I2rtQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                 </div>
                 <div class="strip_box strip_box2">
@@ -264,11 +291,11 @@
                         structure and Entity-Component-System.
                     </p>
 
-                    <div class="media_video_element" id="kvBLclwK0go"></div>
+                    <div class="media_video_left" id="kvBLclwK0go"></div>
                     <!-- <iframe class="media media_left outline" src="https://www.youtube.com/embed/kvBLclwK0go" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                 </div>
                 <div class="strip_box strip_box2">
-                    <div class="media_video_element" id="eLNtwSZR-vU"></div>
+                    <div class="media_video_right" id="eLNtwSZR-vU"></div>
                     <!-- <iframe class="media media_right outline" src="https://www.youtube.com/embed/eLNtwSZR-vU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                     <p class="text text_right">
                         The front-end was designed with C# WPF and uses CLI to access the Engine Core which was developed in C++ using DirectX 11. 
