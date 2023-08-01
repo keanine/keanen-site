@@ -426,7 +426,7 @@ em
 {
     text-align: center;
     height: 40px;
-    width: 160px;
+    width: 150px;
     margin-left: 10px;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -448,7 +448,7 @@ em
     height: 40px;
     line-height: 40px;
     text-align: left;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .download_section
