@@ -1,4 +1,3 @@
-
 function initialize_js() {
     // var intervalId = window.setInterval(function(){
     //     update();

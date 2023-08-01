@@ -1,0 +1,38 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const template = document.getElementById('template_video');
+    var video_elements = document.getElementsByClassName("media_video_element");
+    
+    console.log(video_elements);
+    for (var i = 0; i < video_elements.length; i++) {
+        create_video_button(template, video_elements.item(i).id);
+    }
+});
+
+function create_video_button(template, video_id)
+{
+    var container = document.getElementById(video_id);
+
+    const clone = template.content.cloneNode(true);
+    container.appendChild(clone);
+
+    container.querySelector("#video_container").addEventListener("click", function() { open_gallery(video_id); });
+    // container.querySelector("#video_thumbnail").setAttribute("src", "https://img.youtube.com/vi/" + video_id + "/maxresdefault.jpg");
+    container.querySelector("#video_thumbnail").setAttribute("src", "https://img.youtube.com/vi/" + video_id + "/hqdefault.jpg");
+}
+
+function exit_gallery()
+{
+    var gallery = document.getElementById('gallery');
+    gallery.hidden = true;
+    var gallery_media = document.getElementById('gallery_media');
+    gallery_media.setAttribute("src", "about:blank");
+}
+
+function open_gallery(video_id)
+{
+    var gallery = document.getElementById('gallery');
+    gallery.hidden = false;
+
+    var gallery_media = document.getElementById('gallery_media');
+    gallery_media.setAttribute("src", "https://www.youtube.com/embed/" + video_id + "?autoplay=1");
+}

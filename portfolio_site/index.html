@@ -1,5 +1,6 @@
 <html>
     <head>
+        <script type="text/javascript" src="main.js"></script>
         <script type="text/javascript" src="interactivity.js"></script>
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +16,13 @@
   
     </head>
     <body class="background" onload="initialize_js();">
+        <template id="template_video">
+            <div id="video_container" class="media media_left outline media_video">
+                <img id="video_thumbnail" width="100%" class="youtube_thumbnail" src="https://img.youtube.com/vi/i31BTBffe8I/maxresdefault.jpg">
+                <img src='resources/icons/youtube_hover.svg' class="youtube_hover">
+            </div>
+        </template>
+
         <div>
             <div class="top_break"></div>
             <img src="resources/icon_200px.png" class="logo" />
@@ -70,8 +78,13 @@
                         and worked where needed. My primary focus was on car collisions and dynamic model deformation, however I also worked on other aspects alongside other 
                         members of the team such as the camera, the game loop and sound systems as well as bug fixes and modifications to other systems where needed.
                     </p>
-
-                    <iframe class="media media_left outline" src="https://www.youtube.com/embed/i31BTBffe8I" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                    <div class="media_video_element" id="ijMJZMGN9uo"></div>
+                    <!-- <iframe src="video_template.html"  class="media media_left outline media_video" frameborder="0" scrolling="no"></iframe> -->
+                    <!-- <div class="media media_left outline media_video" onclick="open_gallery('i31BTBffe8I');">
+                        <img width="100%" src="https://img.youtube.com/vi/i31BTBffe8I/maxresdefault.jpg">
+                        <img src='resources/icons/youtube_hover.svg' class="youtube_hover">
+                    </div> -->
                 </div>
                 <div class="strip_box strip_box2">
                     <img class="media media_right outline" src="resources/projects/rental_derby/screenshot.png" />
@@ -92,32 +105,16 @@
                     <a href="http://www.google.com">
                         <div class="download_group">
                             <img class="download_icon" src="resources/icons/download.svg" alt="" />
-                            <div class="download_text">
-                                Download
-                            </div>
+                            <div class="download_text">Download</div>
                         </div>
                     </a>
                     <a href="http://www.google.com">
                         <div class="download_group">
                             <img class="download_icon" src="resources/icons/file-document.svg" alt="" />
-                            <div class="download_text">
-                                Source Code
-                            </div>
+                            <div class="download_text">Source Code</div>
                         </div>
                     </a>
-                    <!-- <div class="download_text">test</div> -->
                 </div>
-                
-                <!-- <div class="strip_box strip_box_centered download_section">
-                    <a href="http://www.google.com">
-                        <img src="resources/icons/download.svg" alt="" class="download_icon" />
-                        Download Game
-                     </a>
-                    <a href="http://www.google.com">
-                        <img src="resources/icons/file-document.svg" alt="" class="download_icon" />
-                        Source Code
-                    </a>
-                </div> -->
             </div>
 			
 <!-- SOUNDWAVE -->
@@ -139,7 +136,7 @@
                         from the game.
                     </p>
 
-                    <iframe class="media media_left outline" src="https://www.youtube.com/embed/i31BTBffe8I" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="media_video_element" id="i31BTBffe8I"></div>
                 </div>
                 <div class="strip_box strip_box2">
                     <img class="media media_right outline" src="resources/projects/2022_soundwave/screenshot.png" />
@@ -180,10 +177,12 @@
                         of C practices from University I was able to create this project with only a little resistance!
                     </p>
 
-                    <iframe class="media media_left outline" src="https://www.youtube.com/embed/WhPowJWFfUg" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="media_video_element" id="WhPowJWFfUg"></div>
+                    <!-- <iframe class="media media_left outline" src="https://www.youtube.com/embed/WhPowJWFfUg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                 </div>
                 <div class="strip_box strip_box2">
-                    <iframe class="media media_right outline" src="https://www.youtube.com/embed/dLv85VsGgI8" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="media_video_element" id="dLv85VsGgI8"></div>
+                    <!-- <iframe class="media media_right outline" src="https://www.youtube.com/embed/dLv85VsGgI8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                     <p class="text text_right">
                         I gained a fair amount of traction with this mod, as of the time of writing the release video is sitting at over 12,000 
                         views and has a 97.2% like ratio. As well as this, a showcase of my mod by a channel called Unreal gained more than 70,000 views and 1300 likes 
@@ -228,7 +227,8 @@
                         critiques of the game including its high difficulty, its lack of tutorial and the fast reflexes required to trigger the active reload mechanic.
                     </p>
 
-                    <iframe class="media media_left outline" src="https://www.youtube.com/embed/6HNOS_I2rtQ" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="media_video_element" id="6HNOS_I2rtQ"></div>
+                    <!-- <iframe class="media media_left outline" src="https://www.youtube.com/embed/6HNOS_I2rtQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                 </div>
                 <div class="strip_box strip_box2">
                     <img class="media media_right outline" src="resources/projects/lifelynk/screenshot.png" />
@@ -264,10 +264,12 @@
                         structure and Entity-Component-System.
                     </p>
 
-                    <iframe class="media media_left outline" src="https://www.youtube.com/embed/kvBLclwK0go" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="media_video_element" id="kvBLclwK0go"></div>
+                    <!-- <iframe class="media media_left outline" src="https://www.youtube.com/embed/kvBLclwK0go" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                 </div>
                 <div class="strip_box strip_box2">
-                    <iframe class="media media_right outline" src="https://www.youtube.com/embed/eLNtwSZR-vU" title="YouTube video player" loading="lazy" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="media_video_element" id="eLNtwSZR-vU"></div>
+                    <!-- <iframe class="media media_right outline" src="https://www.youtube.com/embed/eLNtwSZR-vU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
                     <p class="text text_right">
                         The front-end was designed with C# WPF and uses CLI to access the Engine Core which was developed in C++ using DirectX 11. 
                         The engine can also create builds with an executable file. The demonstration video embedded shows off the Metroidvania 
@@ -280,6 +282,10 @@
             </div>
 
             <!--<div style="height: 600px;"></div>-->
+        </div>
+        
+        <div id="gallery" hidden="true" onclick="exit_gallery();">
+            <iframe id="gallery_media" src="about:blank" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
     </body>
     

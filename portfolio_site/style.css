@@ -321,6 +321,7 @@ em
     box-sizing: border-box;
     width: 480px;
     height: 270px;
+    display: inline-block;
 }
 .media_left
 {
@@ -363,6 +364,49 @@ em
 .iframe_seemless
 {
     border: 0px;
+}
+
+#gallery
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #000000AA;
+}
+#gallery_media
+{
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%,50%);
+    position: absolute;
+    width: 90%;
+    aspect-ratio: 16 / 9;
+}
+
+.youtube_hover
+{
+    width: 17%;
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%,50%);
+}
+
+.youtube_thumbnail
+{
+    width: 100%;
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%,50%);
+}
+
+.media_video
+{
+    position: relative;
+    overflow: hidden;
 }
 
 .download_group
