@@ -1,7 +1,8 @@
 
 body
 {
-    background-color: #111111;
+    /* background-color: #111111; */
+    background-color: #1f1f1f;
     color: #FFFFFF;
     font-family: 'Lato', sans-serif;
     margin: 0;
@@ -19,8 +20,13 @@ header
     line-height: 55px;
 
     padding-left: 20px;
+    padding-right: 10px;
     font-size: x-large;
     font-weight: bold;
+
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+    box-sizing: border-box;         /* Opera/IE 8+ */
 }
 
 #feed
@@ -38,7 +44,7 @@ header
     margin-right: auto;
     
     /* padding: 5px; */
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 5px;
 
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
@@ -52,7 +58,7 @@ header
 
     /* width: 500px; */
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
 
     /* margin-left: 20px;
     margin-right: 20px; */
@@ -133,10 +139,44 @@ header
     border-radius: 50px;
 }
 
+.profile_avatar
+{
+    float:right;
+    margin-top: 5px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
 .thank
 {
     height: 26px;
     float: right;
     margin-top: 12px;
     line-height: 30px;
+}
+
+#button_think
+{
+    float: right;
+
+    width: 100px;
+    height: 34px;
+    margin-top: 8px;
+    margin-right: 10px;
+    background-color: #6666FF;
+    border: 1px solid #4444AA;
+
+    border-radius: 5px;
+    line-height: 34px;
+    font-size: medium;
+    text-align: center;
+
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#button_think:hover
+{
+    background-color: #8888FF;
 }

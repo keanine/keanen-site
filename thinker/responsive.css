@@ -1,0 +1,22 @@
+@media only screen and (max-width: 768px)
+{
+    #feed
+    {
+        width: 100%;
+    }
+
+    .post_author
+    {
+        font-size: larger;
+    }
+
+    .post_content
+    {
+        font-size: large;
+    }
+
+    .post_date
+    {
+        font-size: medium;
+    }
+}
