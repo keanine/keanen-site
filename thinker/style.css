@@ -31,6 +31,12 @@ header
     transition: all 0.2s;
 }
 
+em
+{
+    text-decoration: none;
+    font-style: normal;
+}
+
 #feed
 {
     border-left: 1px solid #2a2a2a;
