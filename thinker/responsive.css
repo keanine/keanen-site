@@ -2,14 +2,14 @@
 {
     header
     {
-        height: 100px;
-        line-height: 110px;
+        height: 80px;
+        line-height: 90px;
         font-size: 2.5em;
     }
 
     #feed
     {
-        margin-top: 100px;
+        margin-top: 80px;
         width: 100%;
     }
 
@@ -31,16 +31,16 @@
     .profile_avatar
     {
         float:right;
-        margin-top: 20px;
+        margin-top: 15px;
         margin-right: 10px;
         width: auto;
-        height: 60px;
+        height: 50px;
         border-radius: 50px;
     }
 
     #button_think
     {
-        margin-top: 30px;
+        margin-top: 20px;
         margin-right: 20px;
         
         width: 120px;
