@@ -27,6 +27,8 @@ header
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
+    
+    transition: all 0.2s;
 }
 
 #feed
@@ -50,6 +52,7 @@ header
     -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
     -moz-box-sizing: border-box;    /* Firefox, other Gecko */
     box-sizing: border-box;         /* Opera/IE 8+ */
+    transition: all 0.2s;
 }
 
 .post
@@ -143,7 +146,7 @@ header
 {
     float:right;
     margin-top: 5px;
-    width: 40px;
+    width: auto;
     height: 40px;
     border-radius: 50px;
 }

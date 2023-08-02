@@ -1,7 +1,15 @@
 @media only screen and (max-width: 768px)
 {
+    header
+    {
+        height: 100px;
+        line-height: 110px;
+        font-size: 2.5em;
+    }
+
     #feed
     {
+        margin-top: 100px;
         width: 100%;
     }
 
@@ -18,5 +26,26 @@
     .post_date
     {
         font-size: medium;
+    }
+
+    .profile_avatar
+    {
+        float:right;
+        margin-top: 20px;
+        margin-right: 10px;
+        width: auto;
+        height: 60px;
+        border-radius: 50px;
+    }
+
+    #button_think
+    {
+        margin-top: 30px;
+        margin-right: 20px;
+        
+        width: 120px;
+        height: 40px;
+        
+        line-height: 40px;
     }
 }
