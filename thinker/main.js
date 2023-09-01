@@ -17,6 +17,7 @@ window.addEventListener("DOMContentLoaded", (event) => {
     posts.push(new Post(profiles[2], new Date("10/16/23 13:25"), "The Olympics should have a 'For Fun' section at the end of all the games so all the athletes can try different sports."));
     posts.push(new Post(profiles[1], new Date("04/14/23 08:00"), "Tall people are expected to use their reach to help shorter people, but if a tall person were to ask a short person to hand them something they dropped on the floor it'd be insulting."));
     posts.push(new Post(profiles[0], new Date("08/22/23 07:42"), "What if Earth is like one of those uncontacted tribes in South America, like the whole Galaxy knows we're here but they've agreed not to contact us until we figure it out for ourselves."));
+    posts.push(new Post(profiles[0], new Date("02/24/23 07:45"), "It's weird to think that nighttime is the natural state of the universe and daytime is only caused by a nearby, radiating ball of flame."));
 
     for (var i = 0; i < posts.length; i++) {
         addThink(posts[i]);
