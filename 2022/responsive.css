@@ -1,0 +1,159 @@
+@media only screen and (min-width: 600px)
+{
+  .navContainer
+  {
+	  height: 150px;
+  }
+    .gameIcon
+    {
+      width:180px;
+      margin-bottom: 10px;
+
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+	.specialIconContainer
+	{
+		position: relative; left: 0; top: 0;
+		width: 180px;
+	}
+	
+	.specialIconMain
+	{
+		position: relative; left: 0; bottom: 0;
+		margin-bottom: 10px;
+		width:180px;
+	}
+	
+	.specialIconOverlay
+	{
+		position: absolute; left: 0; bottom: 0;
+		margin-bottom: 13px;
+		width:180px;
+	}
+
+    .secretProject
+    {
+      width: 100%;
+
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+
+    .navBar
+    {
+      //background-color: green;
+      width: 550px;
+    }
+    .navButtonL
+    {
+      width: 100px;
+      margin-right: 5px;
+      font-size: 14px;
+    }
+    .navButtonR
+    {
+      width: 100px;
+      margin-left: 5px;
+      font-size: 14px;
+    }
+    .icon
+    {
+      height: 100px;
+    }
+
+    .cv
+    {
+      width: 550px;
+    }
+
+    .youtubeVideo
+    {
+      width: 550px;
+      height: calc(550px * 0.5625);
+    }
+}
+
+@media only screen and (min-width: 769px)
+{
+  .navContainer
+  {
+	  height: 200px;
+  }
+  .navBar
+  {
+    //background-color: red;
+    width: 750px;
+  }
+  .navButtonL
+  {
+    width: 125px;
+    margin-right: 25px;
+    font-size: 16px;
+  }
+  .navButtonR
+  {
+    width: 125px;
+    margin-left: 25px;
+    font-size: 16px;
+  }
+  .icon
+  {
+    height: 120px;
+  }
+
+  .gameIcon
+  {
+    width:250px;
+    margin-bottom: 10px;
+  }
+
+	.specialIconContainer
+	{
+		position: relative; left: 0; top: 0;
+		width: 250px;
+	}
+	
+	.specialIconMain
+	{
+		position: relative; left: 0; bottom: 0;
+		margin-bottom: 10px;
+		width:250px;
+	}
+	
+	.specialIconOverlay
+	{
+		position: absolute; left: 0; bottom: 0;
+		margin-bottom: 13px;
+		width:250px;
+	}
+
+  .secretProject
+  {
+    width: 745px;
+    margin-bottom: 10px;
+  }
+
+  .img16x9
+  {
+    width: 768px;
+    height: calc(768px * 0.5625);
+  }
+
+  .cv
+  {
+    width: 768px;
+  }
+
+    h1
+    {
+      padding-left: 0px;
+      width: 768px;
+    }
+
+    p
+    {
+      width: 768px;
+    }
+}

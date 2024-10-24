@@ -1,43 +1,312 @@
 <html>
-  <head>
-    <title>Keanen Collins</title>
-    <link rel="icon" type="image/png"  href="favicon.png"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <script type="text/javascript" src="main.js"></script>
+        <script type="text/javascript" src="interactivity.js"></script>
 
-    <link href="style.css" rel="stylesheet" />
-    <link href="responsive.css" rel="stylesheet" />
-  </head>
-  <body>
-    <div class="navContainer">
-
-      <ul class="navBar">
-        <a href= "index.html"><li class="navButtonL"> PROJECTS</li></a>
-        <a href="https://drive.google.com/file/d/1iHeQ9R1FHtyDHATier39davSo_mnzsV2/view?usp=sharing" target="_blank"><li class="navButtonL"> CV</li></a>
-        <a href= "index.html"><img src="Resources/Icon.png" alt="Logo" class="icon" /></a>
-        <a href= "about.html"><li class="navButtonR"> ABOUT</li></a>
-        <a href= "mailto: keanen195@gmail.com"><li class="navButtonR"> CONTACT</li></a>
-      </ul>
-
-    </div>
-
-    <div class="gameList">
-       <!--<a href="Games/DesmondsRitual.html"><img src="Resources/Games/SecretProject.png" alt="Desmond's Ritual" draggable="false" class="secretProject" /></a>-->
-
-        <h1>Games</h1>
-		<a href="Projects/Games/LisReal.html" class="specialIconContainer"><img src="Resources/Games/Projects/LisReal2.png" alt="L is Real" draggable="false" class="specialIconMain" /><!--<img src="Resources/Games/OverlayNew.png" alt="L is Real" draggable="false" class="specialIconOverlay" />--></a>
-        <a href="Projects/Games/SoundWave.html"><img src="Resources/Games/Projects/SoundWave.png" alt="Sound-Wave" draggable="false" class="gameIcon" /></a>
-        <a href="Projects/Games/LifeLynk.html"><img src="Resources/Games/GameJam/GMTK_LifeLynk.png" alt="Life Lynk" draggable="false" class="gameIcon" /></a>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
         
-        <h1>Game Projects</h1>
-		<a href="Projects/Games/DesmondsRitual.html"><img src="Resources/Games/GameJam/GGJ_DesmondsRitual.png" alt="Desmond's Ritual" draggable="false" class="gameIcon" /></a>
-		<a href="Projects/University/ForgeEngine.html"><img src="Resources/Games/University/ForgeEngine.png" alt="Forge Engine" draggable="false" class="gameIcon" /></a>
-        <a href="Projects/University/RocketBall.html"><img src="Resources/Games/University/DX11.png" alt="DX11 RocketBall" draggable="false" class="gameIcon" /></a>
-        <!--<a href="Projects/Games/Reflection.html"><img src="Resources/Games/Finished/Reflection.png" alt="Reflection" draggable="false" class="gameIcon" /></a>-->
-        <!--<img src="Resources/Games/Projects/InVain.png" alt="In Vain" draggable="false" class="gameIcon" />-->
-    </div>
-    <div class="Filler" style="height: 100px"></div>
-	<div class="Footer" style="height: 40px">
-		Last Updated 2022
-	</div>
-  </body>
-</html>
+        <title>Keanen Collins</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="style.css" rel="stylesheet" />
+        <link href="responsive.css" rel="stylesheet" />
+        <link rel="icon" type="image/png" href="favicon.png"/>
+  
+    </head>
+    <body class="background" onload="initialize_js();">
+        <template id="template_video_left">
+            <div id="video_container" class="media media_left outline media_video">
+                <img id="video_thumbnail" class="youtube_thumbnail no_drag" src="https://img.youtube.com/vi/i31BTBffe8I/maxresdefault.jpg">
+                <img src='resources/icons/youtube_hover.svg' class="youtube_hover no_drag">
+            </div>
+        </template>
+        <template id="template_video_right">
+            <div id="video_container" class="media media_right outline media_video">
+                <img id="video_thumbnail" class="youtube_thumbnail no_drag" src="https://img.youtube.com/vi/i31BTBffe8I/maxresdefault.jpg">
+                <img src='resources/icons/youtube_hover.svg' class="youtube_hover no_drag">
+            </div>
+        </template>
+
+        <div>
+            <div class="top_break"></div>
+            <img src="resources/icon_200px.png" class="logo no_drag" />
+            <h1>Keanen Collins</h1>
+            <h2>Game Programmer</h2>
+            <div class="project_hotbar">
+                <a href="#RentalDerby"><img src="resources/projects/rental_derby/hotbar_icon.png" class="project_hotbar_project no_drag" /></a>
+                <a href="#SoundWave"><img src="resources/projects/2022_soundwave/hotbar_icon.png" class="project_hotbar_project no_drag" /></a>
+                <a href="#LIsReal"><img src="resources/projects/LisReal/hotbar_icon.png" class="project_hotbar_project no_drag" /></a>
+                <a href="#LifeLynk"><img src="resources/projects/lifelynk/hotbar_icon.png" class="project_hotbar_project no_drag" /></a>
+                <a href="#ForgeEngine"><img src="resources/projects/forge_engine/hotbar_icon.png" class="project_hotbar_project no_drag" /></a>
+            </div>
+            <div style="height: 400px;"></div>
+
+<!-- ABOUT ME -->
+            <!-- <iframe src="git_widget.html" frameborder="0" style="width: 320px; height: 100px;"></iframe> -->
+            <div class="strip" id="AboutMe">
+                <p class="text text_centered" style="margin-top: 20px;">
+                    About Me
+                </p>
+                <div class="strip_box strip_box_centered">
+                    <p class="text" id="Description">
+                        Thanks for checking out my site. I'm Keanen, I'm KEANEN_AGE and I'm looking for a job as a programmer!
+                    </p>
+
+                    <p class="text">
+                        On this website you will find the projects that I'm the most proud of. In my spare time I like to do a lot of smaller <em>Unity</em> projects, 
+                        sometimes based off of my own ideas and sometimes just trying to replicate existing mechanics I enjoy in other games.
+                    </p>
+
+                    <p class="text">
+                        My core skills are in <em>C++</em> and <em>C#</em>, however sometimes I will try something a little different in order to expand my skillset. 
+                        In the past I have used different languages such as <em>Java</em>, <em>C</em> and even <em>HTML</em>/<em>Javascript</em>. This website is a project I started in college, 
+                        and I have been iterating upon it over the years.
+                    </p>
+
+                    <p class="text">
+                        I would love to put my skills to use in your company! Please email me at <em>keanen195@gmail.com</em> if you would like to discuss 
+                        any opportunities that may be available.
+                    </p>
+                </div>
+            </div>
+
+<!-- RENTAL DERBY -->
+            <img src="resources/projects/rental_derby/logo.png" class="project_logo no_drag" />
+            <div class="strip" id="RentalDerby">
+                <div class="strip_box">
+                    <p class="text text_left">
+                        Rental Car Derby is a demolition derby game where you have to avoid taking damage as much as possible! We decided to use the theme from the 2023 
+                        GMTK Game Jam, <em>Roles Reversed</em>, in order to brainstorm the idea for this game, and imposed a 48 hour restriction on ourselves. This session allowed us 
+                        to come up with a game idea we believe was fairly unique and very interesting to all of us on the team.
+                    </p>
+
+                    <p class="text text_left">
+                        Our goal for this project was to have a complete experience from beginning to end within the time-limit. For this reason we decided to use <em>Unity</em>, 
+                        which we all have ample experience with. Our team consisted of four developers including myself. Each member of the team assisted with programming the game 
+                        and worked where needed. My primary focus was on car collisions and dynamic 3D model deformation, however I also worked on other aspects alongside other 
+                        members of the team such as the camera, the game loop and sound systems as well as bug fixes and modifications to other systems where needed.
+                    </p>
+                    <div class="media_video_left" id="7_ApZ9weTVc"></div>
+                </div>
+                <div class="strip_box strip_box2">
+                    <img class="media media_right outline no_drag" src="resources/projects/rental_derby/screenshot.png" />
+                    <p class="text text_right">
+						This project went very smoothly, and all members of the team were consistently communicating and contributing to the project to make the game fully functional. 
+                        We were able to use our previous experiences in order to design and create a project with the correct scope that could be completed before the deadline. 
+                        We used <em>Trello</em> in order to separate the different tasks and assigned ourselves to any tasks that we were currently working on.
+                    </p>
+                    <p class="text text_right">
+                        After completing the jam successfully, myself and another member of the team decided to continue working on the project for another week in a smaller 
+                        capacity in order to polish it into an even more complete experience. This included improving deformations and damage caclulation further, adding a 
+                        trick system for prize money, new custom mud shaders, rebalancing the arena, adding a quick play option and more. The version being showcased is the 
+                        polished version of the project.
+                    </p>
+                </div>
+
+                <div class="download_section">
+                    <a href="http://www.google.com" target="_blank">
+                        <div class="download_group">
+                            <img class="download_icon" src="resources/icons/itchio.svg" alt="" />
+                            <div class="download_text">Play on itch.io</div>
+                        </div>
+                    </a>
+                    <a href="http://www.google.com" target="_blank">
+                        <div class="download_group">
+                            <img class="download_icon" src="resources/icons/file_source.svg" alt="" />
+                            <div class="download_text">Source Code</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+			
+<!-- SOUNDWAVE -->
+            <img src="resources/projects/2022_soundwave/logo.png" class="project_logo no_drag" />
+            <div class="strip" id="SoundWave">
+                <div class="strip_box">
+                    <p class="text text_left">
+                        SoundWave is a 2D side-scrolling platformer with a <em>rhythm game</em> twist! Dodge obstacles and anticipate hazards by paying close attention to the beat of the song.
+                    </p>
+
+                    <p class="text text_left">
+                        This game was based off of our entry for Global Games Jam 2017 with the theme "<em>waves</em>". 
+                        Our original game was about navigating rhythm based obstacles while guiding your AI companion, 
+                        however for the full release we decided it would be better to focus on just one of the mechanics
+                        so that we develop it further. Unfortunately this meant that the companion character was dropped
+                        from the game.
+                    </p>
+
+                    <div class="media_video_left" id="i31BTBffe8I"></div>
+                </div>
+                <div class="strip_box strip_box2">
+                    <img class="media media_right outline no_drag" src="resources/projects/2022_soundwave/screenshot.png" />
+                    <p class="text text_right">
+                        We used <em>Unity</em> and <em>C#</em> to reimagine the project. I was in charge
+                        of developing the character controller as well as the rhythm mechanics. I worked with our designer
+                        to implement these new mechanics so that the rhythm objects could be tweaked from the inspector
+                        without having to write additional code to create new behaviours, allowing levels to be made
+                        far more easily.
+                    </p>
+                    <p class="text text_right">
+                        As hobbyist developers with day jobs our biggest struggle was time-management. We initially
+                        planned to finish the project within a month, but it ended up taking four months. Around the end 
+                        of month 3 we decided that our current relaxed approach wasn't working, so we created a <em>Trello</em>
+                        board and scheduled time to work together in the evenings. In the following month we made considerable
+                        progress, and a portion of that time was spent polishing and bug-fixing before release.
+                    </p>
+                </div>
+
+                <div class="download_section">
+                    <a href="http://team-quest.itch.io/soundwave" target="_blank">
+                        <div class="download_group">
+                            <img class="download_icon" src="resources/icons/itchio.svg" alt="" />
+                            <div class="download_text">Play on itch.io</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+<!-- L IS REAL 2401 -->
+            <img src="resources/projects/LisReal/logo.png" class="project_logo no_drag" />
+            <div class="strip" id="LIsReal">
+                <p class="text text_centered" style="margin-top: 20px;">
+                    Lorem ipsum dolor sit amet, <em>consectetur</em> adipiscing elit!
+                </p>
+                <div class="strip_box">
+                    <p class="text text_left">
+                        Unlock Luigi and play through the Mario 64 levels you know and love from a new perspective. Help Luigi collect all 120 Green Stars with his new movement 
+                        options and unlock a fun reward! Green Stars cannot be used to open the castle doors as they do not have the same energy as Power Stars. Looks like Mario 
+                        has to do all the important work once again, despite Luigi's efforts!
+                    </p>
+
+                    <p class="text text_left">
+                        This mod was created using SM64 Port Refresh 12, a PC port of Super Mario 64 based on the Super Mario 64 decompilation project, which allows you to decompile 
+                        the original N64 game into documented C code! I took a little time to learn how some of the systems worked, and decided to work on this Luigi mod in 
+                        order to put what I had learnt into practice! This is my first time working with pure C code, but thanks to my knowledge of C++ and my basic understanding 
+                        of C practices from University I was able to create this project with only a little resistance!
+                    </p>
+
+                    <div class="media_video_left" id="WhPowJWFfUg"></div>
+                </div>
+                <div class="strip_box strip_box2">
+                    <div class="media_video_right" id="dLv85VsGgI8"></div>
+                    <p class="text text_right">
+                        I gained a fair amount of traction with this mod, as of the time of writing the release video is sitting at over 12,000 
+                        views and has a 97.2% like ratio. As well as this, a showcase of my mod by a channel called Unreal gained more than 70,000 views and 1300 likes 
+                        (It also only had 36 dislikes before the feature was removed from YouTube). People appeared to be very happy with my work and I even got some DMs 
+                        from people who tried it showing their appreciation! The channel is now defunct, however you can see the last known statistics of the video <a href="https://web.archive.org/web/20240606034141/https://www.youtube.com/watch?v=dLv85VsGgI8">here</a>
+                    </p>
+                    <p class="text text_right">
+                        The idea for the mod came from an old rumour that stated that the plaque in the courtyard of the castle says "L is Real 2401". Many theories stated that 
+                        you could unlock Luigi by doing an action such as running around the plaque 2401 times. For my version I made it a little more plausible to attain so 
+                        that people had a chance to play with it properly, and I decided to also turn it into a completion bonus! I had a lot of fun learning how Mario controls 
+                        in this old Nintendo 64 game and loved figuring out how to solve issues such as changing the character model, which of course was never a feature in the game.
+                    </p>
+                </div>
+                <p class="text text_centered" style="margin-top: 20px; text-align: left;">
+                    The following download is a git patch file for SM64 Port. It contains all my code changes if you would like to take a look. I cannot provide a download to a 
+                    compiled version of the game for legal reasons, but please feel free to patch the game for yourself! In order to access Luigi, you will have to collect 
+                    24 coins in a level and set the life counter to 1, then go to the castle courtyard and talk to the Boo in the fountain. Or alternatively, just beat the 
+                    game with 120 stars!
+                </p>
+                
+                <div class="download_section">
+                    <a href="https://drive.google.com/file/d/1RTzhTaQNeBLy1so__zAzLfSrnj3CZfdo/view?usp=sharing" target="_blank">
+                        <div class="download_group">
+                            <img class="download_icon" src="resources/icons/download.svg" alt="" />
+                            <div class="download_text">Download</div>
+                        </div>
+                    </a>                    
+                    <a href="https://github.com/sm64-port/sm64-port/tree/8b872a71e82ed63bbdfa00abc741248ff6e5ec7f" target="_blank">
+                        <div class="download_group">
+                            <img class="download_icon" src="resources/icons/question_box.svg" alt="" />
+                            <div class="download_text">SM64PC</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+<!-- LIFELYNK -->
+            <img src="resources/projects/lifelynk/logo.png" class="project_logo no_drag" />
+            <div class="strip" id="LifeLynk">
+                <p class="text text_centered" style="margin-top: 20px;">
+                    Lorem ipsum dolor sit amet, <em>consectetur</em> adipiscing elit!
+                </p>
+                <div class="strip_box">
+                    <p class="text text_left">
+                        Originally prototyped during the 2017 GMTK Game Jam, Life Lynk is a top-down wave-based shooter where health is linked to your weapon 
+                        through your suits energy. Every round you fire uses energy and performing stunts like rolling uses up some of your energy too! 
+                        This can create some tense scenarios as more and more different types of enemies arrive. You are equipped with 4 weapons: a pistol, a rifle, 
+                        a shotgun and a rocket launcher.
+                    </p>
+
+                    <p class="text text_left">
+                        When developing this game, some members of our team could only join us for short periods of time, and we ended up struggling to get the game
+                        completed in time. Despite this we were proud of what we accomplished. The game was played by Mark Brown of GMTK on his livestream and he levelled some
+                        critiques of the game including its high difficulty, its lack of tutorial and the fast reflexes required to trigger the active reload mechanic.
+                    </p>
+
+                    <div class="media_video_left" id="6HNOS_I2rtQ"></div>
+                </div>
+                <div class="strip_box strip_box2">
+                    <img class="media media_right outline no_drag" src="resources/projects/lifelynk/screenshot.png" />
+                    <p class="text text_right">
+                        We all agreed with these critiques however the team was finished with the project. I decided I wanted to try and update the project to cater to these crtiques
+                        to make the game as good as it could be and live up to the plans we had for it. Rather than reworking the existing game, I decided to start over, using the original
+                        project as reference. I believe I was able to take the use the critique to form a more well rounded experience that was only possible thanks to the work our team did
+                        on the original game and the great feedback we received.
+                    </p>
+                    <p class="text text_right">
+                        Both the GMTK Jam version and the reworked version were made with Unity. In the video embedded here I demonstrate my second version that was based off of the code, 
+                        sound design and artwork made by our team during the official jam timeframe.
+                    </p>
+                </div>
+            </div>
+
+<!-- FORGE ENGINE -->
+            <img src="resources/projects/forge_engine/logo.png" class="project_logo no_drag" />
+            <div class="strip" id="ForgeEngine">
+                <p class="text text_centered" style="margin-top: 20px;">
+                    Lorem ipsum dolor sit amet, <em>consectetur</em> adipiscing elit!
+                </p>
+                <div class="strip_box">
+                    <p class="text text_left">
+                        The Forge Engine is a game engine created as part of a module that simulated working in a game studio environment. The module consisted 
+                        entirely of programmers from the Staffordshire University Games Programming course and Computer Science course, but we all had to work 
+                        on design and art for the engine and the games we made using it.
+                    </p>
+
+                    <p class="text text_left">
+                        The engine we were tasked to create only needed to be capable of creating a set of unique platformer games, however the flexibility 
+                        of the engine we designed means that we could potentially use it for other types of games due to the lua scripting, hierarchical 
+                        structure and Entity-Component-System.
+                    </p>
+
+                    <div class="media_video_left" id="kvBLclwK0go"></div>
+                </div>
+                <div class="strip_box strip_box2">
+                    <div class="media_video_right" id="eLNtwSZR-vU"></div>
+                    <p class="text text_right">
+                        The front-end was designed with C# WPF and uses CLI to access the Engine Core which was developed in C++ using DirectX 11. 
+                        The engine can also create builds with an executable file. The demonstration video embedded shows off the Metroidvania 
+                        I created using this engine in a short timeframe after the engine was completed, as well as an overview of the engine itself!
+                    </p>
+                    <p class="text text_right">
+						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis</em> nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint <em>occaecat</em> cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+
+            <!--<div style="height: 600px;"></div>-->
+        </div>
+        
+        <div id="gallery" hidden="true" onclick="exit_gallery();">
+            <iframe id="gallery_media" src="about:blank" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </body>
+    
+    <script type="text/javascript" src="dynamic_age.js"></script>
+    </html>
+
+    
