@@ -25,7 +25,7 @@ a
 {
     --background-color: #222;
     background-color: #22252a;
-    background-image: url("resources/bg.png");
+    background-image: url("resources/background.png");
     background-size: 300px;
     background-attachment: fixed;
 }
